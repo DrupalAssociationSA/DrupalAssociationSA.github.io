@@ -38,10 +38,12 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="membership.html">MEMBERSHIP</a></li>
-          <li><a href="news.html">NEWS</a></li>
+          {% assign url = page.url|remove:'index.html' %}
+          {% for link in site.navigation %}
+            <li {% if url == link.url %}class="active"{% endif %}>
+              <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </div><!--/.nav-collapse -->
     </div>
