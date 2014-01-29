@@ -1,3 +1,13 @@
 name: Drupal Association South Africa
 markdown: redcarpet
 pygments: true
+
+navigation:
+  - text: Home
+    url: /
+  - text: About
+    url: /about.html
+  - text: Membership
+    url: /membership.html
+  - text: News
+    url: /news.html
