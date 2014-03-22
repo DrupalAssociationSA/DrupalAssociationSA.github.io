@@ -371,8 +371,7 @@ a:after {
 }
 
 .pricing-option .price .price-amount {
-    font-size: 90px;
-    letter-spacing: -4px;
+    font-size: 75px;
 }
 
 .pricing-option .price small {
