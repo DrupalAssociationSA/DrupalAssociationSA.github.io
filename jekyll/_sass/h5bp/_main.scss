@@ -264,8 +264,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-  @import "compass";
-html {
-    @include background-image(linear-gradient(darken(white, 5%), white));
-}

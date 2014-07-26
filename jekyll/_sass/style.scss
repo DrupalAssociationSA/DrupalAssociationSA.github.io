@@ -1,4 +1,102 @@
-@import "compass";
-@import "h5bp/normalize";
-@import "h5bp/main";
+/******************************************************************************/
+/*   ____    _    ____    _                                                   */
+/*  |  _ \  / \  / ___|  / \                                                  */
+/*  | | | |/ _ \ \___ \ / _ \                                                 */
+/*  | |_| / ___ \ ___) / ___ \                                                */
+/*  |____/_/   \_\____/_/   \_\   Drupal Association South Africa             */
+/*                                                                            */
+/******************************************************************************/
+/* Imports: Generic                                                           */
+/******************************************************************************/
+  @import "compass";
+  @import "h5bp/normalize";
+  @import "h5bp/main";
+/******************************************************************************/
+/* Variables                                                                  */
+/******************************************************************************/
+  // Fonts
+    $base_font_family:            'Open Sans', Verdana, Arial, sans-serif;
+    $base_font_size:              1.6;
+  // Colours (based on Logo)
+    $cBlack:                      #2D292A;
+    $cGreen:                      #118D45;
+    $cRed:                        #E51E26;
+    $cYellow:                     #F3C016;
+    $cBlueLight:                  #0878BE;
+    $cBlueDark:                   #0D5B90;
+    $cGrey:                       #BFBFC8;
+  // Body
+    $cBodyBackground:             darken($cBlack, 10%);
+    $cBodyColour:                 $cBlack;
+    $cBodyLink:                   $cBlueLight;
+    $cBodyHover:                  $cGreen;
+  // Compass
+    $default-transition-duration: 0.5s;  $td: $default-transition-duration;
+    $default-transition-function: ease;  $tf: $default-transition-function;
+    $legacy-support-for-ie6:      false;
+    $legacy-support-for-ie7:      false;
+    $legacy-support-for-ie8:      true;
+  // Responsive
+    $w1:  320px;  $wb1:  320px;
+    $w2:  640px;  $wb2:  600px; $r1: 'screen and (max-width: ' + ($w2 - 1) + ')';
+    $w3:  960px;  $wb3:  900px; $r2: 'screen and (max-width: ' + ($w3 - 1) + ')';
+    $w4: 1280px;  $wb4: 1200px; $r3: 'screen and (max-width: ' + ($w4 - 1) + ')';
+/******************************************************************************/
+/* Imports: Specific (Needs Variables Above)                                  */
+/******************************************************************************/
+  @import 'general/mixins';
+/******************************************************************************/
+/* General                                                                    */
+/******************************************************************************/
+  // Styles
+    body {
+      color: $cBodyColour;
+      @include font-size($base_font_size);
+      background-color: $cBodyBackground;
+      font-family: $base_font_family;
+      a {
+        @include transition(color $td $tf);
+        @include link-colour($cBodyLink, $cBodyHover);
+        @include link-decoration();
+      }
+    }
+    h1 { @include font-size(2.4); }
+    h2 { @include font-size(2.2); }
+    h3 { @include font-size(2.0); }
+    h4 { @include font-size(1.8); }
+  // Responsive
+    body {
+      @include transition(background-color $td $tf);
+      @media #{$r1} {
+        background-color: white;
+      }
+    }
+/******************************************************************************/
+/* Page                                                                       */
+/******************************************************************************/
+  // Variables
+    $page_margin: 15px;
+    $page_radius: 10px;
+  // Styles
+    #page {
+      margin: $page_margin auto;
+      background: white;
+      @include border-radius($page_radius);
+    }
+  // Responsive
+    #page {
+      @include transition(max-width $td $tf, margin $td $tf);
+                      max-width: $w4;
+      @media #{$r3} { max-width: $w3; }
+      @media #{$r2} { max-width: $w2; }
+      @media #{$r1} { max-width: 100%;
+        @include border-radius(0);
+        margin: 0 auto;
+      }
+    }
+/******************************************************************************/
+/* Imports: Design                                                            */
+/******************************************************************************/
+  @import 'header/header';
+/******************************************************************************/
 

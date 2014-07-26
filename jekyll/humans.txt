@@ -1,15 +1,9 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+   ____    _    ____    _
+  |  _ \  / \  / ___|  / \
+  | | | |/ _ \ \___ \ / _ \
+  | |_| / ___ \ ___) / ___ \
+  |____/_/   \_\____/_/   \_\   Drupal Association South Africa
 
-# TEAM
+  All Drupalers welcome to collaborate on GitHub:
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+  https://github.com/DrupalAssociationSA/

@@ -1,4 +1,4 @@
-name: DASA Website
+name: Drupal Association South Africa
 
 source: jekyll
 destination: deploy/test
@@ -14,4 +14,4 @@ exclude: [
 ]
 keep_files: ['img', 'css', 'js', 'fonts']
 
-include: ['.htaccess']
+include: ['.htaccess', 'favicon.ico']

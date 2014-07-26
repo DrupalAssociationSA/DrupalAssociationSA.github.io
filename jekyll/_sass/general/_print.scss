@@ -1,0 +1,32 @@
+/******************************************************************************/
+/*      ______                                                                */
+/*     //   ) )   Burtronix 2014                                              */
+/*    //___/ /            __    __  ___  __      ___       __     ( )         */
+/*   / __  (   //   / / //  ) )  / /   //  ) ) //   ) ) //   ) ) / / \\ / /   */
+/*  //    ) ) //   / / //       / /   //      //   / / //   / / / /   \/ /    */
+/* //____/ / ((___( ( //       / /   //      ((___/ / //   / / / /    / /\    */
+/*                                                                            */
+/******************************************************************************/
+  @media print {
+    // Underline all links.
+    a:link, a:visited {
+      text-decoration: underline !important;
+      // Don't underline header.
+      &.header__site-link {
+        text-decoration: none !important;
+      }
+    }
+    // Turn off any background colors or images.
+    body, #page, #main, #content {
+      color: #000;
+      background-color: transparent !important;
+      background-image: none !important;
+    }
+
+    // Hide bits.
+    #skip-link, #toolbar, .breadcrumb, .tabs, .action-links, .links, .pager,
+    .feed-icons {
+      visibility: hidden; display: none;
+    }
+  }
+/******************************************************************************/

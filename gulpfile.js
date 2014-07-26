@@ -97,7 +97,9 @@
 		var stream = gulp.src('jekyll/_sass/**/*.scss')
 			.pipe(compass({
 				css: build.to + '/css',
-				sass: 'jekyll/_sass'
+				sass: 'jekyll/_sass',
+				image: 'jekyll/img',
+				relative: false
 			}))
 			.pipe(gulpif(build.intent == 'deploy', minifyCSS({
 				keepSpecialComments: 0
