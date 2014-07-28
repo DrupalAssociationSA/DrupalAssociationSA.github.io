@@ -1,17 +1,5 @@
-name: Drupal Association South Africa
-
-source: jekyll
 destination: deploy/test
 baseurl: /test
 
 future: false
 show_drafts: false
-
-# Gulp handles images and assets.
-exclude: [
-  'img', 'css', 'js', 'fonts',
-  '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico'
-]
-keep_files: ['img', 'css', 'js', 'fonts']
-
-include: ['.htaccess', 'favicon.ico']

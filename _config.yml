@@ -1,0 +1,23 @@
+name: Drupal Association South Africa
+
+short: DASA
+long: DASA - Drupal Association South Africa
+
+source: jekyll
+
+# Gulp handles images and assets.
+exclude: [
+  'img', 'css', 'js', 'fonts',
+  '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico'
+]
+keep_files: ['img', 'css', 'js', 'fonts']
+
+include: ['.htaccess', 'favicon.ico']
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
