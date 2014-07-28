@@ -1,7 +1,46 @@
 ---
-layout: default
-title: Drupal Association South Africa (DASA)
+title: 'Home Page'
+description: About DASA (Drupal Association South Africa) and our Community.
 ---
 
-Hello <strong>World</strong>...
+<article class="about">
+  <header><h1>About DASA (Drupal Association South Africa)</h1></header>
+  <section class="community">
+    <header><h1>Community</h1></header>
+    <p>
+      Drupal Association South Africa (DASA) is a non-profit organisation
+      established for the public benefit objective to foster and support the
+      Drupal project, the community and its growth in South Africa.
+    </p>
+  </section>
+  <section class="mission">
+    <header><h1>Mission</h1></header>
+    <p>
+      DASA is committed to the Drupal Software Project in South Africa,
+      developing an open, transparent and voluntary campaign to promote crusade,
+      support and nurture the local Drupal Community.
+    </p>
+  </section>
+  <section class="vision">
+    <header><h1>Vision</h1></header>
+    <p>
+      Within the next five years, DASA will maintain and support vigorous and
+      growing Drupal Communities in the major centres. DASA will have developed
+      and cultivated a desire within Business, Government and Institutions of
+      Learning for knowledge of the superior functionality and security features
+      in Drupal. Five years thereafter, DASA will host the first DrupalCon on
+      the African continent.
+    </p>
+  </section>
+</article>
 
+<article class="about">
+  <header><h1>Drupal User Group Meet-ups</h1></header>
+  {% for meetup in site.data.meetups %}
+    <section>
+      <header><h1>{{ meetup.title }}</h1></header>
+      <p>{{ meetup.description }}</p>
+      <p>{{ meetup.meetup }} widget...</p>
+    </section>
+  {% endfor %}
+</article>

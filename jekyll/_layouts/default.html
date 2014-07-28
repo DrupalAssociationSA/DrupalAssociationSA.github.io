@@ -3,8 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="">
+    <title>
+      {% if page.title == 'Home Page' %}
+        {{ site.long }}
+      {% else %}
+        {{ page.title }} - {{ site.long }}
+      {% endif %}
+    </title>
+    <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
@@ -24,6 +30,8 @@
 
       <div id="header">
         <h1 id="site-name"><a href="">{{ site.name }}</a></h1>
+
+        {% include menu.html %}
       </div>
 
       {{ content }}
