@@ -1,8 +1,8 @@
 <nav class="menu">
           <ul>
-            <li><a href="{{ site.baseurl }}/" title="Home Page - {{ site.name }}">Home</a></li>
-            <li><a href="{{ site.baseurl }}/resources.html" title="Resources - {{ site.name }}">Resources</a></li>
-            <li><a href="{{ site.baseurl }}/membership.html" title="Membership - {{ site.name }}">Membership</a></li>
-            <li><a href="{{ site.baseurl }}/contact-us.html" title="Contact the {{ site.name }}">Contact Us</a></li>
+            <li><a {% if page.title == "Home Page" %} class="active"{% endif %}href="{{ site.baseurl }}/" title="Home Page - {{ site.name }}">Home</a></li>
+            <li><a {% if page.title == "Resources" %} class="active"{% endif %}href="{{ site.baseurl }}/resources.html" title="Resources - {{ site.name }}">Resources</a></li>
+            <li><a {% if page.title == "Membership" %} class="active"{% endif %}href="{{ site.baseurl }}/membership.html" title="Membership - {{ site.name }}">Membership</a></li>
+            <li><a {% if page.title == "Contact Us" %} class="active"{% endif %}href="{{ site.baseurl }}/contact-us.html" title="Contact the {{ site.name }}">Contact Us</a></li>
           </ul>
         </nav>

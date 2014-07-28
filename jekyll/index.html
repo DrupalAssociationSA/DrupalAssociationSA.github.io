@@ -4,9 +4,11 @@ description: About DASA (Drupal Association South Africa) and our Community.
 ---
 
 <article class="about">
-  <header><h1>About DASA (Drupal Association South Africa)</h1></header>
+  <header>
+    <h1 id="page-title">About DASA (Drupal Association South Africa)</h1>
+  </header>
   <section class="community">
-    <header><h1>Community</h1></header>
+    <header><h2>Community</h2></header>
     <p>
       Drupal Association South Africa (DASA) is a non-profit organisation
       established for the public benefit objective to foster and support the
@@ -14,7 +16,7 @@ description: About DASA (Drupal Association South Africa) and our Community.
     </p>
   </section>
   <section class="mission">
-    <header><h1>Mission</h1></header>
+    <header><h2>Mission</h2></header>
     <p>
       DASA is committed to the Drupal Software Project in South Africa,
       developing an open, transparent and voluntary campaign to promote crusade,
@@ -22,7 +24,7 @@ description: About DASA (Drupal Association South Africa) and our Community.
     </p>
   </section>
   <section class="vision">
-    <header><h1>Vision</h1></header>
+    <header><h2>Vision</h2></header>
     <p>
       Within the next five years, DASA will maintain and support vigorous and
       growing Drupal Communities in the major centres. DASA will have developed
@@ -34,13 +36,13 @@ description: About DASA (Drupal Association South Africa) and our Community.
   </section>
 </article>
 
-<article class="about">
+<article class="meetups">
   <header><h1>Drupal User Group Meet-ups</h1></header>
   {% for meetup in site.data.meetups %}
     <section>
-      <header><h1>{{ meetup.title }}</h1></header>
+      <header><h2>{{ meetup.title }}</h2></header>
       <p>{{ meetup.description }}</p>
-      <p>{{ meetup.meetup }} widget...</p>
+      <iframe width="225" height="570" src="http://meetu.ps/{{ meetup.widget }}" frameborder="0"></iframe>
     </section>
   {% endfor %}
 </article>
