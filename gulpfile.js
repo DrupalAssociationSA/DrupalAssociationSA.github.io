@@ -164,7 +164,7 @@
 	 */
 	gulp.task('buildJekyll', function (cb) {
 		browserSync.notify(messages.buildJekyll);
-		exec('jekyll build --config _config_' + build.intent + '.yml', function () {
+		exec('jekyll build --config _config.yml,_config_' + build.intent + '.yml', function () {
 			cb();
 		});
 	});
@@ -213,6 +213,7 @@
 		gulp.watch([
 			'jekyll/index.html',
 			'jekyll/_layouts/*.html',
+			'_config.yml',
 			'_config_' + build.intent + '.yml'
 		], ['buildAll']);
 
