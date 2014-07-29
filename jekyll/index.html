@@ -38,6 +38,7 @@ description: About DASA (Drupal Association South Africa) and our Community.
 
 <article class="meetups">
   <header><h1>Drupal User Group Meet-ups</h1></header>
+  <div id="widgets">
   {% for meetup in site.data.meetups %}
     <section>
       <header><h2>{{ meetup.title }}</h2></header>
@@ -45,4 +46,5 @@ description: About DASA (Drupal Association South Africa) and our Community.
       <iframe width="225" height="570" src="http://meetu.ps/{{ meetup.widget }}" frameborder="0"></iframe>
     </section>
   {% endfor %}
+  </div>
 </article>

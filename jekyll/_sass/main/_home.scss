@@ -39,13 +39,16 @@
         section.mission {
           width: 50%;
           h2, p {
-            margin: 0 $MainPadding   0 $MainPadding/2;
+            margin: 0 $MainPadding 0 $MainPadding/2;
           }
         }
         section.vision {
           width: 100%;
-          h2, p {
-            margin: 0 $MainPadding   0 $MainPadding;
+          h2 {
+            margin: $MainPadding $MainPadding 0 $MainPadding;
+          }
+          p {
+            margin: 0 $MainPadding 0 $MainPadding;
           }
         }
       }
@@ -55,7 +58,12 @@
         section.community, section.mission, section.vision {
           width: 100%;
           h2, p {
-            margin: 0 $MainPadding   0 $MainPadding;
+            margin: 0 $MainPadding 0 $MainPadding;
+          }
+        }
+        section.mission, section.vision {
+          h2 {
+            margin: $MainPadding $MainPadding 0 $MainPadding;
           }
         }
       }
@@ -66,27 +74,36 @@
   // Style
     body#home-page article.meetups {
       text-align: center;
-      @include clearfix;
       h1 {
         margin: 0 $MainPadding * 2;
         padding: 3px;
         border: 1px solid $cGrey; border-left: none; border-right: none;
       }
-      section {
-        width: 320px; height: 780px; display: block; float: left;
-        p {
-          height: 170px;
-          margin: $MainPadding;
-          @include font-size(1.4);
-          padding: 0 20px;
+      #widgets {
+        word-spacing: -1em;
+        section {
+          width: 320px; height: 780px;
+          display: inline-block; word-spacing: normal;
+          p {
+            height: 155px;
+            margin: $MainPadding;
+            @include font-size(1.4);
+            padding: 0 20px;
+          }
+          iframe {
+            background-color: #1a1a1a;
+            @include border-radius(5px);
+          }
         }
       }
     }
   // Responsive
     @media #{$r3} {
-      body#home-page section { width: 640px; margin: 0 auto; }
+      body#home-page article.meetups #widgets { width: 640px; margin: 0 auto; }
     }
-    @media #{$r2} {
-      body#home-page section { width: 320px; h2.pane-title { margin: 0; } }
+    @media #{$r1} {
+      body#home-page article.meetups #widgets {
+        width: 320px;
+      }
     }
 /******************************************************************************/
