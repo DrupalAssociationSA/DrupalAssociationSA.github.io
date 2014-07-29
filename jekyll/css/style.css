@@ -822,10 +822,19 @@ body {
   }
 }
 
+/* line 75, ../_sass/style.scss */
+.hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 /******************************************************************************/
 /* Page                                                                       */
 /******************************************************************************/
-/* line 82, ../_sass/style.scss */
+/* line 83, ../_sass/style.scss */
 #page {
   margin: 15px auto;
   background: white;
@@ -836,7 +845,7 @@ body {
   border-radius: 10px;
 }
 
-/* line 88, ../_sass/style.scss */
+/* line 89, ../_sass/style.scss */
 #page {
   -webkit-transition: max-width 0.5s ease, margin 0.5s ease;
   -moz-transition: max-width 0.5s ease, margin 0.5s ease;
@@ -845,19 +854,19 @@ body {
   max-width: 1280px;
 }
 @media screen and (max-width: 1279px) {
-  /* line 88, ../_sass/style.scss */
+  /* line 89, ../_sass/style.scss */
   #page {
     max-width: 960px;
   }
 }
 @media screen and (max-width: 959px) {
-  /* line 88, ../_sass/style.scss */
+  /* line 89, ../_sass/style.scss */
   #page {
     max-width: 640px;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 88, ../_sass/style.scss */
+  /* line 89, ../_sass/style.scss */
   #page {
     max-width: 100%;
     -webkit-border-radius: 0;
@@ -1177,24 +1186,16 @@ body#home-page article.meetups #widgets section iframe {
 /* Resources:                                                                 */
 /******************************************************************************/
 /* line 6, ../_sass/main/_resources.scss */
-body#resources article.resources .hide {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-/* line 7, ../_sass/main/_resources.scss */
 body#resources article.resources div.resources {
   padding: 0 20px;
 }
-/* line 9, ../_sass/main/_resources.scss */
+/* line 8, ../_sass/main/_resources.scss */
 body#resources article.resources div.resources section {
   width: 25%;
   float: left;
   margin-bottom: 1em;
 }
-/* line 11, ../_sass/main/_resources.scss */
+/* line 10, ../_sass/main/_resources.scss */
 body#resources article.resources div.resources section h2 {
   font-size: 15px;
   line-height: 22.5px;
@@ -1202,7 +1203,7 @@ body#resources article.resources div.resources section h2 {
   line-height: 2.25rem;
   margin: 0 20px 0 0;
 }
-/* line 12, ../_sass/main/_resources.scss */
+/* line 11, ../_sass/main/_resources.scss */
 body#resources article.resources div.resources section p {
   font-size: 14px;
   line-height: 21.0px;
@@ -1212,21 +1213,96 @@ body#resources article.resources div.resources section p {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 18, ../_sass/main/_resources.scss */
+  /* line 17, ../_sass/main/_resources.scss */
   body#resources article.resources div.resources section {
     width: 33%;
   }
 }
 @media screen and (max-width: 959px) {
-  /* line 21, ../_sass/main/_resources.scss */
+  /* line 20, ../_sass/main/_resources.scss */
   body#resources article.resources div.resources section {
     width: 50%;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 24, ../_sass/main/_resources.scss */
+  /* line 23, ../_sass/main/_resources.scss */
   body#resources article.resources div.resources section {
     width: 100%;
+  }
+}
+/******************************************************************************/
+/******************************************************************************/
+/* Membership                                                                 */
+/******************************************************************************/
+/* line 18, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership {
+  text-align: center;
+  padding: 0 20px;
+  word-spacing: -1em;
+}
+/* line 22, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section {
+  width: 25%;
+  display: inline-block;
+  margin-bottom: 1em;
+  word-spacing: normal;
+}
+/* line 24, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section h2 {
+  font-size: 15px;
+  line-height: 22.5px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin: 0 20px 0 0;
+}
+/* line 25, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section p {
+  font-size: 14px;
+  line-height: 21.0px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin: 0.2em 20px 0.2em 0.5em;
+}
+/* line 27, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section.gold {
+  color: #c98910;
+}
+/* line 28, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section.silver {
+  color: #a5a5a5;
+}
+/* line 29, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section.bronze {
+  color: #965a38;
+}
+/* line 30, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section.individual {
+  color: #0d5b90;
+}
+/* line 31, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section.site-owner-diamond {
+  color: #0878be;
+}
+/* line 32, ../_sass/main/_membership.scss */
+body#membership article.membership div.membership section.site-owner-graphite {
+  color: gray;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 38, ../_sass/main/_membership.scss */
+  #panel-membership .pane-membership-pane {
+    width: 640px;
+    margin: 0 auto;
+  }
+  /* line 40, ../_sass/main/_membership.scss */
+  #panel-membership .pane-membership-pane .view {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 959px) {
+  /* line 44, ../_sass/main/_membership.scss */
+  #panel-membership .pane-membership-pane {
+    width: 320px;
   }
 }
 /******************************************************************************/

@@ -1,0 +1,48 @@
+/******************************************************************************/
+/* Membership                                                                 */
+/******************************************************************************/
+  // Variables
+    $borderWidth: 3px;
+    $border:      $borderWidth solid #333;
+
+
+
+    $cGold:       #C98910;
+    $cSilver:     #A5A5A5;
+    $cBronze:     #965A38;
+    $cIndividual: $cBlueDark;
+    $cDiamond:    $cBlueLight;
+    $cGraphite:   lighten(black, 50%);
+  // Style
+    body#membership article.membership {
+      div.membership {
+        text-align: center;
+        padding: 0 $MainPadding;
+        word-spacing: -1em;
+        section {
+          width: 25%; display: inline-block; margin-bottom: 1em; word-spacing: normal;
+          h2 { @include font-size(1.5); margin: 0 $MainPadding 0 0; }
+          p  { @include font-size(1.4); margin: 0.2em $MainPadding 0.2em 0.5em; }
+        }
+        section.gold                { color: $cGold;   }
+        section.silver              { color: $cSilver; }
+        section.bronze              { color: $cBronze; }
+        section.individual          { color: $cIndividual; }
+        section.site-owner-diamond  { color: $cDiamond; }
+        section.site-owner-graphite { color: $cGraphite; }
+
+      }
+    }
+  // Responsive
+    @media #{$r3} {
+      #panel-membership .pane-membership-pane {
+        width: 640px; margin: 0 auto;
+        .view { padding: 0; }
+      }
+    }
+    @media #{$r2} {
+      #panel-membership .pane-membership-pane {
+        width: 320px;
+      }
+    }
+/******************************************************************************/

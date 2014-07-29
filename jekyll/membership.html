@@ -1,0 +1,39 @@
+---
+title: 'Membership'
+description: Membership and Donations for DASA (Drupal Association South Africa) and our Community.
+---
+
+<article class="{{ page.title | downcase }}">
+  <header>
+    <h1 id="page-title">
+      Membership
+      <span class="hide"> and Donations for DASA (Drupal Association South Africa)</span>
+    </h1>
+  </header>
+  <div class="membership">
+  {% for membership in site.data.memberships %}
+    <section class="{{ membership.type }}">
+      <header><h2>{{ membership.title }}</h2></header>
+      <p>{{ membership.cost }}</p>
+    </section>
+  {% endfor %}
+  </div>
+  <section>
+    <ul>
+      <li>
+        <p>Please check back once a month:</p>
+        <ul>
+          <li>we're working on membership badges.</li>
+          <li>we'll publish membership application instructions.</li>
+          <li>we'll publish membership upgrade instructions.</li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          We link only to Drupal.org for member listings (individuals and
+          organisations).
+        </p>
+      </li>
+    </ul>
+  </section>
+</article>

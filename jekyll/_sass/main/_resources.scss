@@ -3,7 +3,6 @@
 /******************************************************************************/
   // Style
     body#resources article.resources {
-      .hide { @include element-invisible; }
       div.resources {
         padding: 0 $MainPadding;
         section {
