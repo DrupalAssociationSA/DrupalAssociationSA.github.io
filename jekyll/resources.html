@@ -1,0 +1,27 @@
+---
+title: 'Resources'
+description: Online Resources for DASA (Drupal Association South Africa) and our Community.
+---
+
+<article class="resources">
+  <header>
+    <h1 id="page-title">
+      Online Resources
+      <span class="hide"> for DASA (Drupal Association South Africa)</span>
+    </h1>
+  </header>
+  <div class="resources">
+  {% for resource in site.data.resources %}
+    <section>
+      <header>
+        <h2>
+          <a href="{{ resource.url }}" title="{{ resource.title }}">
+            {{ resource.title }}
+          </a>
+        </h2>
+      </header>
+      <p>{{ resource.description }}</p>
+    </section>
+  {% endfor %}
+  </div>
+</article>

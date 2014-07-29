@@ -1,0 +1,26 @@
+/******************************************************************************/
+/* Resources:                                                                 */
+/******************************************************************************/
+  // Style
+    body#resources article.resources {
+      .hide { @include element-invisible; }
+      div.resources {
+        padding: 0 $MainPadding;
+        section {
+          width: 25%; float: left; margin-bottom: 1em;
+          h2 { @include font-size(1.5); margin: 0 $MainPadding 0 0; }
+          p  { @include font-size(1.4); margin: 0.2em $MainPadding 0.2em 0.5em; }
+        }
+      }
+    }
+  // Responsive
+    @media #{$r3} {
+      body#resources article.resources div.resources section { width: 33%; }
+    }
+    @media #{$r2} {
+      body#resources article.resources div.resources section { width: 50%; }
+    }
+    @media #{$r1} {
+      body#resources article.resources div.resources section { width: 100%; }
+    }
+/******************************************************************************/

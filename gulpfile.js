@@ -210,7 +210,7 @@
 
 		// Jekyll files:
 		gulp.watch([
-			'jekyll/index.html',
+			'jekyll/*.html',
 			'jekyll/_layouts/*.html',
 			'_config.yml',
 			'_config_' + build.intent + '.yml'

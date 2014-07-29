@@ -1016,7 +1016,7 @@ nav.menu ul li a:hover, nav.menu ul li a.active {
 #main h1#page-title {
   color: #2d292a;
   line-height: 1.4em;
-  margin: 0 0 20px 0;
+  margin: 0 20px 20px 20px;
   border-bottom: 1px solid #dadae0;
 }
 
@@ -1170,6 +1170,63 @@ body#home-page article.meetups #widgets section iframe {
   /* line 105, ../_sass/main/_home.scss */
   body#home-page article.meetups #widgets {
     width: 320px;
+  }
+}
+/******************************************************************************/
+/******************************************************************************/
+/* Resources:                                                                 */
+/******************************************************************************/
+/* line 6, ../_sass/main/_resources.scss */
+body#resources article.resources .hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* line 7, ../_sass/main/_resources.scss */
+body#resources article.resources div.resources {
+  padding: 0 20px;
+}
+/* line 9, ../_sass/main/_resources.scss */
+body#resources article.resources div.resources section {
+  width: 25%;
+  float: left;
+  margin-bottom: 1em;
+}
+/* line 11, ../_sass/main/_resources.scss */
+body#resources article.resources div.resources section h2 {
+  font-size: 15px;
+  line-height: 22.5px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin: 0 20px 0 0;
+}
+/* line 12, ../_sass/main/_resources.scss */
+body#resources article.resources div.resources section p {
+  font-size: 14px;
+  line-height: 21.0px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin: 0.2em 20px 0.2em 0.5em;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 18, ../_sass/main/_resources.scss */
+  body#resources article.resources div.resources section {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 959px) {
+  /* line 21, ../_sass/main/_resources.scss */
+  body#resources article.resources div.resources section {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 639px) {
+  /* line 24, ../_sass/main/_resources.scss */
+  body#resources article.resources div.resources section {
+    width: 100%;
   }
 }
 /******************************************************************************/
