@@ -96,9 +96,11 @@
 		browserSync.notify(messages.buildCss);
 		var stream = gulp.src('jekyll/_sass/**/*.scss')
 			.pipe(compass({
-				css:   'jekyll/css',
-				sass:  'jekyll/_sass',
-				image: 'jekyll/img'
+				css:           'jekyll/css',
+				sass:          'jekyll/_sass',
+				image:         'jekyll/img',
+				line_comments: (build.intent == 'serve'),
+				debug:         (build.intent == 'serve')
 			}))
 			.pipe(gulpif(build.intent == 'deploy', minifyCSS({
 				keepSpecialComments: 0

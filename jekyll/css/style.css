@@ -15,7 +15,7 @@
  *    user zoom.
  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-/* line 9, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\000039}}
 html {
   font-family: sans-serif;
   /* 1 */
@@ -28,7 +28,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 19, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\0000319}}
 body {
   margin: 0;
 }
@@ -40,7 +40,7 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 43, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\0000343}}
 article,
 aside,
 details,
@@ -60,7 +60,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 55, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\0000355}}
 audio,
 canvas,
 progress,
@@ -75,7 +75,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 65, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\0000365}}
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -85,7 +85,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-/* line 76, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\0000376}}
 [hidden],
 template {
   display: none;
@@ -96,7 +96,7 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 87, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\0000387}}
 a {
   background: transparent;
 }
@@ -104,7 +104,7 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 96, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\0000396}}
 a:active,
 a:hover {
   outline: 0;
@@ -115,7 +115,7 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 107, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003107}}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -123,7 +123,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 116, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003116}}
 b,
 strong {
   font-weight: bold;
@@ -132,7 +132,7 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 124, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003124}}
 dfn {
   font-style: italic;
 }
@@ -141,7 +141,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 133, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003133}}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -150,7 +150,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 142, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003142}}
 mark {
   background: #ff0;
   color: #000;
@@ -159,7 +159,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 151, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003151}}
 small {
   font-size: 80%;
 }
@@ -167,7 +167,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 160, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003160}}
 sub,
 sup {
   font-size: 75%;
@@ -176,12 +176,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 167, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003167}}
 sup {
   top: -0.5em;
 }
 
-/* line 171, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003171}}
 sub {
   bottom: -0.25em;
 }
@@ -191,7 +191,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 182, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003182}}
 img {
   border: 0;
 }
@@ -199,7 +199,7 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 190, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003190}}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -209,7 +209,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 201, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003201}}
 figure {
   margin: 1em 40px;
 }
@@ -217,7 +217,7 @@ figure {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 209, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003209}}
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -227,7 +227,7 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-/* line 219, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003219}}
 pre {
   overflow: auto;
 }
@@ -235,7 +235,7 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 230, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003230}}
 code,
 kbd,
 pre,
@@ -256,7 +256,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 254, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003254}}
 button,
 input,
 optgroup,
@@ -273,7 +273,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 264, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003264}}
 button {
   overflow: visible;
 }
@@ -284,7 +284,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 276, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003276}}
 button,
 select {
   text-transform: none;
@@ -297,7 +297,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 291, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003291}}
 button,
 html input[type="button"],
 input[type="reset"],
@@ -311,7 +311,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 301, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003301}}
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -320,7 +320,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 310, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003310}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -331,7 +331,7 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 320, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003320}}
 input {
   line-height: normal;
 }
@@ -343,7 +343,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 333, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003333}}
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -357,7 +357,7 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 345, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003345}}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -368,7 +368,7 @@ input[type="number"]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 355, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003355}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -383,7 +383,7 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 369, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003369}}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -392,7 +392,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 377, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003377}}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -403,7 +403,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 388, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003388}}
 legend {
   border: 0;
   /* 1 */
@@ -414,7 +414,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 397, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003397}}
 textarea {
   overflow: auto;
 }
@@ -423,7 +423,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 406, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003406}}
 optgroup {
   font-weight: bold;
 }
@@ -433,13 +433,13 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 417, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003417}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 423, ../_sass/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_normalize\.scss}line{font-family:\00003423}}
 td,
 th {
   padding: 0;
@@ -454,7 +454,7 @@ th {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 13, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\0000313}}
 html {
   color: #222;
   font-size: 1em;
@@ -466,13 +466,13 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 25, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\0000325}}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 30, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\0000330}}
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -481,7 +481,7 @@ html {
 /*
  * A better looking default horizontal rule
  */
-/* line 39, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\0000339}}
 hr {
   display: block;
   height: 1px;
@@ -495,7 +495,7 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-/* line 57, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\0000357}}
 audio,
 canvas,
 img,
@@ -507,7 +507,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 65, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\0000365}}
 fieldset {
   border: 0;
   margin: 0;
@@ -517,7 +517,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 75, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\0000375}}
 textarea {
   resize: vertical;
 }
@@ -525,7 +525,7 @@ textarea {
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
-/* line 83, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\0000383}}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -542,7 +542,7 @@ textarea {
 /*
  * Hide visually and from screen readers: h5bp.com/u
  */
-/* line 118, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003118}}
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -551,7 +551,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screen readers: h5bp.com/v
  */
-/* line 127, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003127}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -567,7 +567,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 144, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003144}}
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -581,7 +581,7 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 157, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003157}}
 .invisible {
   visibility: hidden;
 }
@@ -597,7 +597,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 174, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003174}}
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -606,7 +606,7 @@ textarea {
   /* 2 */
 }
 
-/* line 179, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003179}}
 .clearfix:after {
   clear: both;
 }
@@ -627,7 +627,7 @@ textarea {
    Inlined to avoid the additional HTTP request: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 206, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003206}}
   * {
     background: transparent !important;
     color: #000 !important;
@@ -636,18 +636,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 214, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003214}}
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 218, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003218}}
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 222, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003222}}
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -656,37 +656,37 @@ textarea {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 232, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003232}}
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 237, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003237}}
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 242, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003242}}
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 247, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003247}}
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 251, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003251}}
   img {
     max-width: 100% !important;
   }
 
-  /* line 257, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003257}}
   p,
   h2,
   h3 {
@@ -694,7 +694,7 @@ textarea {
     widows: 3;
   }
 
-  /* line 263, ../_sass/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/h5bp\/_main\.scss}line{font-family:\00003263}}
   h2,
   h3 {
     page-break-after: avoid;
@@ -725,7 +725,7 @@ textarea {
 /******************************************************************************/
 /* font-size                                                                  */
 /******************************************************************************/
-/* line 46, ../_sass/general/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/general\/_mixins\.scss}line{font-family:\0000346}}
 html {
   font-size: 62.5%;
 }
@@ -740,7 +740,7 @@ html {
 /******************************************************************************/
 /* General                                                                    */
 /******************************************************************************/
-/* line 53, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000353}}
 body {
   color: #2d292a;
   font-size: 16px;
@@ -750,7 +750,7 @@ body {
   background-color: #121111;
   font-family: "Open Sans", Verdana, Arial, sans-serif;
 }
-/* line 58, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000358}}
 body a {
   -webkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
@@ -759,24 +759,24 @@ body a {
   color: #0878be;
   text-decoration: none;
 }
-/* line 72, ../_sass/general/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/general\/_mixins\.scss}line{font-family:\0000372}}
 body a:link, body a:visited {
   color: #0878be;
 }
-/* line 73, ../_sass/general/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/general\/_mixins\.scss}line{font-family:\0000373}}
 body a:hover, body a:focus, body a .active {
   color: #118d45;
 }
-/* line 76, ../_sass/general/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/general\/_mixins\.scss}line{font-family:\0000376}}
 body a:link, body a:visited {
   text-decoration: none;
 }
-/* line 77, ../_sass/general/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/general\/_mixins\.scss}line{font-family:\0000377}}
 body a:hover, body a:focus, body a .active {
   text-decoration: none;
 }
 
-/* line 64, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000364}}
 h1 {
   font-size: 24px;
   line-height: 36px;
@@ -784,7 +784,7 @@ h1 {
   line-height: 3.6rem;
 }
 
-/* line 65, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000365}}
 h2 {
   font-size: 22px;
   line-height: 33px;
@@ -792,7 +792,7 @@ h2 {
   line-height: 3.3rem;
 }
 
-/* line 66, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000366}}
 h3 {
   font-size: 20px;
   line-height: 30px;
@@ -800,7 +800,7 @@ h3 {
   line-height: 3rem;
 }
 
-/* line 67, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000367}}
 h4 {
   font-size: 18px;
   line-height: 27px;
@@ -808,7 +808,7 @@ h4 {
   line-height: 2.7rem;
 }
 
-/* line 69, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000369}}
 body {
   -webkit-transition: background-color 0.5s ease;
   -moz-transition: background-color 0.5s ease;
@@ -816,13 +816,13 @@ body {
   transition: background-color 0.5s ease;
 }
 @media screen and (max-width: 639px) {
-  /* line 69, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000369}}
   body {
     background-color: white;
   }
 }
 
-/* line 75, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000375}}
 .hide {
   position: absolute !important;
   height: 1px;
@@ -834,7 +834,7 @@ body {
 /******************************************************************************/
 /* Page                                                                       */
 /******************************************************************************/
-/* line 83, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000383}}
 #page {
   margin: 15px auto;
   background: white;
@@ -845,7 +845,7 @@ body {
   border-radius: 10px;
 }
 
-/* line 89, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000389}}
 #page {
   -webkit-transition: max-width 0.5s ease, margin 0.5s ease;
   -moz-transition: max-width 0.5s ease, margin 0.5s ease;
@@ -854,19 +854,19 @@ body {
   max-width: 1280px;
 }
 @media screen and (max-width: 1279px) {
-  /* line 89, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000389}}
   #page {
     max-width: 960px;
   }
 }
 @media screen and (max-width: 959px) {
-  /* line 89, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000389}}
   #page {
     max-width: 640px;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 89, ../_sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000389}}
   #page {
     max-width: 100%;
     -webkit-border-radius: 0;
@@ -884,17 +884,17 @@ body {
 /******************************************************************************/
 /* Header                                                                     */
 /******************************************************************************/
-/* line 12, ../_sass/header/_header.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_header\.scss}line{font-family:\0000312}}
 #header {
   position: relative;
 }
 
-/* line 13, ../_sass/header/_header.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_header\.scss}line{font-family:\0000313}}
 h1#site-name {
   margin: 0;
   padding: 0;
 }
-/* line 15, ../_sass/header/_header.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_header\.scss}line{font-family:\0000315}}
 h1#site-name a {
   display: block;
   width: 640px;
@@ -905,7 +905,7 @@ h1#site-name a {
   background: url("../img/logo/logo-x1.png") no-repeat;
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 15, ../_sass/header/_header.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_header\.scss}line{font-family:\0000315}}
   h1#site-name a {
     background-image: url("../img/logo/logo-x2.png");
     background-size: 640px 180px;
@@ -914,7 +914,7 @@ h1#site-name a {
   }
 }
 
-/* line 23, ../_sass/header/_header.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_header\.scss}line{font-family:\0000323}}
 h1#site-name a {
   -webkit-transition: width 0.5s ease, height 0.5s ease, margin 0.5s ease, padding 0.5s ease;
   -moz-transition: width 0.5s ease, height 0.5s ease, margin 0.5s ease, padding 0.5s ease;
@@ -922,7 +922,7 @@ h1#site-name a {
   transition: width 0.5s ease, height 0.5s ease, margin 0.5s ease, padding 0.5s ease;
 }
 @media screen and (max-width: 639px) {
-  /* line 23, ../_sass/header/_header.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_header\.scss}line{font-family:\0000323}}
   h1#site-name a {
     width: 100%;
     height: 0;
@@ -939,7 +939,7 @@ h1#site-name a {
 /******************************************************************************/
 /* Menu                                                                       */
 /******************************************************************************/
-/* line 6, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\000036}}
 nav.menu ul {
   list-style-image: none;
   list-style-type: none;
@@ -952,34 +952,34 @@ nav.menu ul {
   padding: 3px 0 3px 55px;
   line-height: 1.2em;
 }
-/* line 14, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000314}}
 nav.menu ul li {
   display: inline-block;
   margin: 0 6px;
   padding: 0;
 }
-/* line 17, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000317}}
 nav.menu ul li a {
   display: inline-block;
   padding: 3px;
   border-bottom: 2px solid white;
 }
 
-/* line 26, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000326}}
 nav.menu ul {
   -webkit-transition: padding 0.5s ease, font-size 0.5s ease;
   -moz-transition: padding 0.5s ease, font-size 0.5s ease;
   -o-transition: padding 0.5s ease, font-size 0.5s ease;
   transition: padding 0.5s ease, font-size 0.5s ease;
 }
-/* line 28, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000328}}
 nav.menu ul li {
   -webkit-transition: margin 0.5s ease;
   -moz-transition: margin 0.5s ease;
   -o-transition: margin 0.5s ease;
   transition: margin 0.5s ease;
 }
-/* line 30, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000330}}
 nav.menu ul li a {
   -webkit-transition: padding 0.5s ease, border-color 0.5s ease;
   -moz-transition: padding 0.5s ease, border-color 0.5s ease;
@@ -987,13 +987,13 @@ nav.menu ul li a {
   transition: padding 0.5s ease, border-color 0.5s ease;
 }
 
-/* line 37, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000337}}
 nav.menu ul li a:hover, nav.menu ul li a.active {
   border-color: #118d45;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 41, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000341}}
   nav.menu ul {
     padding: 3px 0 3px 0;
     text-align: center;
@@ -1002,11 +1002,11 @@ nav.menu ul li a:hover, nav.menu ul li a.active {
     font-size: 1.4rem;
     line-height: 2.1rem;
   }
-  /* line 45, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000345}}
   nav.menu ul li {
     margin: 0 1px;
   }
-  /* line 47, ../_sass/header/_menu.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000347}}
   nav.menu ul li a {
     padding: 0 2px;
   }
@@ -1016,108 +1016,132 @@ nav.menu ul li a:hover, nav.menu ul li a.active {
 /******************************************************************************/
 /* Main                                                                       */
 /******************************************************************************/
-/* line 8, ../_sass/main/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\000038}}
 #main {
   padding: 20px;
   overflow: hidden;
 }
-/* line 10, ../_sass/main/_main.scss */
-#main h1#page-title {
-  color: #2d292a;
-  line-height: 1.4em;
-  margin: 0 20px 20px 20px;
-  border-bottom: 1px solid #dadae0;
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000311}}
+article.columns {
+  word-spacing: -1em;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000314}}
+article.columns * {
+  word-spacing: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000315}}
+article.columns * {
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000316}}
+article.columns h1 {
+  margin: 0 0 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000317}}
+article.columns section.column {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 1em;
 }
 
-/* line 17, ../_sass/main/_main.scss */
-body#home-page h1#page-title {
-  display: none;
-}
-
-/* line 18, ../_sass/main/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000326}}
 #main > article {
   margin-left: -20px;
   margin-right: -20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000330}}
+h1#page-title {
+  color: #2d292a;
+  line-height: 1.4em;
+  border-bottom: 1px solid #dadae0;
 }
 
 /******************************************************************************/
 /******************************************************************************/
 /* Home Page: About DASA                                                      */
 /******************************************************************************/
-/* line 5, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\000035}}
+body#home-page h1#page-title {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\000036}}
 body#home-page article.about {
   margin-bottom: 30px;
   overflow: hidden;
 }
-/* line 8, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\000039}}
 body#home-page article.about section {
   float: left;
 }
-/* line 11, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000312}}
 body#home-page article.about section.community {
   width: 25%;
 }
-/* line 13, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000314}}
 body#home-page article.about section.community h2, body#home-page article.about section.community p {
   margin: 0 10px 0 20px;
 }
-/* line 17, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000318}}
 body#home-page article.about section.mission {
   width: 25%;
 }
-/* line 19, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000320}}
 body#home-page article.about section.mission h2, body#home-page article.about section.mission p {
   margin: 0 10px 0 10px;
 }
-/* line 23, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000324}}
 body#home-page article.about section.vision {
   width: 50%;
 }
-/* line 25, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000326}}
 body#home-page article.about section.vision h2, body#home-page article.about section.vision p {
   margin: 0 20px 0 10px;
 }
 
 @media screen and (max-width: 959px) {
-  /* line 33, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000334}}
   body#home-page article.about section.community {
     width: 50%;
   }
-  /* line 35, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000336}}
   body#home-page article.about section.community h2, body#home-page article.about section.community p {
     margin: 0 10px 0 20px;
   }
-  /* line 39, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000340}}
   body#home-page article.about section.mission {
     width: 50%;
   }
-  /* line 41, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000342}}
   body#home-page article.about section.mission h2, body#home-page article.about section.mission p {
     margin: 0 20px 0 10px;
   }
-  /* line 45, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000346}}
   body#home-page article.about section.vision {
     width: 100%;
   }
-  /* line 47, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000348}}
   body#home-page article.about section.vision h2 {
     margin: 20px 20px 0 20px;
   }
-  /* line 50, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000351}}
   body#home-page article.about section.vision p {
     margin: 0 20px 0 20px;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 58, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000359}}
   body#home-page article.about section.community, body#home-page article.about section.mission, body#home-page article.about section.vision {
     width: 100%;
   }
-  /* line 60, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000361}}
   body#home-page article.about section.community h2, body#home-page article.about section.community p, body#home-page article.about section.mission h2, body#home-page article.about section.mission p, body#home-page article.about section.vision h2, body#home-page article.about section.vision p {
     margin: 0 20px 0 20px;
   }
-  /* line 65, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000366}}
   body#home-page article.about section.mission h2, body#home-page article.about section.vision h2 {
     margin: 20px 20px 0 20px;
   }
@@ -1125,11 +1149,11 @@ body#home-page article.about section.vision h2, body#home-page article.about sec
 /******************************************************************************/
 /* Home Page: Drupal User Group Meet-ups                                      */
 /******************************************************************************/
-/* line 75, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000376}}
 body#home-page article.meetups {
   text-align: center;
 }
-/* line 77, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000378}}
 body#home-page article.meetups h1 {
   margin: 0 40px;
   padding: 3px;
@@ -1137,18 +1161,18 @@ body#home-page article.meetups h1 {
   border-left: none;
   border-right: none;
 }
-/* line 82, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000383}}
 body#home-page article.meetups #widgets {
   word-spacing: -1em;
 }
-/* line 84, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000385}}
 body#home-page article.meetups #widgets section {
   width: 320px;
   height: 780px;
   display: inline-block;
   word-spacing: normal;
 }
-/* line 87, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000388}}
 body#home-page article.meetups #widgets section p {
   height: 155px;
   margin: 20px;
@@ -1158,7 +1182,7 @@ body#home-page article.meetups #widgets section p {
   line-height: 2.1rem;
   padding: 0 20px;
 }
-/* line 93, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000394}}
 body#home-page article.meetups #widgets section iframe {
   background-color: #1a1a1a;
   -webkit-border-radius: 5px;
@@ -1169,14 +1193,14 @@ body#home-page article.meetups #widgets section iframe {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 102, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\00003103}}
   body#home-page article.meetups #widgets {
     width: 640px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 105, ../_sass/main/_home.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\00003106}}
   body#home-page article.meetups #widgets {
     width: 320px;
   }
@@ -1185,69 +1209,24 @@ body#home-page article.meetups #widgets section iframe {
 /******************************************************************************/
 /* Resources:                                                                 */
 /******************************************************************************/
-/* line 6, ../_sass/main/_resources.scss */
-body#resources article.resources div.resources {
-  padding: 0 20px;
-}
-/* line 8, ../_sass/main/_resources.scss */
-body#resources article.resources div.resources section {
-  width: 25%;
-  float: left;
-  margin-bottom: 1em;
-}
-/* line 10, ../_sass/main/_resources.scss */
-body#resources article.resources div.resources section h2 {
-  font-size: 15px;
-  line-height: 22.5px;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  margin: 0 20px 0 0;
-}
-/* line 11, ../_sass/main/_resources.scss */
-body#resources article.resources div.resources section p {
-  font-size: 14px;
-  line-height: 21.0px;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
-  margin: 0.2em 20px 0.2em 0.5em;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 17, ../_sass/main/_resources.scss */
-  body#resources article.resources div.resources section {
-    width: 33%;
-  }
-}
-@media screen and (max-width: 959px) {
-  /* line 20, ../_sass/main/_resources.scss */
-  body#resources article.resources div.resources section {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 639px) {
-  /* line 23, ../_sass/main/_resources.scss */
-  body#resources article.resources div.resources section {
-    width: 100%;
-  }
-}
 /******************************************************************************/
 /******************************************************************************/
 /* Membership                                                                 */
 /******************************************************************************/
-/* line 18, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000318}}
 body#membership article.membership div.membership {
   text-align: center;
   padding: 0 20px;
   word-spacing: -1em;
 }
-/* line 22, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000322}}
 body#membership article.membership div.membership section {
   width: 25%;
   display: inline-block;
   margin-bottom: 1em;
   word-spacing: normal;
 }
-/* line 24, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000324}}
 body#membership article.membership div.membership section h2 {
   font-size: 15px;
   line-height: 22.5px;
@@ -1255,7 +1234,7 @@ body#membership article.membership div.membership section h2 {
   line-height: 2.25rem;
   margin: 0 20px 0 0;
 }
-/* line 25, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000325}}
 body#membership article.membership div.membership section p {
   font-size: 14px;
   line-height: 21.0px;
@@ -1263,44 +1242,44 @@ body#membership article.membership div.membership section p {
   line-height: 2.1rem;
   margin: 0.2em 20px 0.2em 0.5em;
 }
-/* line 27, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000327}}
 body#membership article.membership div.membership section.gold {
   color: #c98910;
 }
-/* line 28, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000328}}
 body#membership article.membership div.membership section.silver {
   color: #a5a5a5;
 }
-/* line 29, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000329}}
 body#membership article.membership div.membership section.bronze {
   color: #965a38;
 }
-/* line 30, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000330}}
 body#membership article.membership div.membership section.individual {
   color: #0d5b90;
 }
-/* line 31, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000331}}
 body#membership article.membership div.membership section.site-owner-diamond {
   color: #0878be;
 }
-/* line 32, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000332}}
 body#membership article.membership div.membership section.site-owner-graphite {
   color: gray;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 38, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000338}}
   #panel-membership .pane-membership-pane {
     width: 640px;
     margin: 0 auto;
   }
-  /* line 40, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000340}}
   #panel-membership .pane-membership-pane .view {
     padding: 0;
   }
 }
 @media screen and (max-width: 959px) {
-  /* line 44, ../_sass/main/_membership.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000344}}
   #panel-membership .pane-membership-pane {
     width: 320px;
   }

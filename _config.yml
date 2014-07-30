@@ -1,7 +1,7 @@
 name: Drupal Association South Africa
 
 short: DASA
-long: DASA - Drupal Association South Africa
+long: &LONG DASA - Drupal Association South Africa
 
 source: jekyll
 
@@ -20,4 +20,3 @@ defaults:
       path: ""
     values:
       layout: default
-

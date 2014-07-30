@@ -2,6 +2,7 @@
 /* Home Page: About DASA                                                      */
 /******************************************************************************/
   // Style
+    body#home-page h1#page-title { display: none; }
     body#home-page article.about {
       margin-bottom: $MainPadding * 1.5;
       @include clearfix;
