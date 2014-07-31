@@ -6,34 +6,55 @@
     $MainPadding:  20px;
   // Styles
     #main {
-      padding: $MainPadding; overflow: hidden;
-    }
-    article.columns {
-      word-spacing: -1em;
-      text-align: center;
-      * { word-spacing: normal; }
-      * { text-align: left; }
-      h1 { margin: 0 0 20px 0; }
-      section.column {
-        display: inline-block;
-        width: 25%;
-        margin-bottom: 1em;
+      padding-bottom: 20px;
+
+      article.columns {
+
+        &, &>header { @include clearfix; }
+
+        h1 {
+          color: $cTitleColour;
+          text-align: center;
+          border: 1px solid lighten($cGrey, 10%);
+          border-left: none; border-right: none;
+          margin: 0.8em auto 0.4em 0;
+          @include font-size(1.8);
+          line-height: 1.6em;
+          @include span(3 of 3 last);
+          @include breakpoint($sections_1) { @include span(3  of  3 last); }
+          @include breakpoint($sections_2) { @include span(6  of  6 last); }
+          @include breakpoint($sections_3) { @include span(9  of  9 last); }
+          @include breakpoint($sections_4) { @include span(12 of 12 last); }
+        }
+
+        h1#page-title {
+          border-top: none;
+          text-align: left;
+        }
+
+        section {
+          @include span(3 of 3 last);
+          @include breakpoint($sections_1) {    @include span(3 of  3  last);    }
+          @include breakpoint($sections_2) { @include gallery(3 of  6, of-type); }
+          @include breakpoint($sections_3) { @include gallery(3 of  9, of-type); }
+          @include breakpoint($sections_4) { @include gallery(3 of 12, of-type); }
+        }
+
+        section h2 {
+          @include font-size(1.6);
+          margin: 0.8em 0 0.4em 0;
+        }
+
+        section p {
+          @include font-size(1.5);
+          margin: 0.4em 0 0.4em 0.8em;
+        }
+
       }
-    }
 
-
-
-    #main>article {
-      margin-left:  -$MainPadding;
-      margin-right: -$MainPadding;
-    }
-    h1#page-title {
-      color: $cTitleColour;
-      line-height: 1.4em;
-      border-bottom: 1px solid lighten($cGrey, 10%);
     }
 /******************************************************************************/
   @import 'home';
-  @import 'resources';
   @import 'membership';
+  @import 'contact';
 /******************************************************************************/

@@ -1,0 +1,54 @@
+- name: Gold Company Members
+  type: gold
+  members:
+- name: Silver Company Members
+  type: silver
+  members:
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06
+- name: Bronze Company Members
+  type: bronze
+  members:
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06
+- name: Individual Members
+  type: individual
+  members:
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06
+- name: Diamond Site Owners
+  type: diamond
+  members:
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06
+- name: Graphite Site Owners
+  type: graphite
+  members:
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06
+  - name: NewCo
+    link: https://www.drupal.org/profile/profile_current_company_organization/NewCo
+    from: 2014-07
+    to: 2015-06

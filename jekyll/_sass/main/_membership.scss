@@ -2,47 +2,59 @@
 /* Membership                                                                 */
 /******************************************************************************/
   // Variables
-    $borderWidth: 3px;
-    $border:      $borderWidth solid #333;
-
-
-
     $cGold:       #C98910;
     $cSilver:     #A5A5A5;
     $cBronze:     #965A38;
     $cIndividual: $cBlueDark;
     $cDiamond:    $cBlueLight;
     $cGraphite:   lighten(black, 50%);
-  // Style
-    body#membership article.membership {
-      div.membership {
-        text-align: center;
-        padding: 0 $MainPadding;
-        word-spacing: -1em;
-        section {
-          width: 25%; display: inline-block; margin-bottom: 1em; word-spacing: normal;
-          h2 { @include font-size(1.5); margin: 0 $MainPadding 0 0; }
-          p  { @include font-size(1.4); margin: 0.2em $MainPadding 0.2em 0.5em; }
-        }
-        section.gold                { color: $cGold;   }
-        section.silver              { color: $cSilver; }
-        section.bronze              { color: $cBronze; }
-        section.individual          { color: $cIndividual; }
-        section.site-owner-diamond  { color: $cDiamond; }
-        section.site-owner-graphite { color: $cGraphite; }
+  // Styles
+    body#membership article.columns {
+      section {
+        @include span(1 of 2 last);
+        @include breakpoint($sections_1) {    @include span(1 of  2  last);    }
+        @include breakpoint($sections_2) { @include gallery(2 of  6, of-type); }
+        @include breakpoint($sections_3) { @include gallery(3 of  9, of-type); }
+        @include breakpoint($sections_4) { @include gallery(2 of 12, of-type); }
+      }
 
-      }
+      section h2 { border-bottom: 2px solid white; }
+      section.gold h2                { border-color: $cGold;   }
+      section.silver h2              { border-color: $cSilver; }
+      section.bronze h2              { border-color: $cBronze; }
+      section.individual h2          { border-color: $cIndividual; }
+      section.site-owner-diamond h2  { border-color: $cDiamond; }
+      section.site-owner-graphite h2 { border-color: $cGraphite; }
     }
-  // Responsive
-    @media #{$r3} {
-      #panel-membership .pane-membership-pane {
-        width: 640px; margin: 0 auto;
-        .view { padding: 0; }
-      }
-    }
-    @media #{$r2} {
-      #panel-membership .pane-membership-pane {
-        width: 320px;
-      }
-    }
+/******************************************************************************/
+/* Become a Member                                                            */
+/******************************************************************************/
+  body#membership article.columns.become-a-member section {
+    @include span(3 of 3 last);
+    @include breakpoint($sections_1) { @include span( 3 of  3 last); }
+    @include breakpoint($sections_2) { @include span( 6 of  6 last); }
+    @include breakpoint($sections_3) { @include span( 9 of  9 last); }
+    @include breakpoint($sections_4) { @include span(12 of 12 last); }
+  }
+/******************************************************************************/
+/* Members                                                                    */
+/******************************************************************************/
+  body#membership article.columns.members-gold section {
+    h2 { border-bottom: 2px solid $cGold; }
+  }
+  body#membership article.columns.members-silver section {
+    h2 { border-bottom: 2px solid $cSilver; }
+  }
+  body#membership article.columns.members-bronze section {
+    h2 { border-bottom: 2px solid $cBronze; }
+  }
+  body#membership article.columns.members-individual section {
+    h2 { border-bottom: 2px solid $cIndividual; }
+  }
+  body#membership article.columns.members-diamond section {
+    h2 { border-bottom: 2px solid $cDiamond; }
+  }
+  body#membership article.columns.members-graphite section {
+    h2 { border-bottom: 2px solid $cGraphite; }
+  }
 /******************************************************************************/

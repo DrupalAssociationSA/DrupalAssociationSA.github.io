@@ -100,7 +100,8 @@
 				sass:          'jekyll/_sass',
 				image:         'jekyll/img',
 				line_comments: (build.intent == 'serve'),
-				debug:         (build.intent == 'serve')
+				debug:         (build.intent == 'serve'),
+				require:       ['breakpoint', 'susy']
 			}))
 			.pipe(gulpif(build.intent == 'deploy', minifyCSS({
 				keepSpecialComments: 0

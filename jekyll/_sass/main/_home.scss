@@ -1,110 +1,52 @@
 /******************************************************************************/
 /* Home Page: About DASA                                                      */
 /******************************************************************************/
-  // Style
-    body#home-page h1#page-title { display: none; }
-    body#home-page article.about {
-      margin-bottom: $MainPadding * 1.5;
-      @include clearfix;
-      section {
-        float: left;
-      }
-      section.community {
-        width: 25%;
-        h2, p {
-          margin: 0 $MainPadding/2 0 $MainPadding;
-        }
-      }
-      section.mission {
-        width: 25%;
-        h2, p {
-          margin: 0 $MainPadding/2 0 $MainPadding/2;
-        }
-      }
-      section.vision {
-        width: 50%;
-        h2, p {
-          margin: 0 $MainPadding   0 $MainPadding/2;
-        }
-      }
+  body#home-page article.columns {
+
+    h1#page-title { @include element-invisible; }
+
+    @include breakpoint($sections_2) {
+      section.community { @include span(3 of 6); }
+      section.mission   { @include span(3 of 6); }
+      section.vision    { @include span(6 of 6); }
     }
-  // Responsive
-    @media #{$r2} {
-      body#home-page article.about {
-        section.community {
-          width: 50%;
-          h2, p {
-            margin: 0 $MainPadding/2 0 $MainPadding;
-          }
-        }
-        section.mission {
-          width: 50%;
-          h2, p {
-            margin: 0 $MainPadding 0 $MainPadding/2;
-          }
-        }
-        section.vision {
-          width: 100%;
-          h2 {
-            margin: $MainPadding $MainPadding 0 $MainPadding;
-          }
-          p {
-            margin: 0 $MainPadding 0 $MainPadding;
-          }
-        }
-      }
+
+    @include breakpoint($sections_3) {
+      section.community { @include span(3 of 12); }
+      section.mission   { @include span(3 of 12); }
+      section.vision    { @include span(6 of 12); }
     }
-    @media #{$r1} {
-      body#home-page article.about {
-        section.community, section.mission, section.vision {
-          width: 100%;
-          h2, p {
-            margin: 0 $MainPadding 0 $MainPadding;
-          }
-        }
-        section.mission, section.vision {
-          h2 {
-            margin: $MainPadding $MainPadding 0 $MainPadding;
-          }
-        }
-      }
+
+    @include breakpoint($sections_4) {
+      section.community { @include span(3 of 12); }
+      section.mission   { @include span(3 of 12); }
+      section.vision    { @include span(6 of 12); }
     }
+
+  }
 /******************************************************************************/
 /* Home Page: Drupal User Group Meet-ups                                      */
 /******************************************************************************/
-  // Style
-    body#home-page article.meetups {
-      text-align: center;
-      h1 {
-        margin: 0 $MainPadding * 2;
-        padding: 3px;
-        border: 1px solid $cGrey; border-left: none; border-right: none;
+  body#home-page article.columns.meetups {
+    section {
+      height: auto;
+      p {
+        height: auto;
       }
-      #widgets {
-        word-spacing: -1em;
-        section {
-          width: 320px; height: 780px;
-          display: inline-block; word-spacing: normal;
-          p {
-            height: 155px;
-            margin: $MainPadding;
-            @include font-size(1.4);
-            padding: 0 20px;
-          }
-          iframe {
-            background-color: #1a1a1a;
-            @include border-radius(5px);
-          }
+      iframe {
+        display: block;
+        margin: 0 auto;
+        background-color: #1a1a1a;
+        @include border-radius(5px);
+      }
+    }
+    @include breakpoint($sections_2) {
+      section {
+        height: 750px;
+        p {
+          height: 125px;
         }
       }
     }
-  // Responsive
-    @media #{$r3} {
-      body#home-page article.meetups #widgets { width: 640px; margin: 0 auto; }
-    }
-    @media #{$r1} {
-      body#home-page article.meetups #widgets {
-        width: 320px;
-      }
-    }
+  }
 /******************************************************************************/

@@ -23,13 +23,21 @@
   </head>
   <body id="{{ page.title | downcase | replace:' ', '-' }}">
     <!--[if lt IE 9]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <p class="browsehappy">
+          You are using an <strong>outdated</strong> browser.
+          Please <a href="http://browsehappy.com/">upgrade your browser</a>
+          to improve your experience.
+        </p>
     <![endif]-->
 
     <div id="page">
 
       <div id="header">
-        <h1 id="site-name"><a href="">{{ site.name }}</a></h1>
+        <h1 id="site-name">
+          <a href="{{ site.baseurl }}/" title="{{ site.long }} - Home Page">
+            {{ site.name }}
+          </a>
+        </h1>
 
         {% include menu.html %}
       </div>

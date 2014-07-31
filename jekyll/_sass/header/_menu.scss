@@ -2,23 +2,22 @@
 /* Menu                                                                       */
 /******************************************************************************/
   // Style
-    nav.menu {
-      ul {
-        @include no-bullet;
-        border: 1px solid $cGrey;
-        border-left: none; border-right: none;
-        text-align: left;
-        margin: 0;
-        padding: 3px 0 3px 55px;
-        line-height: 1.2em;
-        li {
+    nav.menu ul {
+      @include no-bullet;
+      border: 1px solid $cGrey;
+      border-left: none; border-right: none;
+      text-align: center;
+      margin: 0;
+      padding: 0.3em 0 0.4em 0;
+      @include font-size(1.3);
+      li {
+        display: inline-block;
+        margin: 0 2px; padding: 0;
+        a {
           display: inline-block;
-          margin: 0 6px; padding: 0;
-          a {
-            display: inline-block;
-            padding: 3px;
-            border-bottom: 2px solid white;
-          }
+          padding: 0 2px;
+          border-bottom: 2px solid white;
+          line-height: 1.3em;
         }
       }
     }
@@ -37,15 +36,15 @@
       &:hover, &.active { border-color: $cGreen; }
     }
   // Responsive
-    @media #{$r1} {
+    @include breakpoint($sections_2) {
       nav.menu ul {
-        padding: 3px 0 3px 0;
-        text-align: center;
-        @include font-size(1.4);
+        text-align: left;
+        padding: 0.25em 0 0.3em 55px;
+        @include font-size(1.6);
         li {
-          margin: 0 1px;
+          margin: 0 6px;
           a {
-            padding: 0 2px;
+            padding: 3px;
           }
         }
       }
