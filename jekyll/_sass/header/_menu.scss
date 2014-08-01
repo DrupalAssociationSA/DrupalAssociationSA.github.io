@@ -36,7 +36,7 @@
       &:hover, &.active { border-color: $cGreen; }
     }
   // Responsive
-    @include breakpoint($sections_2) {
+    @include breakpoint($bpw1 * 1.5) {
       nav.menu ul {
         text-align: left;
         padding: 0.25em 0 0.3em 55px;

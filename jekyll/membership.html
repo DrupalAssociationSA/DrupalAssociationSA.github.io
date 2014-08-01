@@ -3,20 +3,20 @@ title: 'Membership'
 description: Membership and Donations for DASA (Drupal Association South Africa) and our Community.
 ---
 
-<article class="{{ page.title | downcase | replace: ' ','-' }} columns">
+<article class="{{ page.title | downcase | replace: ' ','-' }} memberships">
   <h1 id="page-title">
     {{ page.title }}
     <span class="hide"> and Donations for {{ site.long }}</span>
   </h1>
   {% for membership in site.data.memberships %}
-    <section class="{{ membership.type }}">
+    <section class="{{ membership.type }} content-narrow">
       <h2>{{ membership.title }}</h2>
       <p>{{ membership.cost }}</p>
     </section>
   {% endfor %}
 </article>
 
-<article class="become-a-member columns">
+<article class="become-a-member">
   <h1>Become a Member</h1>
   <section>
     <p>
@@ -52,23 +52,30 @@ description: Membership and Donations for DASA (Drupal Association South Africa)
 
 {% for membership in site.data.members %}
   {% if membership.members.size > 0 %}
-    <article class="members-{{ membership.type }} columns">
+    <article class="members-{{ membership.type }} members">
       <h1>{{ membership.name }}</h1>
       {% for member in membership.members %}
-        <section class="{{ membership.type }}">
-          <h2>
-            <a href="{{ member.link }}" title="{{ member.name }} on Drupal.org" rel="nofollow">
-              {{ member.name }}
-            </a>
-          </h2>
-          <p>{{ member.from }} - {{ member.to }}</p>
-        </section>
+      {% capture name %}
+        {% if member.link.size > 0 and member.link contains 'drupal.org' %}
+          <a
+            href="{{ member.link }}"
+            title="{{ member.name }} on Drupal.org"
+            rel="nofollow"
+          >{{ member.name }}</a>
+        {% else %}
+          {{ member.name }}
+        {% endif %}
+      {% endcapture %}
+      <section class="{{ membership.type }} content-narrow">
+        <h2>{{ name }}</h2>
+        <p>{{ member.from }} - {{ member.to }}</p>
+      </section>
       {% endfor %}
     </article>
   {% endif %}
 {% endfor %}
 
-<article class="donations columns">
+<article class="donations">
   <h1>Donations</h1>
   {% for donation in site.data.donations %}
   {% capture by %}
@@ -82,8 +89,8 @@ description: Membership and Donations for DASA (Drupal Association South Africa)
       {{ donation.by }}:
     {% endif %}
   {% endcapture %}
-    <section>
-      <p>{{ donation.date }} by {{ by }} {{ donation.description }}</p>
-    </section>
+  <section>
+    <p>{{ donation.date }} by {{ by }} {{ donation.description }}</p>
+  </section>
   {% endfor %}
 </article>

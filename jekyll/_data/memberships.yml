@@ -11,9 +11,9 @@
 - type: individual
   title: Individual
   cost: R 150 p.a.
-- type: site-owner-diamond
+- type: diamond
   title: Diamond Site Owner
   cost: R 10 000 p.a.
-- type: site-owner-graphite
+- type: graphite
   title: Graphite Site Owner
   cost: R 2 000 p.a.

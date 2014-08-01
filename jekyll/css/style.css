@@ -710,9 +710,6 @@ textarea {
 /* Variables                                                                  */
 /******************************************************************************/
 /******************************************************************************/
-/* Grids and Breakpoints                                                      */
-/******************************************************************************/
-/******************************************************************************/
 /* Imports: Specific (Needs Variables Above)                                  */
 /******************************************************************************/
 /******************************************************************************/
@@ -749,14 +746,7 @@ html {
 /******************************************************************************/
 /* General                                                                    */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_box-sizing\.scss}line{font-family:\0000314}}
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000358}}
 a {
   -moz-transition: color, ease, 0.5s;
   -webkit-transition: color, ease, 0.5s;
@@ -781,39 +771,7 @@ a:hover, a:focus, a .active {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000387}}
-h1 {
-  font-size: 24px;
-  line-height: 36px;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000388}}
-h2 {
-  font-size: 22px;
-  line-height: 33px;
-  font-size: 2.2rem;
-  line-height: 3.3rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000389}}
-h3 {
-  font-size: 20px;
-  line-height: 30px;
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000390}}
-h4 {
-  font-size: 18px;
-  line-height: 27px;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000363}}
 .hide {
   position: absolute !important;
   height: 1px;
@@ -826,102 +784,37 @@ h4 {
 /******************************************************************************/
 /* Body / Page                                                                */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000368}}
 body {
+  background-color: #181616;
   color: #2d292a;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
   font-size: 15px;
   line-height: 22.5px;
   font-size: 1.5rem;
   line-height: 2.25rem;
-  background-color: #181616;
-  font-family: "Open Sans", Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000374}}
 #page {
+  max-width: 100em;
+  margin: 0 auto;
   background: white;
   border-top: 3px solid #e51e26;
   border-bottom: 3px solid #f3c016;
-  overflow: hidden;
-  *zoom: 1;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-#page:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-@media (min-width: 22em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\00003104}}
-  #page {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\00003104}}
-  #page {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media (min-width: 66em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\00003104}}
-  #page {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media (min-width: 88em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\00003104}}
-  #page {
-    max-width: 88em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  #page:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000382}}
 body {
   -moz-transition: padding 0.5s ease;
   -webkit-transition: padding 0.5s ease;
   transition: padding 0.5s ease;
   padding: 0;
 }
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\00003116}}
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000382}}
   body {
-    padding: 20px;
+    padding: 2em;
   }
 }
 
@@ -1023,7 +916,7 @@ nav.menu ul li a:hover, nav.menu ul li a.active {
   border-color: #118d45;
 }
 
-@media (min-width: 44em) {
+@media (min-width: 37.5em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000340}}
   nav.menu ul {
     text-align: left;
@@ -1047,175 +940,282 @@ nav.menu ul li a:hover, nav.menu ul li a.active {
 /******************************************************************************/
 /* Main                                                                       */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\000035}}
 #main {
-  padding-bottom: 20px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 0.83333% 0.83333% 0.83333%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000313}}
-#main article.columns, #main article.columns > header {
-  overflow: hidden;
-  *zoom: 1;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
+#main:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000315}}
-#main article.columns h1 {
-  color: #2d292a;
-  text-align: center;
-  border: 1px solid #dadae0;
-  border-left: none;
-  border-right: none;
-  margin: 0.8em auto 0.4em 0;
-  font-size: 18px;
-  line-height: 27px;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  line-height: 1.6em;
-  width: 93.33333%;
-  float: right;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\000038}}
+#main section,
+#main section.content-wide {
+  width: 98.33333%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
 }
-@media (min-width: 22em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000315}}
-  #main article.columns h1 {
-    width: 93.33333%;
-    float: right;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
-  }
-}
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000315}}
-  #main article.columns h1 {
-    width: 96.66667%;
-    float: right;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
-  }
-}
-@media (min-width: 66em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000315}}
-  #main article.columns h1 {
-    width: 97.77778%;
-    float: right;
-    margin-left: 1.11111%;
-    margin-right: 1.11111%;
-  }
-}
-@media (min-width: 88em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000315}}
-  #main article.columns h1 {
+@media (min-width: 25em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\000038}}
+  #main section,
+  #main section.content-wide {
     width: 98.33333%;
-    float: right;
+    float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000330}}
-#main article.columns h1#page-title {
-  border-top: none;
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000335}}
-#main article.columns section {
-  width: 93.33333%;
-  float: right;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
-}
-@media (min-width: 22em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000335}}
-  #main article.columns section {
-    width: 93.33333%;
-    float: right;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
-  }
-}
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000335}}
-  #main article.columns section {
-    width: 46.66667%;
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\000038}}
+  #main section,
+  #main section.content-wide {
+    width: 48.33333%;
     float: left;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(2n + 1) {
-    margin-left: 1.66667%;
-    margin-right: -100%;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(2n + 2) {
-    margin-left: 51.66667%;
-    margin-right: -100%;
-    clear: none;
-  }
-}
-@media (min-width: 66em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000335}}
-  #main article.columns section {
-    width: 31.11111%;
-    float: left;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(3n + 1) {
-    margin-left: 1.11111%;
-    margin-right: -100%;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(3n + 2) {
-    margin-left: 34.44444%;
-    margin-right: -100%;
-    clear: none;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(3n + 3) {
-    margin-left: 67.77778%;
-    margin-right: -100%;
-    clear: none;
-  }
-}
-@media (min-width: 88em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000335}}
-  #main article.columns section {
-    width: 23.33333%;
-    float: left;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(4n + 1) {
+  #main section:nth-of-type(2n + 1),
+  #main section.content-wide:nth-of-type(2n + 1) {
     margin-left: 0.83333%;
     margin-right: -100%;
     clear: both;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(4n + 2) {
+  #main section:nth-of-type(2n + 2),
+  #main section.content-wide:nth-of-type(2n + 2) {
+    margin-left: 50.83333%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 75em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\000038}}
+  #main section,
+  #main section.content-wide {
+    width: 31.66667%;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section:nth-of-type(3n + 1),
+  #main section.content-wide:nth-of-type(3n + 1) {
+    margin-left: 0.83333%;
+    margin-right: -100%;
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section:nth-of-type(3n + 2),
+  #main section.content-wide:nth-of-type(3n + 2) {
+    margin-left: 34.16667%;
+    margin-right: -100%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section:nth-of-type(3n + 3),
+  #main section.content-wide:nth-of-type(3n + 3) {
+    margin-left: 67.5%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 100em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\000038}}
+  #main section,
+  #main section.content-wide {
+    width: 23.33333%;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section:nth-of-type(4n + 1),
+  #main section.content-wide:nth-of-type(4n + 1) {
+    margin-left: 0.83333%;
+    margin-right: -100%;
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section:nth-of-type(4n + 2),
+  #main section.content-wide:nth-of-type(4n + 2) {
     margin-left: 25.83333%;
     margin-right: -100%;
     clear: none;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(4n + 3) {
+  #main section:nth-of-type(4n + 3),
+  #main section.content-wide:nth-of-type(4n + 3) {
     margin-left: 50.83333%;
     margin-right: -100%;
     clear: none;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  #main article.columns section:nth-of-type(4n + 4) {
+  #main section:nth-of-type(4n + 4),
+  #main section.content-wide:nth-of-type(4n + 4) {
     margin-left: 75.83333%;
     margin-right: -100%;
     clear: none;
   }
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000316}}
+#main section.content-narrow {
+  width: 98.33333%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+}
+@media (min-width: 25em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000316}}
+  #main section.content-narrow {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+}
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000316}}
+  #main section.content-narrow {
+    width: 31.66667%;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(3n + 1) {
+    margin-left: 0.83333%;
+    margin-right: -100%;
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(3n + 2) {
+    margin-left: 34.16667%;
+    margin-right: -100%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(3n + 3) {
+    margin-left: 67.5%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 75em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000316}}
+  #main section.content-narrow {
+    width: 23.33333%;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(4n + 1) {
+    margin-left: 0.83333%;
+    margin-right: -100%;
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(4n + 2) {
+    margin-left: 25.83333%;
+    margin-right: -100%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(4n + 3) {
+    margin-left: 50.83333%;
+    margin-right: -100%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(4n + 4) {
+    margin-left: 75.83333%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 100em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000316}}
+  #main section.content-narrow {
+    width: 15%;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(6n + 1) {
+    margin-left: 0.83333%;
+    margin-right: -100%;
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(6n + 2) {
+    margin-left: 17.5%;
+    margin-right: -100%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(6n + 3) {
+    margin-left: 34.16667%;
+    margin-right: -100%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(6n + 4) {
+    margin-left: 50.83333%;
+    margin-right: -100%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(6n + 5) {
+    margin-left: 67.5%;
+    margin-right: -100%;
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
+  #main section.content-narrow:nth-of-type(6n + 6) {
+    margin-left: 84.16667%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000325}}
+#main article, #main h1, #main section, #main h2 {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000327}}
+#main h1 {
+  width: 98.33333%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+  color: #2d292a;
+  text-align: center;
+  border: 1px solid #dadae0;
+  border-left: none;
+  border-right: none;
+  font-size: 18px;
+  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  line-height: 1.6em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000337}}
+#main h1#page-title {
+  border-top: none;
+  text-align: left;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000343}}
-#main article.columns section h2 {
+h2 {
   font-size: 16px;
   line-height: 24.0px;
   font-size: 1.6rem;
   line-height: 2.4rem;
   margin: 0.8em 0 0.4em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000348}}
-#main article.columns section p {
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000344}}
+p {
   font-size: 15px;
   line-height: 22.5px;
   font-size: 1.5rem;
@@ -1224,11 +1224,10 @@ nav.menu ul li a:hover, nav.menu ul li a.active {
 }
 
 /******************************************************************************/
-/******************************************************************************/
 /* Home Page: About DASA                                                      */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\000036}}
-body#home-page article.columns h1#page-title {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000348}}
+body#home-page #main h1#page-title {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -1236,69 +1235,47 @@ body#home-page article.columns h1#page-title {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
 }
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\000039}}
-  body#home-page article.columns section.community {
+
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000352}}
+  #main section.community {
     width: 46.66667%;
     float: left;
     margin-left: 1.66667%;
     margin-right: 1.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000310}}
-  body#home-page article.columns section.mission {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000353}}
+  #main section.mission {
     width: 46.66667%;
     float: left;
     margin-left: 1.66667%;
     margin-right: 1.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000311}}
-  body#home-page article.columns section.vision {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000354}}
+  #main section.vision {
     width: 96.66667%;
     float: left;
     margin-left: 1.66667%;
     margin-right: 1.66667%;
   }
 }
-@media (min-width: 66em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000315}}
-  body#home-page article.columns section.community {
+@media (min-width: 75em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000357}}
+  #main section.community {
     width: 23.33333%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000316}}
-  body#home-page article.columns section.mission {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000358}}
+  #main section.mission {
     width: 23.33333%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000317}}
-  body#home-page article.columns section.vision {
-    width: 48.33333%;
-    float: left;
-    margin-left: 0.83333%;
-    margin-right: 0.83333%;
-  }
-}
-@media (min-width: 88em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000321}}
-  body#home-page article.columns section.community {
-    width: 23.33333%;
-    float: left;
-    margin-left: 0.83333%;
-    margin-right: 0.83333%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000322}}
-  body#home-page article.columns section.mission {
-    width: 23.33333%;
-    float: left;
-    margin-left: 0.83333%;
-    margin-right: 0.83333%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000323}}
-  body#home-page article.columns section.vision {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000359}}
+  #main section.vision {
     width: 48.33333%;
     float: left;
     margin-left: 0.83333%;
@@ -1309,16 +1286,8 @@ body#home-page article.columns h1#page-title {
 /******************************************************************************/
 /* Home Page: Drupal User Group Meet-ups                                      */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000331}}
-body#home-page article.columns.meetups section {
-  height: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000333}}
-body#home-page article.columns.meetups section p {
-  height: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000336}}
-body#home-page article.columns.meetups section iframe {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000366}}
+body#home-page article.meetups iframe {
   display: block;
   margin: 0 auto;
   background-color: #1a1a1a;
@@ -1326,298 +1295,66 @@ body#home-page article.columns.meetups section iframe {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000344}}
-  body#home-page article.columns.meetups section {
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000373}}
+  body#home-page article.meetups section {
     height: 750px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_home\.scss}line{font-family:\0000346}}
-  body#home-page article.columns.meetups section p {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000375}}
+  body#home-page article.meetups section p {
     height: 125px;
   }
 }
 
 /******************************************************************************/
-/******************************************************************************/
 /* Membership                                                                 */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000313}}
-body#membership article.columns section {
-  width: 40%;
-  float: right;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-@media (min-width: 22em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000313}}
-  body#membership article.columns section {
-    width: 40%;
-    float: right;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000313}}
-  body#membership article.columns section {
-    width: 30%;
-    float: left;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(3n + 1) {
-    margin-left: 1.66667%;
-    margin-right: -100%;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(3n + 2) {
-    margin-left: 35.0%;
-    margin-right: -100%;
-    clear: none;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(3n + 3) {
-    margin-left: 68.33333%;
-    margin-right: -100%;
-    clear: none;
-  }
-}
-@media (min-width: 66em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000313}}
-  body#membership article.columns section {
-    width: 31.11111%;
-    float: left;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(3n + 1) {
-    margin-left: 1.11111%;
-    margin-right: -100%;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(3n + 2) {
-    margin-left: 34.44444%;
-    margin-right: -100%;
-    clear: none;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(3n + 3) {
-    margin-left: 67.77778%;
-    margin-right: -100%;
-    clear: none;
-  }
-}
-@media (min-width: 88em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000313}}
-  body#membership article.columns section {
-    width: 15%;
-    float: left;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(6n + 1) {
-    margin-left: 0.83333%;
-    margin-right: -100%;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(6n + 2) {
-    margin-left: 17.5%;
-    margin-right: -100%;
-    clear: none;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(6n + 3) {
-    margin-left: 34.16667%;
-    margin-right: -100%;
-    clear: none;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(6n + 4) {
-    margin-left: 50.83333%;
-    margin-right: -100%;
-    clear: none;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(6n + 5) {
-    margin-left: 67.5%;
-    margin-right: -100%;
-    clear: none;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/susy-2\.1\.3\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000366}}
-  body#membership article.columns section:nth-of-type(6n + 6) {
-    margin-left: 84.16667%;
-    margin-right: -100%;
-    clear: none;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000321}}
-body#membership article.columns section h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000392}}
+body#membership article.memberships section h2, body#membership article.members section h2 {
   border-bottom: 2px solid white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000322}}
-body#membership article.columns section.gold h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000393}}
+body#membership article.memberships section.gold h2, body#membership article.members section.gold h2 {
   border-color: #c98910;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000323}}
-body#membership article.columns section.silver h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000394}}
+body#membership article.memberships section.silver h2, body#membership article.members section.silver h2 {
   border-color: #a5a5a5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000324}}
-body#membership article.columns section.bronze h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000395}}
+body#membership article.memberships section.bronze h2, body#membership article.members section.bronze h2 {
   border-color: #965a38;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000325}}
-body#membership article.columns section.individual h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000396}}
+body#membership article.memberships section.individual h2, body#membership article.members section.individual h2 {
   border-color: #0d5b90;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000326}}
-body#membership article.columns section.site-owner-diamond h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000397}}
+body#membership article.memberships section.diamond h2, body#membership article.members section.diamond h2 {
   border-color: #0878be;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000327}}
-body#membership article.columns section.site-owner-graphite h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000398}}
+body#membership article.memberships section.graphite h2, body#membership article.members section.graphite h2 {
   border-color: gray;
 }
 
-/******************************************************************************/
-/* Become a Member                                                            */
-/******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000332}}
-body#membership article.columns.become-a-member section {
-  width: 93.33333%;
-  float: right;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
-}
-@media (min-width: 22em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000332}}
-  body#membership article.columns.become-a-member section {
-    width: 93.33333%;
-    float: right;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
-  }
-}
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000332}}
-  body#membership article.columns.become-a-member section {
-    width: 96.66667%;
-    float: right;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
-  }
-}
-@media (min-width: 66em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000332}}
-  body#membership article.columns.become-a-member section {
-    width: 97.77778%;
-    float: right;
-    margin-left: 1.11111%;
-    margin-right: 1.11111%;
-  }
-}
-@media (min-width: 88em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000332}}
-  body#membership article.columns.become-a-member section {
-    width: 98.33333%;
-    float: right;
-    margin-left: 0.83333%;
-    margin-right: 0.83333%;
-  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003101}}
+#main article.become-a-member section {
+  width: 98.33333%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
 }
 
 /******************************************************************************/
-/* Members                                                                    */
+/* Contact Us                                                                 */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000343}}
-body#membership article.columns.members-gold section h2 {
-  border-bottom: 2px solid #c98910;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000346}}
-body#membership article.columns.members-silver section h2 {
-  border-bottom: 2px solid #a5a5a5;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000349}}
-body#membership article.columns.members-bronze section h2 {
-  border-bottom: 2px solid #965a38;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000352}}
-body#membership article.columns.members-individual section h2 {
-  border-bottom: 2px solid #0d5b90;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000355}}
-body#membership article.columns.members-diamond section h2 {
-  border-bottom: 2px solid #0878be;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_membership\.scss}line{font-family:\0000358}}
-body#membership article.columns.members-graphite section h2 {
-  border-bottom: 2px solid gray;
-}
-
-/******************************************************************************/
-/******************************************************************************/
-/* Home Page: About DASA                                                      */
-/******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_contact\.scss}line{font-family:\000035}}
-body#contact-us article.columns.contact-us h1#page-title {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-/******************************************************************************/
-/* General Contact                                                            */
-/******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_contact\.scss}line{font-family:\0000310}}
-body#contact-us article.columns.general section {
-  width: 93.33333%;
-  float: right;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
-}
-@media (min-width: 22em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_contact\.scss}line{font-family:\0000310}}
-  body#contact-us article.columns.general section {
-    width: 93.33333%;
-    float: right;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
-  }
-}
-@media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_contact\.scss}line{font-family:\0000310}}
-  body#contact-us article.columns.general section {
-    width: 96.66667%;
-    float: right;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
-  }
-}
-@media (min-width: 66em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_contact\.scss}line{font-family:\0000310}}
-  body#contact-us article.columns.general section {
-    width: 97.77778%;
-    float: right;
-    margin-left: 1.11111%;
-    margin-right: 1.11111%;
-  }
-}
-@media (min-width: 88em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_contact\.scss}line{font-family:\0000310}}
-  body#contact-us article.columns.general section {
-    width: 98.33333%;
-    float: right;
-    margin-left: 0.83333%;
-    margin-right: 0.83333%;
-  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003107}}
+body#contact-us article.general section {
+  width: 98.33333%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
 }
 
 /******************************************************************************/

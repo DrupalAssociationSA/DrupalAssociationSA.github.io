@@ -1,60 +1,110 @@
 /******************************************************************************/
 /* Main                                                                       */
 /******************************************************************************/
-  // Variables
-    $cTitleColour: $cBlack;
-    $MainPadding:  20px;
-  // Styles
+  // Grids
     #main {
-      padding-bottom: 20px;
-
-      article.columns {
-
-        &, &>header { @include clearfix; }
-
-        h1 {
-          color: $cTitleColour;
-          text-align: center;
-          border: 1px solid lighten($cGrey, 10%);
-          border-left: none; border-right: none;
-          margin: 0.8em auto 0.4em 0;
-          @include font-size(1.8);
-          line-height: 1.6em;
-          @include span(3 of 3 last);
-          @include breakpoint($sections_1) { @include span(3  of  3 last); }
-          @include breakpoint($sections_2) { @include span(6  of  6 last); }
-          @include breakpoint($sections_3) { @include span(9  of  9 last); }
-          @include breakpoint($sections_4) { @include span(12 of 12 last); }
-        }
-
-        h1#page-title {
-          border-top: none;
-          text-align: left;
-        }
-
-        section {
-          @include span(3 of 3 last);
-          @include breakpoint($sections_1) {    @include span(3 of  3  last);    }
-          @include breakpoint($sections_2) { @include gallery(3 of  6, of-type); }
-          @include breakpoint($sections_3) { @include gallery(3 of  9, of-type); }
-          @include breakpoint($sections_4) { @include gallery(3 of 12, of-type); }
-        }
-
-        section h2 {
-          @include font-size(1.6);
-          margin: 0.8em 0 0.4em 0;
-        }
-
-        section p {
-          @include font-size(1.5);
-          margin: 0.4em 0 0.4em 0.8em;
-        }
-
+      @include container;
+      margin: 0 gutter() gutter() gutter();
+      section,
+      section.content-wide {
+        @include span(12);
+        @include breakpoint($bpw1) { @include    span(12); }
+        @include breakpoint($bpw2) { @include gallery( 6, of-type); }
+        @include breakpoint($bpw3) { @include gallery( 4, of-type); }
+        @include breakpoint($bpw4) { @include gallery( 3, of-type); }
       }
+      section.content-narrow {
+        @include span(12);
+        @include breakpoint($bpw1) { @include    span( 6); }
+        @include breakpoint($bpw2) { @include gallery( 4, of-type); }
+        @include breakpoint($bpw3) { @include gallery( 3, of-type); }
+        @include breakpoint($bpw4) { @include gallery( 2, of-type); }
+      }
+    }
+  // Styles
+    #main { article, h1, section, h2 { @include clearfix; } }
 
+    #main h1 {
+      @include span(12);
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+      color: $cBlack;
+      text-align: center;
+      border: 1px solid lighten($cGrey, 10%);
+      border-left: none; border-right: none;
+      @include font-size(1.8);
+      line-height: 1.6em;
+      &#page-title {
+        border-top: none;
+        text-align: left;
+      }
+    }
+
+    h2 { @include font-size(1.6); margin: 0.8em 0 0.4em 0;     }
+    p  { @include font-size(1.5); margin: 0.4em 0 0.4em 0.8em; }
+/******************************************************************************/
+/* Home Page: About DASA                                                      */
+/******************************************************************************/
+  body#home-page #main { h1#page-title { @include element-invisible; } }
+
+  #main {
+      @include breakpoint($bpw2) {
+      section.community { @include span(3 of 6); }
+      section.mission   { @include span(3 of 6); }
+      section.vision    { @include span(6 of 6); }
+    }
+    @include breakpoint($bpw3) {
+      section.community { @include span(3 of 12); }
+      section.mission   { @include span(3 of 12); }
+      section.vision    { @include span(6 of 12); }
+    }
+  }
+/******************************************************************************/
+/* Home Page: Drupal User Group Meet-ups                                      */
+/******************************************************************************/
+  body#home-page article.meetups {
+    iframe {
+      display: block;
+      margin: 0 auto;
+      background-color: #1a1a1a;
+      @include border-radius(5px);
+    }
+    @include breakpoint($bpw2) {
+      section {
+            height: 750px;
+        p { height: 125px; }
+      }
+    }
+  }
+/******************************************************************************/
+/* Membership                                                                 */
+/******************************************************************************/
+  // Variables
+    $cGold:       #C98910;
+    $cSilver:     #A5A5A5;
+    $cBronze:     #965A38;
+    $cIndividual: $cBlueDark;
+    $cDiamond:    $cBlueLight;
+    $cGraphite:   lighten(black, 50%);
+  // Styles
+    body#membership {
+      article.memberships, article.members {
+        section h2 { border-bottom: 2px solid white; }
+        section.gold       h2 { border-color: $cGold;       }
+        section.silver     h2 { border-color: $cSilver;     }
+        section.bronze     h2 { border-color: $cBronze;     }
+        section.individual h2 { border-color: $cIndividual; }
+        section.diamond    h2 { border-color: $cDiamond;    }
+        section.graphite   h2 { border-color: $cGraphite;   }
+      }
+    }
+    #main article.become-a-member section {
+      @include span(12);
     }
 /******************************************************************************/
-  @import 'home';
-  @import 'membership';
-  @import 'contact';
+/* Contact Us                                                                 */
+/******************************************************************************/
+  body#contact-us article.general section {
+    @include span(12);
+  }
 /******************************************************************************/

@@ -3,12 +3,12 @@ title: 'Resources'
 description: Online Resources for DASA (Drupal Association South Africa) and our Community.
 ---
 
-<article class="{{ page.title | downcase | replace: ' ','-' }} columns">
+<article class="{{ page.title | downcase | replace: ' ','-' }}">
   <h1 id="page-title">
     Online {{ page.title }} <span class="hide"> for {{ site.long }}</span>
   </h1>
   {% for resource in site.data.resources %}
-  <section class="column">
+  <section class="content-wide">
     <h2>
       <a href="{{ resource.url }}" title="{{ resource.title }}" rel="nofollow">
         {{ resource.title }}

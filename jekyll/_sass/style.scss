@@ -8,9 +8,9 @@
 /******************************************************************************/
 /* Compass Defaults                                                           */
 /******************************************************************************/
-  $browser-minimum-versions:    ('ie': "9");
-  $default-transition-duration: 0.5s;
-  $default-transition-function: ease;
+  $browser-minimum-versions:      ('ie': "9");
+  $default-transition-duration:   0.5s;  $td: $default-transition-duration;
+  $default-transition-function:   ease;  $tf: $default-transition-function;
 /******************************************************************************/
 /* Imports: Generic                                                           */
 /******************************************************************************/
@@ -23,53 +23,30 @@
 /******************************************************************************/
 /* Colours (based on Logo)                                                    */
 /******************************************************************************/
-  $cBlack:                      #2D292A;
-  $cGreen:                      #118D45;
-  $cRed:                        #E51E26;
-  $cYellow:                     #F3C016;
-  $cBlueLight:                  #0878BE;
-  $cBlueDark:                   #0D5B90;
-  $cGrey:                       #BFBFC8;
+  $cBlack:                        #2D292A;
+  $cGreen:                        #118D45;
+  $cRed:                          #E51E26;
+  $cYellow:                       #F3C016;
+  $cBlueLight:                    #0878BE;
+  $cBlueDark:                     #0D5B90;
+  $cGrey:                         #BFBFC8;
 /******************************************************************************/
 /* Variables                                                                  */
 /******************************************************************************/
-  // Fonts
-    $base_font_family:            'Open Sans', Verdana, Arial, sans-serif;
-    $base_font_size:              1.5;
-  // Body
-    $cBodyBackground:             darken($cBlack, 8%);
-    $cBodyColour:                 $cBlack;
-    $cBodyLink:                   $cBlueLight;
-    $cBodyHover:                  $cGreen;
-  // Transitions
-    $td:                          $default-transition-duration;
-    $tf:                          $default-transition-function;
-/******************************************************************************/
-/* Grids and Breakpoints                                                      */
-/******************************************************************************/
-  // Grids
-    $column-max-width:            22em;
-  // Susy Defaults
+  // General
+    $paragraph_column_width:      25em;
+    $page_max_width:              $paragraph_column_width * 4;
+  // Susy Grid Defaults
     $susy: (
-      columns:           12,
-      gutters:           1/4,
-      use-custom:        (rem: true),
-      global-box-sizing: border-box,
-      gutter-position:   split,
-      debug: (
-        // image:   show-columns,
-        // color:   mix($cGreen, white, 35%),
-        // // output:  overlay,
-        // output:  background,
-        // toggle:  top right,
-      ),
+      columns:                    12,
+      gutter-position:            split,
+      //debug:                      (image: show-columns),
     );
-  // Breakpoints
-    $section_max_width:           22em;
-    $sections_1:                  $section_max_width * 1;
-    $sections_2:                  $section_max_width * 2;
-    $sections_3:                  $section_max_width * 3;
-    $sections_4:                  $section_max_width * 4;
+  // Breakpoint Widths
+    $bpw1:                        $paragraph_column_width * 1;
+    $bpw2:                        $paragraph_column_width * 2;
+    $bpw3:                        $paragraph_column_width * 3;
+    $bpw4:                        $paragraph_column_width * 4;
 /******************************************************************************/
 /* Imports: Specific (Needs Variables Above)                                  */
 /******************************************************************************/
@@ -78,43 +55,32 @@
 /* General                                                                    */
 /******************************************************************************/
   // Styles
-    @include border-box-sizing;
     a {
       @include transition(color, $tf, $td);
-      @include link-colour($cBodyLink, $cBodyHover);
+      @include link-colour($cBlueLight, $cGreen);
       @include link-decoration();
     }
-    h1 { @include font-size(2.4); }
-    h2 { @include font-size(2.2); }
-    h3 { @include font-size(2.0); }
-    h4 { @include font-size(1.8); }
     .hide { @include element-invisible; }
 /******************************************************************************/
 /* Body / Page                                                                */
 /******************************************************************************/
-  // Variables
-    $body_padding: 20px;
   // Styles
     body {
-      color: $cBodyColour;
-      @include font-size($base_font_size);
-      background-color: $cBodyBackground;
-      font-family: $base_font_family;
+      background-color: darken($cBlack, 8%);
+      color:            $cBlack;
+      font-family:      'Open Sans', Verdana, Arial, sans-serif;
+      @include font-size(1.5);
     }
     #page {
+      max-width:      $page_max_width;
+      margin:         0 auto;
       background:     white;
       border-top:     3px solid $cRed;
       border-bottom:  3px solid $cYellow;
-      @include clearfix;
-      @include container(3);
-      @include breakpoint($sections_1) { @include container(3); }
-      @include breakpoint($sections_2) { @include container(6); }
-      @include breakpoint($sections_3) { @include container(9); }
-      @include breakpoint($sections_4) { @include container(12 $sections_4); }
     }
   // Transitions:
     body {
-      @include breakpoint($sections_2) {    padding: $body_padding; }
+      @include breakpoint($bpw2) {          padding: 2em; }
       @include transition(padding $td $tf); padding: 0;
     }
 /******************************************************************************/

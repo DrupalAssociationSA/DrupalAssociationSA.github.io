@@ -3,14 +3,10 @@ title: 'Contact Us'
 description: Contact DASA (Drupal Association South Africa).
 ---
 
-<article class="{{ page.title | downcase | replace: ' ','-' }} columns">
+<article class="general">
   <h1 id="page-title">
-    {{ page.title }} <span class="hide"> at {{ site.long }}</span>
+    General Contact <span class="hide"> for {{ site.long }}</span>
   </h1>
-</article>
-
-<article class="general columns">
-  <h1>General Contact</h1>
   <section class="column">
     <h2>{% include fragment-email.html %}</h2>
     <p>
@@ -21,7 +17,7 @@ description: Contact DASA (Drupal Association South Africa).
   </section>
 </article>
 
-<article class="governing-board columns">
+<article class="governing-board">
   <h1>Governing Board</h1>
   {% for member in site.data.board %}
   {% capture display %}
@@ -35,13 +31,13 @@ description: Contact DASA (Drupal Association South Africa).
       {{ member.name }}
     {% endif %}
   {% endcapture %}
-  <section class="column">
+  <section class="content-narrow">
     <h2>{{ display }}</h2>
   </section>
   {% endfor %}
 </article>
 
-<article class="governing-board columns">
+<article class="portfolio-holders">
   <h1>Portfolio Holders</h1>
   {% for member in site.data.portfolios %}
   {% capture display %}
@@ -55,7 +51,7 @@ description: Contact DASA (Drupal Association South Africa).
       {{ member.name }}
     {% endif %}
   {% endcapture %}
-  <section class="column">
+  <section class="content-narrow">
     <h2>{{ display }}</h2>
     <p>{{ member.portfolio }}</p>
   </section>

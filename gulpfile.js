@@ -27,12 +27,13 @@
 	var build       = { 'intent': '', 'to': '' };
 
 	var messages    = {
-		buildCss:    '<span style="color: grey">Building</span> CSS...',
-		buildJs:     '<span style="color: grey">Building</span> JS...',
-		buildImages: '<span style="color: grey">Building</span> Images...',
-		buildFonts:  '<span style="color: grey">Building</span> Fonts...',
-		builJekyll:  '<span style="color: grey">Building</span> Jekyll...',
-		lintJs:      '<span style="color: grey">Linting</span> JS...'
+		buildCss:    '<span style="color: grey;">Building</span> CSS...',
+		buildJs:     '<span style="color: grey;">Building</span> JS...',
+		buildImages: '<span style="color: grey;">Building</span> Images...',
+		buildFonts:  '<span style="color: grey;">Building</span> Fonts...',
+		builJekyll:  '<span style="color: grey;">Building</span> Jekyll...',
+		errCompass:  '<span style="color: red; ">Error</span> in Compass.',
+		lintJs:      '<span style="color: grey;">Linting</span> JS...'
 	};
 
 /*******************************************************************************
@@ -103,6 +104,10 @@
 				debug:         (build.intent == 'serve'),
 				require:       ['breakpoint', 'susy']
 			}))
+      .on('error', function(err) {
+        console.log(err.toString());
+        browserSync.notify(messages.errCompass, 5000);
+      })
 			.pipe(gulpif(build.intent == 'deploy', minifyCSS({
 				keepSpecialComments: 0
 			})))
