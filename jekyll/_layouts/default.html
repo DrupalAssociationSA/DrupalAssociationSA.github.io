@@ -16,9 +16,11 @@
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 
+    {% comment %}
     <!-- Replace with a custom modernizer build for production -->
     <!-- <script src="{{ site.baseurl }}/_bower_components/modernizr/modernizr.js"></script> -->
     <!-- endbuild -->
+    {% endcomment %}
 
   </head>
   <body id="{{ page.title | downcase | replace:' ', '-' }}">
@@ -48,8 +50,8 @@
 
     </div>
 
-    <!-- {% include scripts.html %} -->
-    <!-- {% include googleanalytics.html %} -->
+    {% comment %}{% include scripts.html %}{% endcomment %}
+    {% comment %}{% include googleanalytics.html %}{% endcomment %}
 
   </body>
 </html>
