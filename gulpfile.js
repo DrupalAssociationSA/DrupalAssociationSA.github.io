@@ -244,7 +244,7 @@
 	gulp.task('deployToGitHub', ['buildAll'], function () {
 		var options = {
 			remoteURL: config.github.remote,
-			branch:    'gh-pages'
+			branch:    'master'
 		};
 		gulp.src("./" + build.to + "/**/*").pipe(deploy(options));
 	});
