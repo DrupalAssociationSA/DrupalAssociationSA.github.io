@@ -1,0 +1,52 @@
+/******************************************************************************/
+/* Menu                                                                       */
+/******************************************************************************/
+  // Style
+    nav.menu ul {
+      @include no-bullet;
+      border: 1px solid $cGrey;
+      border-left: none; border-right: none;
+      text-align: center;
+      margin: 0;
+      padding: 0.3em 0 0.4em 0;
+      @include font-size(1.3);
+      li {
+        display: inline-block;
+        margin: 0 2px; padding: 0;
+        a {
+          display: inline-block;
+          padding: 0 2px;
+          border-bottom: 2px solid white;
+          line-height: 1.3em;
+        }
+      }
+    }
+  // Transitions
+    nav.menu ul {
+      @include transition(padding $td $tf, font-size $td $tf);
+      li {
+        @include transition(margin $td $tf);
+        a {
+          @include transition(padding $td $tf, border-color $td $tf);
+        }
+      }
+    }
+  // Hover Effects
+    nav.menu ul li a {
+      &:hover, &.active { border-color: $cGreen; }
+    }
+  // Responsive
+    @include breakpoint($bpw1 * 1.5) {
+      nav.menu ul {
+        text-align: left;
+        padding: 0.25em 0 0.3em 55px;
+        @include font-size(1.6);
+        li {
+          margin: 0 6px;
+          a {
+            padding: 3px;
+          }
+        }
+      }
+    }
+/******************************************************************************/

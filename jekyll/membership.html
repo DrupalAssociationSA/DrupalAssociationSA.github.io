@@ -1,0 +1,96 @@
+---
+title: 'Membership'
+description: Membership and Donations for DASA (Drupal Association South Africa) and our Community.
+---
+
+<article class="{{ page.title | downcase | replace: ' ','-' }} memberships">
+  <h1 id="page-title">
+    {{ page.title }}
+    <span class="hide"> and Donations for {{ site.long }}</span>
+  </h1>
+  {% for membership in site.data.memberships %}
+    <section class="{{ membership.type }} content-narrow">
+      <h2>{{ membership.title }}</h2>
+      <p>{{ membership.cost }}</p>
+    </section>
+  {% endfor %}
+</article>
+
+<article class="become-a-member">
+  <h1>Become a Member</h1>
+  <section>
+    <p>
+      Contact us at {% include fragment-email.html %} with the membership you
+      are interested in.
+    </p>
+    <p><strong>We'll send you details for an EFT payment.</strong></p>
+    <ul>
+      <li>
+        If the membership is for a company (Gold, Silver or Bronze), include a
+        link to your company' profile on {% include fragment-do.html %}.
+      </li>
+      <li>
+        If the membership is for an individual, include a link to your profile on
+        {% include fragment-do.html %}.
+      </li>
+      <li>
+        If the membership is for a website (Diamond Site Owner or Graphite Site
+        Owner), include a link to the website.
+      </li>
+    </ul>
+    <p>
+      If you cannot find these links, e-mail us at
+      {% include fragment-email.html %} and we will help you.
+    </p>
+    <p>
+      We link only to Drupal.org individual and company profiles and only list
+      (no hot link) the domains of site ownership unless they have a Drupal.org
+      link too.
+    </p>
+  </section>
+</article>
+
+{% for membership in site.data.members %}
+  {% if membership.members.size > 0 %}
+    <article class="members-{{ membership.type }} members">
+      <h1>{{ membership.name }}</h1>
+      {% for member in membership.members %}
+      {% capture name %}
+        {% if member.link.size > 0 and member.link contains 'drupal.org' %}
+          <a
+            href="{{ member.link }}"
+            title="{{ member.name }} on Drupal.org"
+            rel="nofollow"
+          >{{ member.name }}</a>
+        {% else %}
+          {{ member.name }}
+        {% endif %}
+      {% endcapture %}
+      <section class="{{ membership.type }} content-narrow">
+        <h2>{{ name }}</h2>
+        <p>{{ member.from }} - {{ member.to }}</p>
+      </section>
+      {% endfor %}
+    </article>
+  {% endif %}
+{% endfor %}
+
+<article class="donations">
+  <h1>Donations</h1>
+  {% for donation in site.data.donations %}
+  {% capture by %}
+    {% if donation.link.size > 0 and donation.link contains 'drupal.org' %}
+      <a
+        href="{{ donation.link }}"
+        title="{{ donation.by }} on Drupal.org"
+        rel="nofollow"
+      >{{ donation.by }}</a>:
+    {% else %}
+      {{ donation.by }}:
+    {% endif %}
+  {% endcapture %}
+  <section>
+    <p>{{ donation.date }} by {{ by }} {{ donation.description }}</p>
+  </section>
+  {% endfor %}
+</article>
