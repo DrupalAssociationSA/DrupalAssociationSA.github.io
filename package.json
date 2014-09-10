@@ -1,0 +1,37 @@
+{
+	"name":        "dasa-website",
+	"description": "Jekyll website with Gulp, H5BP, Compass...",
+	"private":     true,
+	"version":     "0.0.0",
+	"main":        "gulpfile.js",
+	"author": {
+		"name":        "Riaan Burger",
+		"email":       "riaan.burger@burtronix.com",
+		"url":         "http://burtronix.com"
+	},
+	"engines": {
+		"node":        ">=0.11.13"
+	},
+	"scripts": {
+		"test":        "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"browser-sync":    "^1.3.6",
+		"del":             "^0.1.3",
+		"gulp":            "^3.8.8",
+		"gulp-compass":    "^1.3.1",
+		"gulp-concat":     "^2.4.0",
+		"gulp-eslint":     "^0.1.8",
+		"gulp-gh-pages":   "^0.3.4",
+		"gulp-if":         "^1.2.4",
+		"gulp-ignore":     "^1.2.0",
+		"gulp-imagemin":   "^1.0.1",
+		"gulp-jshint":     "^1.8.4",
+		"gulp-minify-css": "^0.3.8",
+		"gulp-rename":     "^1.2.0",
+		"gulp-uglify":     "^1.0.1",
+		"jshint-stylish":  "^0.4.0",
+		"mkdirp":          "^0.5.0"
+	}
+}
