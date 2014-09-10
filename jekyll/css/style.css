@@ -749,6 +749,7 @@ html {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000358}}
 a {
   -moz-transition: color, ease, 0.5s;
+  -o-transition: color, ease, 0.5s;
   -webkit-transition: color, ease, 0.5s;
   transition: color, ease, 0.5s;
   color: #0878be;
@@ -807,6 +808,7 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/style\.scss}line{font-family:\0000382}}
 body {
   -moz-transition: padding 0.5s ease;
+  -o-transition: padding 0.5s ease;
   -webkit-transition: padding 0.5s ease;
   transition: padding 0.5s ease;
   padding: 0;
@@ -839,11 +841,12 @@ h1#site-name a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../img/../img/logo/logo-x1.png?1401557693');
+  background-image: url('../img/../img/logo/logo-x1.png?1410290423');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding-top: 28.125%;
   -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   background-size: 100% 100% !important;
@@ -895,18 +898,21 @@ nav.menu ul li a {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000325}}
 nav.menu ul {
   -moz-transition: padding 0.5s ease, font-size 0.5s ease;
+  -o-transition: padding 0.5s ease, font-size 0.5s ease;
   -webkit-transition: padding 0.5s ease, font-size 0.5s ease;
   transition: padding 0.5s ease, font-size 0.5s ease;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000327}}
 nav.menu ul li {
   -moz-transition: margin 0.5s ease;
+  -o-transition: margin 0.5s ease;
   -webkit-transition: margin 0.5s ease;
   transition: margin 0.5s ease;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/header\/_menu\.scss}line{font-family:\0000329}}
 nav.menu ul li a {
   -moz-transition: padding 0.5s ease, border-color 0.5s ease;
+  -o-transition: padding 0.5s ease, border-color 0.5s ease;
   -webkit-transition: padding 0.5s ease, border-color 0.5s ease;
   transition: padding 0.5s ease, border-color 0.5s ease;
 }
@@ -1359,3 +1365,5 @@ body#contact-us article.general section {
 
 /******************************************************************************/
 /******************************************************************************/
+
+/*# sourceMappingURL=style.css.map */

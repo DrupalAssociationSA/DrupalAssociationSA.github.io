@@ -25,7 +25,7 @@
 	var rename      = require('gulp-rename');
 	var uglify      = require('gulp-uglify');
 
-	var build       = { 'intent': 'serve', 'to': '' };
+	var build       = { 'intent': 'serve', 'to': 'serve' };
 
 	var messages    = {
 		buildCss:    '<span style="color: grey;">Building</span> CSS...',
