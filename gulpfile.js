@@ -8,12 +8,14 @@
 	var config      = require('./config.json');
 
 	var browserSync = require('browser-sync');
+	var del         = require('del');
 	var exec        = require('child_process').exec;
 	var stylish     = require('jshint-stylish');
 	var mkdirp      = require('mkdirp');
 
 	var compass     = require('gulp-compass');
 	var concat      = require('gulp-concat');
+	var eslint      = require('gulp-eslint');
 	var deploy      = require("gulp-gh-pages");
 	var gulpif      = require('gulp-if');
 	var ignore      = require('gulp-ignore');
@@ -21,10 +23,9 @@
 	var jshint      = require('gulp-jshint');
 	var minifyCSS   = require('gulp-minify-css');
 	var rename      = require('gulp-rename');
-	var rimraf      = require('gulp-rimraf');
 	var uglify      = require('gulp-uglify');
 
-	var build       = { 'intent': '', 'to': '' };
+	var build       = { 'intent': 'serve', 'to': '' };
 
 	var messages    = {
 		buildCss:    '<span style="color: grey;">Building</span> CSS...',
@@ -43,33 +44,29 @@
 	/**
 	 * Task cleanCss
 	 */
-	gulp.task('cleanCss', function () {
-		return gulp.src(build.to + '/css/*.css', { read: false })
-			.pipe(rimraf());
+	gulp.task('cleanCss', function (cb) {
+		del([build.to + '/css'], cb);
 	});
 
 	/**
 	 * Task cleanJs
 	 */
-	gulp.task('cleanJs', function () {
-		return gulp.src(build.to + '/js/*.js', { read: false })
-			.pipe(rimraf());
+	gulp.task('cleanJs', function (cb) {
+		del([build.to + '/js'], cb);
 	});
 
 	/**
 	 * Task: cleanImages
 	 */
-	gulp.task('cleanImages', function () {
-		return gulp.src(build.to + '/img/*', { read: false })
-			.pipe(rimraf());
+	gulp.task('cleanImages', function (cb) {
+		del([build.to + '/img'], cb);
 	});
 
 	/**
 	 * Task: cleanFonts
 	 */
-	gulp.task('cleanFonts', function () {
-		return gulp.src(build.to + '/fonts/*', { read: false })
-			.pipe(rimraf());
+	gulp.task('cleanFonts', function (cb) {
+		del([build.to + '/fonts'], cb);
 	});
 
 /*******************************************************************************
@@ -79,11 +76,17 @@
 	/**
 	 * Task: lintJs
 	 */
+	// gulp.task('lintJs', function() {
+	// 	browserSync.notify(messages.lintJs);
+	// 	return gulp.src('jekyll/js/**/*.js')
+	// 		.pipe(jshint())
+	// 		.pipe(jshint.reporter('jshint-stylish', { verbose: true }));
+	// });
 	gulp.task('lintJs', function() {
 		browserSync.notify(messages.lintJs);
-		return gulp.src('jekyll/js/**/*.js')
-			.pipe(jshint())
-			.pipe(jshint.reporter('jshint-stylish', { verbose: true }));
+		gulp.src('jekyll/js/**/*.js')
+			.pipe(eslint())
+			.pipe(eslint.format());
 	});
 
 /*******************************************************************************
@@ -112,7 +115,7 @@
 				keepSpecialComments: 0
 			})))
 			.pipe(gulp.dest(build.to + '/css'))
-			.pipe(browserSync.reload({stream: true, once: true}));
+			.pipe(browserSync.reload({ stream: true }));
 		return stream;
 	});
 
@@ -244,7 +247,7 @@
 	gulp.task('deployToGitHub', ['buildAll'], function () {
 		var options = {
 			remoteURL: config.github.remote,
-			branch:    'gh-pages'
+			branch:    'master'
 		};
 		gulp.src("./" + build.to + "/**/*").pipe(deploy(options));
 	});
