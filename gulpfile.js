@@ -249,7 +249,7 @@
 			remoteURL: config.github.remote,
 			branch:    'master'
 		};
-		gulp.src("./" + build.to + "/**/*");//.pipe(deploy(options));
+		gulp.src("./" + build.to + "/**/*").pipe(deploy(options));
 	});
 
 /*******************************************************************************
