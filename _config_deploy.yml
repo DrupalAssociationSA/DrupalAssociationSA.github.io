@@ -1,5 +1,5 @@
 destination: deploy/
-baseurl: /
+baseurl:
 
 future: false
 show_drafts: false
