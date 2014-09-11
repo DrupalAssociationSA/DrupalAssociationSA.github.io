@@ -1,5 +1,5 @@
 destination: deploy/
-baseurl: /DrupalAssociationSA.github.io
+baseurl: /
 
 future: false
 show_drafts: false
