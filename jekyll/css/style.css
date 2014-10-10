@@ -1290,9 +1290,45 @@ body#home-page #main h1#page-title {
 }
 
 /******************************************************************************/
-/* Home Page: Drupal User Group Meet-ups                                      */
+/* Home Page: MailChimp                                                       */
 /******************************************************************************/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000366}}
+body#home-page article.mailchimp #mc_embed_signup {
+  clear: both;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000369}}
+body#home-page article.mailchimp #mc_embed_signup * {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000371}}
+body#home-page article.mailchimp .mc-field-group {
+  padding: 0 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000374}}
+body#home-page article.mailchimp input#mce-EMAIL {
+  margin: 5px 0 5px -3px;
+  padding: 2px;
+  width: 100%;
+  border: 1px solid #dadae0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000380}}
+body#home-page article.mailchimp input#mc-embedded-subscribe {
+  padding: 2px 5px;
+  border: 1px solid #a4a4b0;
+}
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000385}}
+  body#home-page article.mailchimp input#mce-EMAIL {
+    width: 250px;
+    margin-left: 15px;
+  }
+}
+
+/******************************************************************************/
+/* Home Page: Drupal User Group Meet-ups                                      */
+/******************************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000392}}
 body#home-page article.meetups iframe {
   display: block;
   margin: 0 auto;
@@ -1302,11 +1338,11 @@ body#home-page article.meetups iframe {
   border-radius: 5px;
 }
 @media (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000399}}
   body#home-page article.meetups section {
     height: 750px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003101}}
   body#home-page article.meetups section p {
     height: 125px;
   }
@@ -1315,36 +1351,36 @@ body#home-page article.meetups iframe {
 /******************************************************************************/
 /* Membership                                                                 */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003118}}
 body#membership article.memberships section h2, body#membership article.members section h2 {
   border-bottom: 2px solid white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003119}}
 body#membership article.memberships section.gold h2, body#membership article.members section.gold h2 {
   border-color: #c98910;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003120}}
 body#membership article.memberships section.silver h2, body#membership article.members section.silver h2 {
   border-color: #a5a5a5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003121}}
 body#membership article.memberships section.bronze h2, body#membership article.members section.bronze h2 {
   border-color: #965a38;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003122}}
 body#membership article.memberships section.individual h2, body#membership article.members section.individual h2 {
   border-color: #0d5b90;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003123}}
 body#membership article.memberships section.diamond h2, body#membership article.members section.diamond h2 {
   border-color: #0878be;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003124}}
 body#membership article.memberships section.graphite h2, body#membership article.members section.graphite h2 {
   border-color: gray;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003127}}
 #main article.become-a-member section {
   width: 98.33333%;
   float: left;
@@ -1355,7 +1391,7 @@ body#membership article.memberships section.graphite h2, body#membership article
 /******************************************************************************/
 /* Contact Us                                                                 */
 /******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/riaan\/Projects\/Repos\/RiaanBurger\/DrupalAssociationSA\.github\.io\/jekyll\/_sass\/main\/_main\.scss}line{font-family:\00003133}}
 body#contact-us article.general section {
   width: 98.33333%;
   float: left;

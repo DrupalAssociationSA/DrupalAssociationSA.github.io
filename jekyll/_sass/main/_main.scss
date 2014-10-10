@@ -60,6 +60,32 @@
     }
   }
 /******************************************************************************/
+/* Home Page: MailChimp                                                       */
+/******************************************************************************/
+  body#home-page article.mailchimp {
+    #mc_embed_signup {
+      clear: both;
+      text-align: center;
+      * { display: inline-block; }
+    }
+    .mc-field-group {
+      padding: 0 15px;
+    }
+    input#mce-EMAIL {
+      margin: 5px 0 5px -3px;
+      padding: 2px;
+      width: 100%;
+      border: 1px solid lighten($cGrey, 10%);
+    }
+    input#mc-embedded-subscribe {
+      padding: 2px 5px;
+      border: 1px solid darken($cGrey, 10%);
+    }
+    @include breakpoint($bpw2) {
+      input#mce-EMAIL { width: 250px; margin-left: 15px; }
+    }
+  }
+/******************************************************************************/
 /* Home Page: Drupal User Group Meet-ups                                      */
 /******************************************************************************/
   body#home-page article.meetups {
