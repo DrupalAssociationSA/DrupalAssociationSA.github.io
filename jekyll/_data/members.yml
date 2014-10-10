@@ -14,6 +14,14 @@
 - name: Individual Members
   type: individual
   members:
+  - name: Adam Dunn
+    link: https://www.drupal.org/user/1761708
+    from: 2014-10
+    to: 2015-09
+  - name: Johan du Bois
+    link: https://www.drupal.org/user/107632
+    from: 2014-10
+    to: 2015-09
   - name: Riaan Burger
     link: https://www.drupal.org/user/53372
     from: 2014-06
