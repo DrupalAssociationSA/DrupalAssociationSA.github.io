@@ -250,7 +250,8 @@
     gulp.task('deployToGitHub', ['buildAll'], function () {
       var options = {
         remote: gitHub.remote,
-        branch: gitHub.branch
+        branch: gitHub.branch,
+        cacheDir: '.deploy-cache'
       };
       gulp.src(intent + '/**/*').pipe($.ghPages(options));
     });
