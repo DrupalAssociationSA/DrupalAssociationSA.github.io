@@ -241,20 +241,19 @@
 
     });
 
-// // /*******************************************************************************
-// // * Tasks: Deploy
-// // *******************************************************************************/
+/*******************************************************************************
+* Tasks: Deploy
+*******************************************************************************/
 
-// //  /**
-// //   * Task: deploy
-// //   */
-// //  gulp.task('deployToGitHub', ['buildAll'], function () {
-// //    var options = {
-// //      remoteURL: config.github.remote,
-// //      branch:    'master'
-// //    };
-// //    gulp.src("./" + build.to + "/**/*").pipe(deploy(options));
-// //  });
+  /*----- Task deploy --------------------------------------------------------*/
+
+    gulp.task('deployToGitHub', ['buildAll'], function () {
+      var options = {
+        remote: github.remote,
+        branch: github.branch
+      };
+      gulp.src('./' + build.to + "/**/*").pipe(deploy(options));
+    });
 
 /*----------------------------------------------------------------------------*/
 /* Execution                                                                  */
@@ -262,7 +261,7 @@
 
   /*----- runModes -----------------------------------------------------------*/
 
-    gulp.task('runDeploy', false, ['buildAll']);
+    gulp.task('runDeploy', false, ['deployToGitHub']);
     gulp.task('runServe',  false, ['browserSync', 'watch']);
 
   /*----- Command line Tasks -------------------------------------------------*/
