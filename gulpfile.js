@@ -252,7 +252,7 @@
         remote: gitHub.remote,
         branch: gitHub.branch
       };
-      gulp.src('./' + intent + '/**/*').pipe($.ghPages(options));
+      gulp.src(intent + '/**/*').pipe($.ghPages(options));
     });
 
 /*----------------------------------------------------------------------------*/
