@@ -249,10 +249,10 @@
 
     gulp.task('deployToGitHub', ['buildAll'], function () {
       var options = {
-        remote: github.remote,
-        branch: github.branch
+        remote: gitHub.remote,
+        branch: gitHub.branch
       };
-      gulp.src('./' + build.to + "/**/*").pipe(deploy(options));
+      gulp.src('./' + intent + '/**/*').pipe($.ghPages(options));
     });
 
 /*----------------------------------------------------------------------------*/
