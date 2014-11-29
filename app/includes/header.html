@@ -1,0 +1,11 @@
+<div class="page-header clearfix">
+
+  {% capture href  %}{{ site.baseurl }}/{% endcapture %}
+  {% capture title %}{{ site.name.long }} Home Page{% endcapture %}
+  {% capture text  %}{{ site.name.short }} <small>{{ site.name.long }}</small>{% endcapture %}
+
+  <h1 id="site-title"><a href="{{ href }}" title="{{ title }} Home Page">{{ text }}</a></h1>
+
+  {% include_relative includes/mailchimp.html %}
+
+</div>

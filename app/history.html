@@ -1,0 +1,43 @@
+---
+title: 'History'
+description: History of DASA (Drupal Association South Africa).
+---
+
+
+{% for article in site.data.history %}
+
+  <article class="clearfix">
+
+    <h1>{{ article.head }}</h1>
+
+    <p>{{ article.desc }}</p>
+
+    {% for person in article.people %}
+      {% capture display %}
+        {% if person.link.size > 0 and person.link contains 'drupal.org' %}
+          <a
+            href="{{ person.link }}"
+            title="{{ person.name }} on Drupal.org"
+            rel="nofollow"
+          >{{ person.name }}</a>
+        {% else %}
+          {{ person.name }}
+        {% endif %}
+      {% endcapture %}
+      {% cycle 'board_row_open': '<div class="row">', '', '', '', '', '' %}
+      <div class="col-md-2">
+        <section class="panel panel-default panel-small">
+          <header class="panel-heading">
+            <h2>{{ display }}</h2>
+          </header>
+          <div class="panel-body">
+            <p>{{ person.desc }}</p>
+          </div>
+        </section>
+      </div>
+      {% cycle 'board_row_close': '', '', '', '', '', '</div>' %}
+    {% endfor %}
+
+  </article>
+
+{% endfor %}

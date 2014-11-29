@@ -1,0 +1,110 @@
+---
+title: 'Membership'
+description: Membership and Donations for DASA (Drupal Association South Africa) and our Community.
+---
+
+<article class="membership clearfix">
+  <h1 id="page-title">
+    {{ page.title }}
+    <span class="hide"> and Donations for {{ site.long }}</span>
+  </h1>
+  {% for membership in site.data.memberships %}
+    <div class="col-md-4">
+      <section class="panel panel-default panel-{{ membership.type }}">
+        <header class="panel-heading">
+          <h2>{{ membership.title }}</h2>
+        </header>
+        <div class="panel-body">
+          <p>{{ membership.cost }}</p>
+          <p>{{ membership.desc }}</p>
+        </div>
+      </section>
+    </div>
+  {% endfor %}
+</article>
+
+<article class="become-a-member clearfix">
+  <h1>Become a Member</h1>
+  <section class="panel panel-default">
+    <div class="panel-body">
+      <p>
+        Contact us at {% include_relative includes/fragment-email.html %} with the
+        membership you are interested in.
+      </p>
+      <p><strong>We'll send you details for an EFT payment.</strong></p>
+      <ul>
+        <li>
+          If the membership is for an individual, include a link to your profile on
+          {% include_relative includes/fragment-do.html %}
+        </li>
+        <li>
+          If the membership is for a website (Diamond Site Owner or Graphite Site
+          Owner), include a link to the website.
+        </li>
+      </ul>
+    </div>
+  </section>
+</article>
+
+{% for membership in site.data.members %}
+  {% if membership.members.size > 0 %}
+    <article class="members-{{ membership.type }} members clearfix">
+      <h1>{{ membership.name }}</h1>
+      {% for member in membership.members %}
+      {% capture name %}
+        {% if member.link.size > 0 and member.link contains 'drupal.org' %}
+          <a
+            href="{{ member.link }}"
+            title="{{ member.name }} on Drupal.org"
+            rel="nofollow"
+          >{{ member.name }}</a>
+        {% else %}
+          {{ member.name }}
+        {% endif %}
+      {% endcapture %}
+      <div class="col-md-3">
+        <section class="panel panel-default panel-{{ membership.type }}">
+          <header class="panel-heading">
+            <h2>{{ name }}</h2>
+          </header>
+          <div class="panel-body">
+            <p>{{ member.from }} - {{ member.to }}</p>
+          </div>
+        </section>
+      </div>
+      {% endfor %}
+    </article>
+  {% endif %}
+{% endfor %}
+
+<article class="donations clearfix">
+  <h1>Donations</h1>
+  {% for date in site.data.donations %}
+    <h2>{{ date.date }}</h2>
+    <div class="clearfix">
+      {% for donation in date.donations %}
+        {% capture by %}
+          {% if donation.link.size > 0 and donation.link contains 'drupal.org' %}
+            <a
+              href="{{ donation.link }}"
+              title="{{ donation.by }} on Drupal.org"
+              rel="nofollow"
+            >{{ donation.by }}</a>
+          {% else %}
+            {{ donation.by }}:
+          {% endif %}
+        {% endcapture %}
+        <div class="col-md-2">
+          <section class="panel panel-default panel-small">
+            <header class="panel-heading">
+              <h3><small>by</small> {{ by }}</h3>
+            </header>
+            <div class="panel-body">
+              <p>{{ donation.date }} {{ donation.description }}</p>
+            </div>
+          </section>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</article>

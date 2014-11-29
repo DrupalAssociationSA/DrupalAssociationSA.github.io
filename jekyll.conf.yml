@@ -1,0 +1,54 @@
+################################################################################
+#        ______                                                                #
+#       //   ) )                                                               #
+#      //___/ /            __    __  ___  __      ___       __     ( )         #
+#     / __  (   //   / / //  ) )  / /   //  ) ) //   ) ) //   ) ) / / \\ / /   #
+#    //    ) ) //   / / //       / /   //      //   / / //   / / / /   \/ /    #
+#   //____/ / ((___( ( //       / /   //      ((___/ / //   / / / /    / /\    #
+#                                                                              #
+################################################################################
+
+##### Basic Configuration ######################################################
+
+source:      app
+data_source: data
+destination: .tmp/jekyll
+layouts:     app/layouts
+name:
+  short: DASA
+  long: Drupal Association South Africa
+  combined: DASA - Drupal Association South Africa
+
+##### Includes, Excludes and Ignores ###########################################
+
+include:
+  - .htaccess
+  - favicon.ico
+
+exclude:
+  # Jekyll Assets
+  - data
+  - includes
+  - layouts
+  # Gulp-handeled Assets
+  - bower_components
+  - fonts
+  - images
+  - scripts
+  - styles
+
+keep_files:
+  - fonts
+  - images
+  - scripts
+  - styles
+
+##### Defaults by Scope Path ###################################################
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+################################################################################

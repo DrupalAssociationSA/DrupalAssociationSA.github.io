@@ -1,0 +1,64 @@
+/******************************************************************************/
+/*   ____    _    ____    _                                                   */
+/*  |  _ \  / \  / ___|  / \                                                  */
+/*  | | | |/ _ \ \___ \ / _ \                                                 */
+/*  | |_| / ___ \ ___) / ___ \                                                */
+/*  |____/_/   \_\____/_/   \_\   Drupal Association South Africa             */
+/*                                                                            */
+/******************************************************************************/
+
+/*----- Styles ---------------------------------------------------------------*/
+
+  .page-header {
+    position: relative;
+    article.mailchimp {
+      &, .panel-heading, .panel-body {
+        background: transparent;
+      }
+      h2.panel-heading {
+        margin: 0;
+      }
+      .panel-body {
+        padding: 10px 15px;
+      }
+    }
+  }
+
+/*----- Responsive -----------------------------------------------------------*/
+
+  $easeInCubic:  cubic-bezier(0.550, 0.055, 0.675, 0.19);
+  $easeOutCubic: cubic-bezier(0.215, 0.610, 0.355, 1.00);
+  $easeInQuint:  cubic-bezier(0.755, 0.050, 0.855, 0.06);
+  $easeOutQuint: cubic-bezier(0.230, 1.000, 0.320, 1.00);
+  $t: 0.7s / 3;
+  //$ : ;
+
+  @media(min-width: 1260px) {
+    .page-header {
+      height: 180px;
+      transition: height $t*2 $easeInCubic $t;
+      article.mailchimp {
+        transition: top $t*3 $easeInQuint, right $t*3 $easeOutQuint, width $t*3 $easeOutQuint;
+        position: absolute;
+        right: 40px;
+        top: 45px;
+        width: 440px;
+      }
+    }
+  }
+
+  @media(min-width: $screen-sm-min) and (max-width: 1259px) {
+    .page-header {
+      height: 255px;
+      transition: height $t*2 $easeOutCubic;
+      article.mailchimp {
+        transition: top $t*2 $easeOutQuint, right $t*2 $easeInQuint $t, width $t*2 $easeInQuint $t;
+        position: absolute;
+        right: 0px;
+        top: 155px;
+        width: 100%;
+      }
+    }
+  }
+
+/******************************************************************************/

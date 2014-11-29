@@ -1,0 +1,81 @@
+---
+title: 'Contact Us'
+description: Contact DASA (Drupal Association South Africa).
+---
+
+<article class="contact">
+  <h1 id="page-title">
+    General Contact <span class="hide"> for {{ site.long }}</span>
+  </h1>
+  <section class="panel panel-default">
+    <header class="panel-heading">
+      <h2>{% include_relative includes/fragment-email.html %}</h2>
+    </header>
+    <div class="panel-body">
+      <p>
+        E-mail our Secretary at
+        {% include_relative includes/fragment-email.html %} or use the links
+        below which will lead to people's Drupal profile pages where you can use
+        the contact form there to contact people directly.
+      </p>
+    </div>
+  </section>
+</article>
+
+<article class="governing-board clearfix">
+  <h1>Current (2015) Governing Board</h1>
+  {% for member in site.data.board %}
+    {% capture display %}
+      {% if member.link.size > 0 and member.link contains 'drupal.org' %}
+        <a
+          href="{{ member.link }}"
+          title="{{ member.name }} on Drupal.org"
+          rel="nofollow"
+        >{{ member.name }}</a>
+      {% else %}
+        {{ member.name }}
+      {% endif %}
+    {% endcapture %}
+    {% cycle 'board_row_open': '<div class="row">', '', '', '' %}
+    <div class="col-md-3">
+      <section class="panel panel-default">
+        <header class="panel-heading">
+          <h2>{{ display }}</h2>
+        </header>
+        <div class="panel-body">
+          <p>{{ member.desc }}</p>
+        </div>
+      </section>
+    </div>
+    {% cycle 'board_row_close': '', '', '', '</div>' %}
+  {% endfor %}
+</article>
+
+<article class="portfolio-holders clearfix">
+  <h1>Current Portfolio Holders</h1>
+  {% for member in site.data.portfolios %}
+    {% capture display %}
+      {% if member.link.size > 0 and member.link contains 'drupal.org' %}
+        <a
+          href="{{ member.link }}"
+          title="{{ member.name }} on Drupal.org"
+          rel="nofollow"
+        >{{ member.name }}</a>
+      {% else %}
+        {{ member.name }}
+      {% endif %}
+    {% endcapture %}
+    {% cycle 'portfolios_row_open': '<div class="row">', '', '', '' %}
+    <div class="col-md-3">
+      <section class="panel panel-default">
+        <header class="panel-heading">
+          <h2>{{ display }}</h2>
+        </header>
+        <div class="panel-body">
+          <p>{{ member.portfolio }}</p>
+        </div>
+      </section>
+    </div>
+    {% cycle 'portfolios_row_close': '', '', '', '</div>' %}
+  {% endfor %}
+</article>

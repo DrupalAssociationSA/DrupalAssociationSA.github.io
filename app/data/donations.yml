@@ -1,0 +1,157 @@
+---
+
+- date: 2014-11
+  donations:
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: R 500
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Renate Ehlers
+    link: https://www.drupal.org/user/2996509
+    description: JHB Catering
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+
+- date: 2014-10
+  donations:
+  - by: Adam Dunn
+    link: https://www.drupal.org/user/1761708
+    description: R 350
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: R 500
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: CT Catering
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Renate Ehlers
+    link: https://www.drupal.org/user/2996509
+    description: JHB Catering
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+
+- date: 2014-09
+  donations:
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: CT Catering
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+
+- date: 2014-08
+  donations:
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: CT Catering
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Speaker to CT
+
+- date: 2014-07
+  donations:
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+
+- date: 2014-06
+  donations:
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: R 500
+
+- date: 2014-05
+  donations:
+  - by: Robin Prieschl
+    link: https://www.drupal.org/user/139756
+    description: JHB to CT Trip
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB to CT Trip
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+
+- date: 2014-04
+  donations:
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+
+- date: 2014-03
+  donations:
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Lee Taylor
+    link: https://www.drupal.org/user/1047248
+    description: R 500
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: R 666 (Banking Fees)
+  - by: Lee Taylor
+    link: https://www.drupal.org/user/1047248
+    description: Annual Google Apps
+  - by: Adam Dunn
+    link: https://www.drupal.org/user/1761708
+    description: Annual Hosting

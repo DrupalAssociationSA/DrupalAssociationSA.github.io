@@ -1,286 +1,285 @@
 'use strict';
+/******************************************************************************/
+/*       ______                                                               */
+/*      //   ) )                                                              */
+/*     //___/ /            __    __  ___  __      ___       __     ( )        */
+/*    / __  (   //   / / //  ) )  / /   //  ) ) //   ) ) //   ) ) / / \\ / /  */
+/*   //    ) ) //   / / //       / /   //      //   / / //   / / / /   \/ /   */
+/*  //____/ / ((___( ( //       / /   //      ((___/ / //   / / / /    / /\   */
+/*                                                                            */
+/******************************************************************************/
 
-/*******************************************************************************
-* Required & Variables
-*******************************************************************************/
+  /*----- Load Gulp, Plugins and Requirements --------------------------------*/
 
-	var gulp        = require('gulp');
-	var config      = require('./config.json');
+    var gulp = require('gulp-help')(require('gulp'), { description: false });
+    var $ = require('gulp-load-plugins')();
 
-	var browserSync = require('browser-sync');
-	var del         = require('del');
-	var exec        = require('child_process').exec;
-	var stylish     = require('jshint-stylish');
-	var mkdirp      = require('mkdirp');
+    var gitHub = require('./github.conf.json');
 
-	var compass     = require('gulp-compass');
-	var concat      = require('gulp-concat');
-	var eslint      = require('gulp-eslint');
-	var deploy      = require("gulp-gh-pages");
-	var gulpif      = require('gulp-if');
-	var ignore      = require('gulp-ignore');
-	var imagemin    = require('gulp-imagemin');
-	var jshint      = require('gulp-jshint');
-	var minifyCSS   = require('gulp-minify-css');
-	var rename      = require('gulp-rename');
-	var uglify      = require('gulp-uglify');
+    var browserSync = require('browser-sync');
+    var cp = require('child_process');
+    var del = require('del');
+    var exec = require('child_process').exec;
+    var mainBowerFiles = require('main-bower-files');
 
-	var build       = { 'intent': 'serve', 'to': 'serve' };
+  /*----- Variables ----------------------------------------------------------*/
 
-	var messages    = {
-		buildCss:    '<span style="color: grey;">Building</span> CSS...',
-		buildJs:     '<span style="color: grey;">Building</span> JS...',
-		buildImages: '<span style="color: grey;">Building</span> Images...',
-		buildFonts:  '<span style="color: grey;">Building</span> Fonts...',
-		builJekyll:  '<span style="color: grey;">Building</span> Jekyll...',
-		errCompass:  '<span style="color: red; ">Error</span> in Compass.',
-		lintJs:      '<span style="color: grey;">Linting</span> JS...'
-	};
+    var intent = 'serve';
+    var messages = {
+      buildCss: '<span style="color: grey;">Building</span> CSS...',
+      buildJs: '<span style="color: grey;">Building</span> JS...',
+      buildImages: '<span style="color: grey;">Building</span> Images...',
+      buildFonts: '<span style="color: grey;">Building</span> Fonts...',
+      buildHtml: '<span style="color: grey;">Building</span> HTML...',
+      builJekyll: '<span style="color: grey;">Building</span> Jekyll...',
+      errCompass: '<span style="color: red; ">Error</span> in Compass.',
+      lintJs: '<span style="color: grey;">Linting</span> JS...'
+    };
 
-/*******************************************************************************
-* Tasks: Clean Assets
-*******************************************************************************/
+/*----------------------------------------------------------------------------*/
+/* Tasks: Clean and Lint                                                      */
+/*----------------------------------------------------------------------------*/
 
-	/**
-	 * Task cleanCss
-	 */
-	gulp.task('cleanCss', function (cb) {
-		del([build.to + '/css'], cb);
-	});
+  /*----- Task clean ---------------------------------------------------------*/
 
-	/**
-	 * Task cleanJs
-	 */
-	gulp.task('cleanJs', function (cb) {
-		del([build.to + '/js'], cb);
-	});
+    gulp.task('clean', false, function (cb) {
+      del(['deploy', 'serve', '.tmp'], cb);
+    });
 
-	/**
-	 * Task: cleanImages
-	 */
-	gulp.task('cleanImages', function (cb) {
-		del([build.to + '/img'], cb);
-	});
+  /*----- Task lintScripts ---------------------------------------------------*/
 
-	/**
-	 * Task: cleanFonts
-	 */
-	gulp.task('cleanFonts', function (cb) {
-		del([build.to + '/fonts'], cb);
-	});
+    gulp.task('lintScripts', false, function() {
+      browserSync.notify(messages.lintJs);
+      gulp.src('app/scripts/**/*.js')
+        .pipe($.eslint('.eslintrc'))
+        .pipe($.eslint.format());
+    });
 
-/*******************************************************************************
-* Tasks: Linting
-*******************************************************************************/
+  /*----- Task lintGulpfile --------------------------------------------------*/
 
-	/**
-	 * Task: lintJs
-	 */
-	// gulp.task('lintJs', function() {
-	// 	browserSync.notify(messages.lintJs);
-	// 	return gulp.src('jekyll/js/**/*.js')
-	// 		.pipe(jshint())
-	// 		.pipe(jshint.reporter('jshint-stylish', { verbose: true }));
-	// });
-	gulp.task('lintJs', function() {
-		browserSync.notify(messages.lintJs);
-		gulp.src('jekyll/js/**/*.js')
-			.pipe(eslint())
-			.pipe(eslint.format());
-	});
+    gulp.task('lintGulpfile', false, function() {
+      browserSync.notify(messages.lintJs);
+      gulp.src('gulpfile.js')
+        .pipe($.eslint('.eslintrc_node'))
+        .pipe($.eslint.format());
+    });
 
-/*******************************************************************************
-* Tasks: Build Assets
-*******************************************************************************/
+/*----------------------------------------------------------------------------*/
+/* Tasks: Build Assets                                                        */
+/*----------------------------------------------------------------------------*/
 
-	/**
-	 * Task: buildCss (Compass Sass)
-	 */
-	gulp.task('buildCss', ['cleanCss'], function () {
-		browserSync.notify(messages.buildCss);
-		var stream = gulp.src('jekyll/_sass/**/*.scss')
-			.pipe(compass({
-				css:           'jekyll/css',
-				sass:          'jekyll/_sass',
-				image:         'jekyll/img',
-				line_comments: (build.intent == 'serve'),
-				debug:         (build.intent == 'serve'),
-				require:       ['breakpoint', 'susy']
-			}))
-      .on('error', function(err) {
-        console.log(err.toString());
-        browserSync.notify(messages.errCompass, 5000);
-      })
-			.pipe(gulpif(build.intent == 'deploy', minifyCSS({
-				keepSpecialComments: 0
-			})))
-			.pipe(gulp.dest(build.to + '/css'))
-			.pipe(browserSync.reload({ stream: true }));
-		return stream;
-	});
+  /*----- Task buildStyles (libSass) -----------------------------------------*/
 
-	/**
-	 * Task: buildJs
-	 */
-	gulp.task('buildJs', ['cleanJs', 'lintJs'], function() {
-		browserSync.notify(messages.buildJs);
-		var stream = gulp.src('jekyll/js/**/*.js')
-			.pipe(concat('build.js'))
-			.pipe(gulpif(build.intent == 'deploy', uglify()))
-			.pipe(gulp.dest(build.to + '/js'))
-			.pipe(browserSync.reload({ stream: true, once: true }));
-		return stream;
-	});
+    gulp.task('buildStyles', false, function () {
 
-	/**
-	 * Task: buildImages
-	 */
-	gulp.task('buildImages', function () {
-		browserSync.notify(messages.buildImages);
-		return gulp.src('jekyll/img/**/*')
-			.pipe(imagemin())
-			.pipe(gulp.dest(build.to + '/img'));
-	});
+      browserSync.notify(messages.buildCss);
 
-	/**
-	 * Task: buildFonts (copy only right now)
-	 */
-	gulp.task('buildFonts', function () {
-		browserSync.notify(messages.buildFonts);
-		var stream = gulp.src('jekyll/fonts/**/*')
-			.pipe(gulp.dest(build.to + '/fonts'));
-		browserSync.reload();
-		return stream;
-	});
+      return gulp.src('app/styles/**/*.scss')
+        .pipe($.sass({
+          style: 'expanded',
+          precision: 10,
+          errLogToConsole: false,
+          onError: function(err) {
+            console.log(err);
+            browserSync.notify(err, 5000);
+          }
+        }))
+        // .on('error', function(err) {
+        //   console.log(err.message);
+        //   browserSync.notify(err.message, 5000);
+        // })
+        .pipe($.sourcemaps.write())
+        .pipe($.autoprefixer())
+        .pipe($.if(intent === 'deploy', $.minifyCss({
+          keepSpecialComments: 0
+        })))
+        .on('error', function(err) {
+          console.log(err.message);
+          browserSync.notify(err.message, 5000);
+        })
+        .pipe(gulp.dest(intent + '/styles'))
+        .pipe(browserSync.reload({ stream: true }));
 
-	/**
-	 * Task: buildAssets
-	 */
-	gulp.task('buildAssets', [
-		'buildCss',
-		'buildJs',
-		'buildImages',
-		'buildFonts'
-	], function (cb) {
-		cb();
-	});
+    });
 
-/*******************************************************************************
-* Tasks: Build Jekyll and Browser-Sync
-*******************************************************************************/
+  /*----- Task buildScripts --------------------------------------------------*/
 
-	/**
-	 * Task: buildJekyll
-	 */
-	gulp.task('buildJekyll', function (cb) {
-		browserSync.notify(messages.buildJekyll);
-		exec('jekyll build --config _config.yml,_config_' + build.intent + '.yml', function () {
-			cb();
-		});
-	});
+    gulp.task('buildScripts', false, ['lintScripts', 'lintGulpfile'], function() {
+      browserSync.notify(messages.buildJs);
+      return gulp.src('app/scripts/**/*.js')
+        .pipe($.concat('main.js'))
+        .pipe($.if(intent === 'deploy', $.uglify()))
+        .pipe(gulp.dest('.tmp/scripts'))
+        .pipe(gulp.dest(intent + '/scripts'))
+        .pipe(browserSync.reload({ stream: true }));
+    });
 
-	/**
-	 * Task: buildAll
-	 */
-	gulp.task('buildAll', ['buildJekyll', 'buildAssets'], function (cb) {
-		cb();
-	});
+  /*----- Task buildImages ---------------------------------------------------*/
 
-	/**
-	 * Task: rebuildJekyll (and queue reload)
-	 */
-	gulp.task('rebuildJekyll', ['buildAll'], function () {
-		browserSync.reload();
-	});
+    gulp.task('buildImages', false, function () {
+      browserSync.notify(messages.buildImages);
+      return gulp.src('app/images/**/*')
+        .pipe($.imagemin())
+        .pipe(gulp.dest(intent + '/images'))
+        .pipe(browserSync.reload({ stream: true }));
+    });
 
-	/**
-	 * Task borwserSync
-	 */
-	gulp.task('browserSync', ['buildAll'], function() {
-		browserSync({
-			server: {
-				baseDir: build.to
-			}
-		});
-	});
+  /*----- Task buildFonts ----------------------------------------------------*/
 
-/*******************************************************************************
-* Tasks: Watch
-*******************************************************************************/
+    gulp.task('buildFonts', false, function () {
+      browserSync.notify(messages.buildFonts);
+      return gulp.src(mainBowerFiles())
+        .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
+        .pipe($.flatten())
+        .pipe(gulp.dest(intent + '/fonts'))
+        .pipe(browserSync.reload({ stream: true }));
+    });
 
-	/**
-	 * Task: watch
-	 */
-	gulp.task('watch', function() {
+  /*----- Task buildAssets ---------------------------------------------------*/
 
-		// Compass Sass files:
-		gulp.watch('jekyll/_sass/**/*.scss', ['buildCss']);
+    gulp.task('buildAssets', false, [
+      'buildStyles',
+      'buildScripts',
+      'buildImages',
+      'buildFonts'
+    ], function (cb) {
+      cb();
+    });
 
-		// JS files:
-		gulp.watch('jekyll/js/*.js', ['buildJs']);
+  /*----- Task buildJekyll ---------------------------------------------------*/
 
-		// Jekyll files:
-		gulp.watch([
-			'jekyll/*.html',
-			'jekyll/_layouts/*.html',
-			'_config.yml',
-			'_config_' + build.intent + '.yml'
-		], ['buildAll']);
+    gulp.task('buildJekyll', false, function (cb) {
+      browserSync.notify(messages.buildJekyll);
+      exec('bundle exec jekyll build --config jekyll.conf.yml,jekyll.conf.' + intent + '.yml', function (error, stdout, stderr) {
+        if (error !== null) {
+          console.log('stderr: ' + stderr + '\n' + 'stdout: ' + stdout);
+          browserSync.notify('stderr: ' + stderr, 5000);
+        }
+        cb();
+      });
+    });
 
-		// Images
-		gulp.watch('jekyll/img/**/*.+(png|jpeg|jpg|gif|svg)', ['buildImages'], function () {
-			browserSync.reload();
-		});
+  /*----- Task buildHtml -----------------------------------------------------*/
 
-		// Fonts
-		gulp.watch('jekyll/fonts/**/*', ['buildFonts']);
+    gulp.task('buildHtml', false, ['buildAssets', 'buildJekyll'], function (cb) {
+      browserSync.notify(messages.buildHtml);
+      var assets = $.useref.assets({ searchPath: ['.tmp', 'app'] });
+      var cssFilter = $.filter('**/*.css');
+      var htmlFilter = $.filter('**/*.html');
+      var jsFilter = $.filter('**/*.js');
+      gulp.src('.tmp/jekyll/*.html')
+        .pipe(assets)
+          .pipe(jsFilter)
+            .pipe($.if(intent === 'deploy', $.uglify()))
+          .pipe(jsFilter.restore())
+          .pipe(cssFilter)
+            .pipe($.if(intent === 'deploy', $.minifyCss({
+              keepSpecialComments: 0
+            })))
+          .pipe(cssFilter.restore())
+        .pipe(assets.restore())
+        .pipe($.useref())
+        .pipe(htmlFilter)
+          .pipe($.if(intent === 'deploy', $.minifyHtml()))
+        .pipe(htmlFilter.restore())
+        .pipe(gulp.dest(intent))
+        .pipe(browserSync.reload({ stream: true, once: true }));
+      cb();
+    });
 
-	});
+  /*----- Task buildExtras ---------------------------------------------------*/
+
+    gulp.task('buildExtras', false, ['buildHtml'], function (cb) {
+      return gulp.src(['.tmp/jekyll/**/*', '!.tmp/jekyll/**/*.html'], { dot: true })
+        .pipe(gulp.dest(intent));
+    });
+
+  /*----- Task buildAll ------------------------------------------------------*/
+
+    gulp.task('buildAll', false, ['buildExtras'], function (cb) {
+      browserSync.reload({ once: true });
+      cb();
+    });
+
+/*----------------------------------------------------------------------------*/
+/* Tasks: Browser-Sync and Watch                                              */
+/*----------------------------------------------------------------------------*/
+
+  /*----- Task borwserSync ---------------------------------------------------*/
+
+    gulp.task('browserSync', false, ['buildAll'], function() {
+      browserSync({
+        server: {
+          baseDir: intent
+        }
+      });
+    });
+
+  /*----- Task watch ---------------------------------------------------------*/
+
+    gulp.task('watch', false, function() {
+
+      // Sass files:
+      gulp.watch('app/styles/**/*.scss', ['buildStyles']);
+
+      // JS files:
+      gulp.watch('app/scripts/**/*.js', ['buildScripts']);
+
+      // Jekyll files:
+      gulp.watch([
+        'app/*.html',
+        'app/data/*',
+        'app/includes/*.html',
+        'app/layouts/*.html'
+      ], ['buildAll']);
+
+      // Images
+      gulp.watch('app/images/**/*.+(png|jpeg|jpg|gif|svg)', ['buildImages']);
+
+      // Fonts:
+      gulp.watch('app/bower_components/**/*.{eot,svg,ttf,woff}', ['buildFonts']);
+
+    });
 
 /*******************************************************************************
 * Tasks: Deploy
 *******************************************************************************/
 
-	/**
-	 * Task: deploy
-	 */
-	gulp.task('deployToGitHub', ['buildAll'], function () {
-		var options = {
-			remoteURL: config.github.remote,
-			branch:    'master'
-		};
-		gulp.src("./" + build.to + "/**/*").pipe(deploy(options));
-	});
+  /*----- Task deploy --------------------------------------------------------*/
 
-/*******************************************************************************
-* Tasks: setVariables
-*******************************************************************************/
+    gulp.task('deployToGitHub', ['buildAll'], function () {
+      var options = {
+        remote: gitHub.remote,
+        branch: gitHub.branch,
+        cacheDir: '.deploy-cache'
+      };
+      gulp.src(intent + '/**/*').pipe($.ghPages(options));
+    });
 
-	/**
-	 * setServe (compileTo = 'serve')
-	 */
-	gulp.task('setServe', function () {
-		build.intent = 'serve';
-		build.to     = build.intent;
-		return;
-	});
+/*----------------------------------------------------------------------------*/
+/* Execution                                                                  */
+/*----------------------------------------------------------------------------*/
 
-	/**
-	 * setDeploy (compileTo = 'deploy')
-	 */
-	gulp.task('setDeploy', function () {
-		build.intent = 'deploy';
-		build.to     = build.intent + config.github.path;
-		return;
-	});
+  /*----- runModes -----------------------------------------------------------*/
 
-/*******************************************************************************
-* Command-line aggregate tasks.
-*******************************************************************************/
+    gulp.task('runDeploy', false, ['deployToGitHub']);
+    gulp.task('runServe',  false, ['browserSync', 'watch']);
 
-	gulp.task('serve',   ['setServe',  'browserSync', 'watch']);
-	gulp.task('deploy',  ['setDeploy', 'deployToGitHub']);
+  /*----- Command line Tasks -------------------------------------------------*/
 
-	gulp.task('default', ['serve']);
+    //gulp.task('deploy', 'Deploy the site to GitHub.', ['clean'], function () {
+    gulp.task('deploy', 'Deploy the site to GitHub.', function () {
+      intent = 'deploy';
+      gulp.start('runDeploy');
+    }, {
+      aliases: ['d']
+    });
 
-/******************************************************************************/
+    gulp.task('serve', 'Serve the site for local development.', ['clean'], function () {
+      intent = 'serve';
+      gulp.start('runServe');
+    }, {
+      aliases: ['s']
+    });
+
+/*----------------------------------------------------------------------------*/

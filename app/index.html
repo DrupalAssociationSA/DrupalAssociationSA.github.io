@@ -1,0 +1,72 @@
+---
+title: 'Home Page'
+description: About DASA (Drupal Association South Africa) and our Community.
+---
+
+<article class="about clearfix">
+  <h1 id="page-title" class="hidden">About {{ site.name.long }}</h1>
+  <div class="row">
+    <div class="col-md-3">
+      <section class=" panel panel-default panel-community">
+        <header class="panel-heading"><h2>Community</h2></header>
+        <div class="panel-body">
+          <p>
+            Drupal Association South Africa (DASA) is a non-profit organisation
+            established for the public benefit objective to foster and support the
+            Drupal project, the community and its growth in South Africa.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-3">
+      <section class="panel panel-default panel-mission">
+        <header class="panel-heading"><h2>Mission</h2></header>
+        <div class="panel-body">
+          <p>
+            DASA is committed to the Drupal Software Project in South Africa,
+            developing an open, transparent and voluntary campaign to promote crusade,
+            support and nurture the local Drupal Community.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <section class="panel panel-default panel-vision">
+        <header class="panel-heading"><h2>Vision</h2></header>
+        <div class="panel-body">
+          <p>
+            Within the next five years, DASA will maintain and support vigorous and
+            growing Drupal Communities in the major centres. DASA will have developed
+            and cultivated a desire within Business, Government and Institutions of
+            Learning for knowledge of the superior functionality and security features
+            in Drupal. Five years thereafter, DASA will host the first DrupalCon on
+            the African continent.
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</article>
+
+<article class="meetups clearfix">
+  <h1>Drupal User Group Meetups</h1>
+  {% for meetup in site.data.meetups %}
+    {% cycle 'meetups_row_open': '<div class="row">', '', '', '' %}
+    <div class="col-md-3">
+      <section class="panel panel-default">
+        <header class="panel-heading">
+          <h2><a href="http://www.meetup.com/{{ meetup.id }}" title="{{ meetup.title }}" rel="nofollow">{{ meetup.title }}</a></h2>
+        </header>
+        <div class="panel-body">
+          {% if meetup.image %}
+            <div class="thumbnail" style="width: {{ meetup.imagew }}">
+              <img src="../images/{{ meetup.image }}" alt="{{ meetup.title }} Logo" />
+            </div>
+          {% endif %}
+          <p>{{ meetup.description }}</p>
+        </div>
+      </section>
+    </div>
+    {% cycle 'meetups_row_close': '', '', '', '</div>' %}
+  {% endfor %}
+</article>

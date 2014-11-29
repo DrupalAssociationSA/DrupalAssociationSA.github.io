@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/" title="{{ site.name.combined }}">
+        <img src="../images/logo/dasa-logo-stamp.svg" alt="{{ site.name.short }} Home" width="40" />
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li{% if page.title == "Home Page" %} class="active"{% endif %}>
+          <a href="{{ site.baseurl }}/" title="Home Page - {{ site.name.combined }}">Home</a>
+        </li>
+
+        <li{% if page.title == "Resources" %} class="active"{% endif %}>
+          <a href="{{ site.baseurl }}/resources.html" title="Resources - {{ site.name.combined }}">Resources</a>
+        </li>
+
+        <li{% if page.title == "Membership" %} class="active"{% endif %}>
+          <a href="{{ site.baseurl }}/membership.html" title="Membership - {{ site.name.combined }}">Membership</a>
+        </li>
+
+        <li{% if page.title == "History" %} class="active"{% endif %}>
+          <a href="{{ site.baseurl }}/history.html" title="History - {{ site.name.combined }}">History</a>
+        </li>
+
+        <li{% if page.title == "Contact Us" %} class="active"{% endif %}>
+          <a class="dropdown-toggle" href="{{ site.baseurl }}/contact-us.html" title="Contact the {{ site.name.combined }}">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
