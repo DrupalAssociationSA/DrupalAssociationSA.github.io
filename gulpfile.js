@@ -267,7 +267,8 @@
 
   /*----- Command line Tasks -------------------------------------------------*/
 
-    gulp.task('deploy', 'Deploy the site to GitHub.', ['clean'], function () {
+    //gulp.task('deploy', 'Deploy the site to GitHub.', ['clean'], function () {
+    gulp.task('deploy', 'Deploy the site to GitHub.', function () {
       intent = 'deploy';
       gulp.start('runDeploy');
     }, {
