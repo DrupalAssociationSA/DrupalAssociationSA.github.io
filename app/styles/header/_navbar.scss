@@ -1,0 +1,51 @@
+/******************************************************************************/
+/*   ____    _    ____    _                                                   */
+/*  |  _ \  / \  / ___|  / \                                                  */
+/*  | | | |/ _ \ \___ \ / _ \                                                 */
+/*  | |_| / ___ \ ___) / ___ \                                                */
+/*  |____/_/   \_\____/_/   \_\   Drupal Association South Africa             */
+/*                                                                            */
+/******************************************************************************/
+
+/*----- Styles ---------------------------------------------------------------*/
+
+  .navbar {
+    margin: 0 -15px;
+    border-radius: 0;
+    border: 1px solid$cGrey;
+    border-width: 1px 0;
+    background: white;
+    .container-fluid {
+      padding: 0 30px;
+    }
+    .navbar-brand {
+      padding-top: 7px;
+    }
+    .navbar-nav {
+      li {
+        a {
+          margin: 12px 8px 0 8px;
+          padding: 2px 8px;
+          line-height: 22px;
+          background: white;
+          border-bottom: 2px solid white;
+          transition: border-color 0.7s;
+        }
+      }
+      li.active a, li a:hover {
+        background: white;
+        border-bottom: 2px solid $cGreen;
+      }
+    }
+    .navbar-toggle {
+      border-color: $cBlueDark;
+      .icon-bar {
+        background-color: $cBlueDark;
+      }
+    }
+    .navbar-toggle:hover, .navbar-toggle:focus {
+      background: darken(white, 2%);
+    }
+  }
+
+/******************************************************************************/

@@ -1,0 +1,65 @@
+---
+
+#------------------------------------------------------------------------------#
+
+- name: Gold Agency Members
+  type: gold
+  members:
+
+#------------------------------------------------------------------------------#
+
+- name: Silver Agency Members
+  type: silver
+  members:
+
+#------------------------------------------------------------------------------#
+
+- name: Bronze Agency Members
+  type: bronze
+  members:
+
+  - name: Burtronix
+    link:
+    # link: https://www.drupal.org/profile/profile_current_company_organization/Burtronix
+    from: 2014-06
+    to: 2015-05
+
+#------------------------------------------------------------------------------#
+
+- name: Individual Members
+  type: individual
+  members:
+
+  - name: Clinton Lee Taylor
+    link: https://www.drupal.org/user/1047248
+    from: 2014-10
+    to: 2015-09
+
+  - name: Adam Dunn
+    link: https://www.drupal.org/user/1761708
+    from: 2014-10
+    to: 2015-09
+
+  - name: Johan du Bois
+    link: https://www.drupal.org/user/107632
+    from: 2014-10
+    to: 2015-09
+
+  - name: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    from: 2014-06
+    to: 2015-05
+
+#------------------------------------------------------------------------------#
+
+- name: Diamond Site Owners
+  type: diamond
+  members:
+
+#------------------------------------------------------------------------------#
+
+- name: Graphite Site Owners
+  type: graphite
+  members:
+
+#------------------------------------------------------------------------------#

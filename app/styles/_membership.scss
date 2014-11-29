@@ -1,0 +1,43 @@
+/******************************************************************************/
+/*   ____    _    ____    _                                                   */
+/*  |  _ \  / \  / ___|  / \                                                  */
+/*  | | | |/ _ \ \___ \ / _ \                                                 */
+/*  | |_| / ___ \ ___) / ___ \                                                */
+/*  |____/_/   \_\____/_/   \_\   Drupal Association South Africa             */
+/*                                                                            */
+/******************************************************************************/
+
+/*----- Variables ------------------------------------------------------------*/
+
+    $cGold:       #C98910;
+    $cSilver:     #A5A5A5;
+    $cBronze:     #965A38;
+    $cIndividual: $cBlueDark;
+    $cDiamond:    $cBlueLight;
+    $cGraphite:   lighten(black, 50%);
+
+/*----- Membership -----------------------------------------------------------*/
+
+  body#membership {
+    section.panel-gold       .panel-heading { border-color: $cGold;       }
+    section.panel-silver     .panel-heading { border-color: $cSilver;     }
+    section.panel-bronze     .panel-heading { border-color: $cBronze;     }
+    section.panel-individual .panel-heading { border-color: $cIndividual; }
+    section.panel-diamond    .panel-heading { border-color: $cDiamond;    }
+    section.panel-graphite   .panel-heading { border-color: $cGraphite;   }
+  }
+
+  article.donations {
+    h2 {
+      color: $cGrey;
+      border-bottom: 2px solid $cGrey;
+      font-size: 25px;
+      padding: 5px 10px;
+      text-align: center;
+    }
+    @media(min-width: $screen-sm-min) {
+      h2 { text-align: left; }
+    }
+  }
+
+/******************************************************************************/

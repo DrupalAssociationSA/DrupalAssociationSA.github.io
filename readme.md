@@ -1,58 +1,70 @@
-# DrupalAssociationSA.github.io
+# This Website
 
-The Drupal Association South Africa (DASA) website.
+This website is built with [Jekyll](http://jekyllrb.com) and intended to be
+publicly hosted with GitHub Pages. Everyone can contribute to it.
 
-The dasa.org.za site is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://dasa.org.za>. The site may also be run locally.
+## Requirements
 
-## Contribute
-
-Help build and contribute to the DASA website.
-
-### Requirements
-
-* node.js
+* node.js with gulp
 * Ruby
 
-### Prepare
+## Prepare
 
 * Fork this repo.
 * Clone your fork to your local development desktop.
 * Run:
-  * ```bundle install```
-  * ```npm install```
-  * ```bower install```
+  * ```bundle install``` to install required Ruby gems.
+  * ```npm install``` to install required Node.js modules.
+  * ```bower install``` to install required JS (and other) libraries.
+* Update ```github.conf.json```.
+* Update ```jekyll.conf.yml```.
+* If you're not hosting for a domain and the site will be served in a sub-folder
+  then edit ```jekyll.conf.deploy.yml``` to reflect the path it will be hosted
+  in.
 
-### Use
+### Update ```package.json```
 
-To serve a local copy of the site with BrowserSync while developing, from the root ```/DrupalAssociationSA.github.io``` run ```gulp```
+Before starting a new project, update the information in ```package.json```.
+You can update the required packages' versions with:
 
-### Commit Message Format
-Commit messages should have the following a **type**, a **scope** and a **subject**:
+* If you don't have it yet: ```npm install -g npm-check-updates```.
+* ```npm-check-updates -u```
 
-```
-<type>(<scope>): <subject>
-```
+## Development
 
-Any line of the commit message cannot be longer 100 characters! This allows the message to be easier
-to read on github as well as in various git tools.
+To serve a local copy of the site with BrowserSync while developing, from the
+root ```/DrupalAssociationSA.github.io``` run ```gulp```
 
-### Commit Message Type
-Must be one of the following:
+Any line of the commit message cannot be longer 100 characters! This allows the
+message to be easier to read on github as well as in various git tools.
 
-* **feat**: A new feature
-* **fix**: A bug fix
-* **docs**: Documentation only changes
-* **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing
-  semi-colons, etc)
-* **refactor**: A code change that neither fixes a bug or adds a feature
-* **perf**: A code change that improves performance
-* **test**: Adding missing tests
-* **chore**: Changes to the build process or auxiliary tools and libraries such as documentation
-  generation
+## Files
 
-### Windows
-
-**Windows users:** run `chcp 65001` first to change the command prompt's character encoding ([code page](http://en.wikipedia.org/wiki/Windows_code_page)) to UTF-8 so Jekyll runs without errors.
-
-
-
+* **```app```**
+  The Jekyll website source files. This is where site development happens.
+* ```bower.json``` and ```.bowerrc```
+  Bower configuration and site asset requirements like JS and front-end
+  frameworks.
+* ```CNAME```
+  (optional) domain you will point to GitHub for hosting the site.
+* ```Gemfile[.lock]```
+  Ruby gem requirements installed with ```bundle install```.
+* ```github.conf.json```
+  Configuration file used by Gulp setup to deploy to GitHub pages.
+* ```gulpfile.js```
+  Gulp tasks.
+* ```jekyll.conf.yml``` and ```jekyll.conf.*.yml```
+  Jekyll configuration files.
+* ```package.json```
+  Node Package Manager project metadata and Node Packaged Modules requirements
+  installed with ```npm install```.
+* ```readme.md```
+  This file you're reading now.
+* ```serve```
+  Where the locally served site is built to.
+* ```.git```, ```.gitattributes``` and ```.gitattributes```
+  Git related configuration and local repository.
+* ```.sass-cache```
+  Sass cache.
+* ```.tmp```
+  Intermediate build steps' assets.

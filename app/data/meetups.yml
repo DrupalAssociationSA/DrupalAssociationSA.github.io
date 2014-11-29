@@ -1,0 +1,55 @@
+---
+
+- title:  Cape Town Meetup
+  id:     Drupal-Cape-Town
+  image:  meetups/dasa-ct-logo.svg
+  imagew: 60%
+  widget: 2mWYVH
+  description: >
+    Cape Town Drupal user group meet-up. Every forth Wednesday of the month.
+    Please sign up using meetup.com so that we know for how many people we
+    should prepare.
+
+- title:  Pretoria Meetup (upcoming)
+  id:
+  widget:
+  description: >
+    Pretoria Drupal user group meet-up. Day of the week to be decided, starting
+    soon in 2015.
+
+- title:  Durban Meetup (upcoming)
+  id:     Drupal-Durban
+  image:  meetups/dasa-dbn-logo.svg
+  imagew: 60%
+  widget: 2sMX6v
+  description: >
+    Durban Drupal user group meet-up. Every second Wednesday of the month
+    starting soon in 2015. Please sign up using meetup.com so that we know
+    for how many people we should prepare.
+
+- title:  Johannesburg Meetup
+  id:     Drupal-Johannesburg
+  image:  meetups/dasa-jhb-logo.svg
+  imagew: 60%
+  widget: 2mWZWb
+  description: >
+    Johannesburg Drupal user group meet-up. Every first Wednesday of the month.
+    Please sign up using meetup.com so that we know for how many people we
+    should prepare.
+
+- title:  DASA Meeting
+  id:     drupal-association-south-africa
+  image:  logo/dasa-logo-short.png
+  imagew: 95%
+  widget: 2mX036
+  description: >
+    The Drupal Association South Africa meeting takes place on the third
+    Wednesday of each month. If you want to volunteer some of your time or ideas
+    for nurturing the South African Drupal community, this is the one to attend.
+
+- title:  Windhoek Meetup (upcoming)
+  id:
+  widget:
+  description: >
+    Windhoek Drupal user group meet-up. Day of the week to be decided, starting
+    soon in 2015.

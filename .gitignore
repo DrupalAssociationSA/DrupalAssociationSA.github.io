@@ -1,14 +1,15 @@
-# Ignore some hidden folders
-# This takes care of .tmp, .sass-cache, and many others
-.sass-cache
+################################################################################
+#        ______                                                                #
+#       //   ) )                                                               #
+#      //___/ /            __    __  ___  __      ___       __     ( )         #
+#     / __  (   //   / / //  ) )  / /   //  ) ) //   ) ) //   ) ) / / \\ / /   #
+#    //    ) ) //   / / //       / /   //      //   / / //   / / / /   \/ /    #
+#   //____/ / ((___( ( //       / /   //      ((___/ / //   / / / /    / /\    #
+#                                                                              #
+################################################################################
 
-# Ignore OS generated files
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
+##### Always Ignore ############################################################
 
-# Always-ignore files and folders
 *.diff
 *.err
 *.log
@@ -20,7 +21,15 @@ Thumbs.db
 ._*
 *~
 
-# Ignore packages
+##### OS Generated #############################################################
+
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+##### Archives and Packages ####################################################
+
 *.7z
 *.dmg
 *.gz
@@ -30,9 +39,13 @@ Thumbs.db
 *.tar
 *.zip
 
-# Ignore for projects
+##### Project ##################################################################
+
 app/_bower_components
-serve
 deploy
 node_modules
+serve
+.sass-cache
 .tmp
+
+################################################################################

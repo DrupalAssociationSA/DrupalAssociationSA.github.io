@@ -1,0 +1,71 @@
+/******************************************************************************/
+/*   ____    _    ____    _                                                   */
+/*  |  _ \  / \  / ___|  / \                                                  */
+/*  | | | |/ _ \ \___ \ / _ \                                                 */
+/*  | |_| / ___ \ ___) / ___ \                                                */
+/*  |____/_/   \_\____/_/   \_\   Drupal Association South Africa             */
+/*                                                                            */
+/******************************************************************************/
+
+/*----- Colours (based on Logo) ----------------------------------------------*/
+
+  $cBlack:                        #2D292A;
+  $cGreen:                        #118D45;
+  $cRed:                          #E51E26;
+  $cYellow:                       #F3C016;
+  $cBlueLight:                    #0878BE;
+  $cBlueDark:                     #0D5B90;
+  $cGrey:                         #BFBFC8;
+
+/*----- Bootstrap Variables --------------------------------------------------*/
+
+  @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+  @import "bootstrap/variables";
+
+/*----- Bower Bootstrap ------------------------------------------------------*/
+
+  $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+  @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+
+/*----- Overall --------------------------------------------------------------*/
+
+  html.css-loaded body { transition: padding 0.7s; }
+  @media(max-width: $screen-xs-max) {
+    body { padding: 0; }
+  }
+  @media(min-width: $screen-tablet) {
+    body { padding: 25px 50px; }
+  }
+
+  #page-container {
+    border-radius:  0;
+    border:         none;
+    border-top:     3px solid $cRed;
+    border-bottom:  3px solid $cYellow;
+    background:     white;
+  }
+
+  .page-header {
+    border: none;
+  }
+
+  h1 {
+    border-bottom: 2px solid $cBlack;
+    font-size: 30px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  @media(min-width: $screen-sm-min) {
+    h1 { text-align: left; }
+  }
+
+  a { transition: color 0.7s; }
+
+/*----- Imports --------------------------------------------------------------*/
+
+  @import "bootstrap/styles";
+  @import "header/header";
+  @import "front_page";
+  @import "membership";
+
+/******************************************************************************/
