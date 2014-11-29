@@ -190,7 +190,7 @@
   /*----- Task buildExtras ---------------------------------------------------*/
 
     gulp.task('buildExtras', false, ['buildHtml'], function (cb) {
-      return gulp.src(['.tmp/jekyll/*.*', '!.tmp/jekyll/*.html'], { dot: true })
+      return gulp.src(['.tmp/jekyll/**/*', '!.tmp/jekyll/**/*.html'], { dot: true })
         .pipe(gulp.dest(intent));
     });
 
