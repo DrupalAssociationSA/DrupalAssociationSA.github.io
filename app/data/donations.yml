@@ -1,10 +1,121 @@
 ---
 
+- date: 2015-02
+  donations:
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: Individual Sponsor
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: Burtronix Gold Sponsor
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: Monetary Donation
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: CT Catering
+  - by: Willem van Straaten
+    link: https://groups.drupal.org/user/155
+    description: JHB Catering
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Speaker
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: D8 Launch Creative
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: DASA Creative
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Camp Creative
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: Memb Badges Creative
+
+- date: 2015-01
+  donations:
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: Monetary Donation
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: CT Catering
+  - by: Willem van Straaten
+    link: https://groups.drupal.org/user/155
+    description: JHB Catering
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Speaker
+  - by: Victor Künzig
+    link: https://www.drupal.org/user/1298054
+    description: CT Speaker
+  - by: Johan du Bois
+    link: https://www.drupal.org/user/107632
+    description: JHB Speaker
+
+- date: 2014-12
+  donations:
+  - by: Adam Dunn
+    link: https://www.drupal.org/user/1761708
+    description: Monetary Donation
+  - by: Johan du Bois
+    link: https://www.drupal.org/user/107632
+    description: Monetary Donation
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: Monetary Donation
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Venue
+  - by: Ivan Breet
+    link: https://www.drupal.org/user/830042
+    description: JHB Catering
+  - by: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
+
 - date: 2014-11
   donations:
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
-    description: R 500
+    description: Monetary Donation
   - by: Ivan Breet
     link: https://www.drupal.org/user/830042
     description: JHB Venue
@@ -17,21 +128,30 @@
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
 
 - date: 2014-10
   donations:
   - by: Adam Dunn
     link: https://www.drupal.org/user/1761708
-    description: R 350
+    description: Monetary Donation
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
-    description: R 500
+    description: Monetary Donation
   - by: Jason Lewis
     link: https://www.drupal.org/user/1938816
     description: CT Catering
   - by: Ivan Breet
     link: https://www.drupal.org/user/830042
     description: JHB Venue
+  - by: Willem van Straaten
+    link: https://groups.drupal.org/user/155
+    description: JHB Catering
   - by: Renate Ehlers
     link: https://www.drupal.org/user/2996509
     description: JHB Catering
@@ -41,6 +161,12 @@
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
 
 - date: 2014-09
   donations:
@@ -56,6 +182,12 @@
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
 
 - date: 2014-08
   donations:
@@ -74,6 +206,12 @@
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: JHB Speaker to CT
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
 
 - date: 2014-07
   donations:
@@ -86,6 +224,12 @@
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
 
 - date: 2014-06
   donations:
@@ -100,7 +244,13 @@
     description: JHB Catering
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
-    description: R 500
+    description: Monetary Donation
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
 
 - date: 2014-05
   donations:
@@ -119,6 +269,12 @@
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
 
 - date: 2014-04
   donations:
@@ -131,6 +287,12 @@
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: JHB Catering
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com
 
 - date: 2014-03
   donations:
@@ -139,7 +301,7 @@
     description: JHB Venue
   - by: Lee Taylor
     link: https://www.drupal.org/user/1047248
-    description: R 500
+    description: Monetary Donation
   - by: Ivan Breet
     link: https://www.drupal.org/user/830042
     description: JHB Catering
@@ -148,10 +310,16 @@
     description: JHB Catering
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
-    description: R 666 (Banking Fees)
+    description: Monetary Donation
   - by: Lee Taylor
     link: https://www.drupal.org/user/1047248
     description: Annual Google Apps
   - by: Adam Dunn
     link: https://www.drupal.org/user/1761708
     description: Annual Hosting
+  - by: SubOracle
+    link: https://groups.drupal.org/user/140
+    description: JHB Meetup.com
+  - by: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    description: JHB Meetup.com

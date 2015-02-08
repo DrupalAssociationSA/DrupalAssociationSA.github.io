@@ -32,6 +32,10 @@
           <a href="{{ site.baseurl }}/history.html" title="History - {{ site.name.combined }}">History</a>
         </li>
 
+        <li{% if page.title == "DrupalCamp Johannesburg" %} class="active"{% endif %}>
+          <a href="{{ site.baseurl }}/drupalcamp-johannesburg.html" title="DrupalCamp Johannesburg - {{ site.name.combined }}">DrupalCamp JHB</a>
+        </li>
+
         <li{% if page.title == "Contact Us" %} class="active"{% endif %}>
           <a class="dropdown-toggle" href="{{ site.baseurl }}/contact-us.html" title="Contact the {{ site.name.combined }}">Contact</a>
         </li>

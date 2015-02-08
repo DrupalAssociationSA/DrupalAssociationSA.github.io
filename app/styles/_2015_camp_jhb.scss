@@ -1,0 +1,234 @@
+/******************************************************************************/
+/*   ____    _    ____    _                                                   */
+/*  |  _ \  / \  / ___|  / \                                                  */
+/*  | | | |/ _ \ \___ \ / _ \                                                 */
+/*  | |_| / ___ \ ___) / ___ \                                                */
+/*  |____/_/   \_\____/_/   \_\   Drupal Association South Africa             */
+/*                                                                            */
+/******************************************************************************/
+
+/*----- Variables ------------------------------------------------------------*/
+
+  $logo_w:   503px;
+  $logo_h:   132px;
+  $cta_r:     10px;
+  $cta_t:      0.6s;
+
+/*----- Variables (Derived) --------------------------------------------------*/
+
+  $logo_r:   $logo_w / $logo_h;
+
+/*----- Styles ---------------------------------------------------------------*/
+
+  body#drupalcamp-johannesburg {
+
+    /*----- Logo ---------------------------------------------------------*/
+
+      .page-title-wrapper {
+        max-width: 600px;
+        margin: 2em auto;
+      }
+      #page-title {
+        @include text-hide;
+        background-image: url('../images/2015-camp-jhb/logo-wide.svg');
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-bottom: percentage(1 / $logo_r);
+        background-size: 100% 100% !important;
+      }
+
+    /*----- Where --------------------------------------------------------*/
+
+      .where {
+
+        address {
+          margin-bottom: 0.5em;
+        }
+
+        .auditorium {
+          width: 85%;
+          max-width: 250px;
+          margin-top: 1em;
+          img {
+            display: block;
+            width: 100%;
+            border-radius: 7px;
+          }
+        }
+
+      }
+
+    /*----- Sign-up ------------------------------------------------------*/
+
+      .cta, .cta-1, .cta-2 {
+        display: block;
+        padding: $cta_r;
+        transition: background-color $cta_t, border-color $cta_t, color $cta_t;
+      }
+      .cta {
+        margin: 1em 1em 1.5em 0;
+        background: #0077C0;
+        border: $cta_r solid #00598E;
+        border-radius: $cta_r * 5;
+      }
+      .cta-1 {
+        background: #FFCA05;
+        border: $cta_r solid #FFAA00;
+        border-radius: $cta_r * 3;
+      }
+      .cta-2 {
+        border-radius: $cta_r;
+        text-align: center;
+        line-height: 1em;
+        font-size: 1.3em;
+        font-weight: bold;
+        background: white;
+      }
+      a.cta, a.cta:active, a.cta:link {
+        color: #00598E;
+      }
+      a.cta:hover {
+        color: #0077C0;
+        border-color: white;
+        background-color: #FFCA05;
+        .cta-1 {
+          border-color: #0077C0;
+          background-color: #00598E;
+        }
+      }
+
+      @media(min-width: $screen-sm-min) and (max-width: 1176px) {
+        .short-hide {
+          display: none;
+        }
+      }
+
+    /*----- Become a Sponsor ---------------------------------------------*/
+
+      .become-a-sponsor {
+
+        .sponsor-us {
+
+          header {
+            overflow: auto;
+            zoom: 1;
+          }
+
+          h3 {
+            display: block;
+            padding: 3px 0 6px 0;
+            font-size: 1.2em;
+            border-bottom: 1px solid #bfbfc8;
+            text-indent: 0.5em;
+          }
+          h4 {
+            margin: 1.5em 0;
+          }
+
+          ul, li {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            clear: both;
+          }
+          ul {
+            margin: 1em 0;
+          }
+          li {
+            margin: 0.5em;
+          }
+
+        }
+
+        .sponsor-us-dasa p {
+          margin-left: 0.5em;
+        }
+
+      }
+
+    /*----- Sponsors -----------------------------------------------------*/
+
+      .sponsors {
+
+        .sponsor {
+          width: 95%;
+          max-width: 275px;
+          margin: 1em auto;
+          img {
+            display: block;
+            margin: 2.5em auto;
+            width: 100%;
+          }
+        }
+
+      }
+
+      .sponsors-individual {
+
+        ul, li {
+          display: block;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+        ul {
+          margin: 1em 0;
+
+        }
+        li {
+          display: inline-block;
+          margin: 3px;
+          padding: 1px 7px;
+          white-space: nowrap;
+          float: left;
+          background: #eee;
+          border-radius: 3px;
+        }
+
+      }
+
+    /*----- Drops --------------------------------------------------------*/
+
+      .drop {
+        width: 25%;
+        margin-right: 5%;
+        max-width: 200px;
+        float: left;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+    /*----- Spponsor Rectangles ------------------------------------------*/
+
+      .sponsor-rectangle {
+        width: 85%;
+        max-width: 250px;
+        margin: 1em auto;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+    /*----- Stickers -----------------------------------------------------*/
+
+      .sticker {
+        width: 80%;
+        max-width: 220px;
+        margin: 1em auto;
+        img {
+          display: block;
+          width: 100%;
+          filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.4));
+        }
+      }
+
+    /*--------------------------------------------------------------------*/
+
+  }
+
+/******************************************************************************/

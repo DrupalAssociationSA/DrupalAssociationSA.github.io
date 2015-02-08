@@ -247,7 +247,7 @@
 
   /*----- Task deploy --------------------------------------------------------*/
 
-    gulp.task('deployToGitHub', ['buildAll'], function () {
+    gulp.task('deployToGitHub', false, ['buildAll'], function () {
       var options = {
         remote: gitHub.remote,
         branch: gitHub.branch,
