@@ -1,1 +1,1 @@
-"use strict";$(window).load(function(){$("html").addClass("css-loaded")});
+"use strict";$(window).load(function(){$("html").addClass("css-loaded")}),$(window).load(function(){$("html").addClass("css-loaded")});
