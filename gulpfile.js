@@ -248,6 +248,7 @@
   /*----- Task deploy --------------------------------------------------------*/
 
     gulp.task('deployToGitHub', false, ['buildAll'], function () {
+      setTimeout( function(){ }, 1000);
       var options = {
         remote: gitHub.remote,
         branch: gitHub.branch,

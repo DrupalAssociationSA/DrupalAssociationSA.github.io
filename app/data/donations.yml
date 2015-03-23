@@ -2,12 +2,24 @@
 
 - date: 2015-02
   donations:
+  - by: Adam Dunn
+    link: https://www.drupal.org/user/1761708
+    description: Individual Sponsor
+  - by: Lauro Scott-Parkin
+    link: https://www.drupal.org/user/237346
+    description: Individual Sponsor
+  - by: Lauro Scott-Parkin
+    link: https://www.drupal.org/user/237346
+    description: Ingen Media Silver Sponsor
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: Individual Sponsor
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: Burtronix Gold Sponsor
+  - by: Gregory Gerhardt
+    link: https://www.drupal.org/user/2053410
+    description: Amazee Silver Sponsor
   - by: Riaan Burger
     link: https://www.drupal.org/user/53372
     description: Monetary Donation
