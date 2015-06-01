@@ -15,6 +15,12 @@ description: Membership and Donations for DASA (Drupal Association South Africa)
           <h2>{{ membership.title }}</h2>
         </header>
         <div class="panel-body">
+          <div class="membership-badge">
+            <img
+              alt="{{ membership.desc }} Badge"
+              src="images/membership/{{ membership.img }}"
+            >
+          </div>
           <p>{{ membership.cost }}</p>
           <p>{{ membership.desc }}</p>
         </div>

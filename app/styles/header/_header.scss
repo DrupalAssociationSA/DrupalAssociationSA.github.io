@@ -9,8 +9,8 @@
 
 /*----- Variables ------------------------------------------------------------*/
 
-  $logo_x1:  "../images/logo/logo-x1.png"; // Should be 640px wide by design.
-  $logo_x2:  "../images/logo/logo-x2.png";
+  // $logo_x1:  "../images/logo/logo-x1.png"; // Should be 640px wide by design.
+  // $logo_x2:  "../images/logo/logo-x2.png";
 
   $logo_w:   640px;
   $logo_h:   180px;
@@ -29,7 +29,8 @@
     max-width: $logo_w; margin: 0; padding: 0; border: none;
     a {
       @include text-hide;
-      @include img-retina($logo_x1, $logo_x2, 640, 1280);
+      // @include img-retina($logo_x1, $logo_x2, 640, 1280);
+      background-image: url('../images/logo/dasa-logo-complete.svg');
       display: block; width: 100%; height: 0;
       padding-top: percentage(1 / $logo_r);
       background-size: 100% 100% !important;
