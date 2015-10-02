@@ -30,35 +30,47 @@
   type: individual
   members:
 
+  - name: Renate Ehlers
+    link: https://www.drupal.org/user/2996509
+    type: business
+    from: 2015-10
+    to: 2016-09
+
+  - name: Riaan Burger
+    link: https://www.drupal.org/user/53372
+    type: business
+    from: 2014-06
+    to: 2015-09
+
   - name: Lancelot Nyachoto
     link: https://www.drupal.org/user/189021
+    type: business
     from: 2015-05
     to: 2016-04
 
   - name: Sergio Henriques
     link: https://www.drupal.org/user/2730937
+    type: business
     from: 2015-03
     to: 2016-02
 
   - name: Clinton Lee Taylor
     link: https://www.drupal.org/user/1047248
+    type: business
     from: 2014-10
     to: 2015-09
 
   - name: Adam Dunn
     link: https://www.drupal.org/user/1761708
+    type: business
     from: 2014-10
     to: 2015-09
 
   - name: Johan du Bois
     link: https://www.drupal.org/user/107632
+    type: government
     from: 2014-10
     to: 2015-09
-
-  - name: Riaan Burger
-    link: https://www.drupal.org/user/53372
-    from: 2014-06
-    to: 2015-05
 
 #------------------------------------------------------------------------------#
 

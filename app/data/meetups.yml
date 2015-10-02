@@ -1,24 +1,55 @@
 ---
 
+- title:  DrupalCamp Cape Town 2015
+  id:     drupal-south-africa
+  image:  meetups/logos/drupalcamp-cape-town-2015.jpg
+  imagew: 60%
+  widget:
+  description: >
+    The first DrupalCamp in Cape Town is on its way! The Camp’s aim is to bring
+    together smart and creative Drupal minds and enrich them through industry
+    talks and educational workshops, as well as grow the community and find new
+    talents ready to be drupalized.
+
+- title:  Johannesburg / Parkhurst
+  id:     Drupal-Johannesburg-Parkhurst
+  image:  meetups/logos/dasa-logo-jhb.svg
+  imagew: 60%
+  widget:
+  description: >
+    Johannesburg / Parkhurst meet-up. Every second Friday of the month. Noon
+    until 15:00. Please sign up using meetup.com so that we know for how many
+    people we should prepare.
+
+- title:  Pretoria / Arcadia (NGO &amp; Gov)
+  id:     Drupal-Pretoria-Arcadia-NGO-gov
+  image:  meetups/logos/dasa-logo-pta.svg
+  imagew: 60%
+  widget:
+  description: >
+    Pretoria / Arcadia (NGO and Government) Drupal user group meet-up.
+    Starting on the 16th of October 2015. Please sign up using meetup.com so
+    that we know for how many people we should prepare.
+
+- title:  Pretoria / Centurion Meetup
+  id:     Drupal-Pretoria
+  image:  meetups/logos/dasa-logo-pta.svg
+  imagew: 60%
+  widget:
+  description: >
+    Pretoria / Centurion Drupal user group meet-up. Every last Friday of the
+    month. 17:30 to 20:30. Please sign up using meetup.com so that we know for
+    how many people we should prepare.
+
 - title:  Cape Town Meetup
   id:     Drupal-Cape-Town
   image:  meetups/logos/dasa-logo-ct.svg
   imagew: 60%
   widget: 2mWYVH
   description: >
-    Cape Town Drupal user group meet-up. Every forth Wednesday of the month.
-    Please sign up using meetup.com so that we know for how many people we
-    should prepare.
-
-- title:  Pretoria Meetup (upcoming)
-  id:     Drupal-Pretoria
-  image:  meetups/logos/dasa-logo-pta.svg
-  imagew: 60%
-  widget:
-  description: >
-    Pretoria Drupal user group meet-up. Day of the week to be decided, starting
-    second quarter 2015. Please sign up using meetup.com so that we know for how
-    many people we should prepare.
+    Cape Town Drupal user group meet-up. 18:30 to 21:30. Every forth Wednesday
+    of the month. Please sign up using meetup.com so that we know for how many
+    people we should prepare.
 
 - title:  Durban Meetup (upcoming)
   id:     Drupal-Durban
@@ -26,22 +57,22 @@
   imagew: 60%
   widget: 2sMX6v
   description: >
-    Durban Drupal user group meet-up. Day of the week to be decided, starting
-    late 2015. Please sign up using meetup.com so that we know for how many
-    people we should prepare.
+    Durban Drupal user group meet-up. Day of the week to be decided, starting on
+    the 19th of November 2015. Please sign up using meetup.com so that we know
+    for how many people we should prepare.
 
-- title:  Johannesburg Meetup
+- title:  Johannesburg / Bryanston
   id:     Drupal-Johannesburg
   image:  meetups/logos/dasa-logo-jhb.svg
   imagew: 60%
   widget: 2mWZWb
   description: >
     Johannesburg Drupal user group meet-up. Every first Wednesday of the month.
-    Please sign up using meetup.com so that we know for how many people we
-    should prepare.
+    18:30 to 21:30. Please sign up using meetup.com so that we know for how many
+    people we should prepare.
 
-- title:  DASA Meeting
-  id:     drupal-association-south-africa
+- title:  National Events / DrupalCamps
+  id:     drupal-south-africa
   image:  logo/dasa-logo-stamp-and-dasa.svg
   imagew: 95%
   widget: 2mX036
@@ -49,3 +80,12 @@
     The Drupal Association South Africa meeting takes place on the third
     Wednesday of each month. If you want to volunteer some of your time or ideas
     for nurturing the South African Drupal community, this is the one to attend.
+
+- title:  DASA Meeting
+  id:     drupal-association-sa
+  image:  logo/dasa-logo-stamp-and-dasa.svg
+  imagew: 95%
+  widget: 2mX036
+  description: >
+    National events are currently two annual DrupalCamps, one in Cape Town and
+    one in Johannesburg.
