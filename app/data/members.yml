@@ -2,27 +2,27 @@
 
 #------------------------------------------------------------------------------#
 
-- name: Gold Agency Members
-  type: gold
+- name: Organisation Members
+  type: organisation
   members:
 
-#------------------------------------------------------------------------------#
+  - name: SpinningYourWeb
+    link: http://spinningyourweb.net
+    type: business
+    from: 2016-03
+    to: 2017-02
 
-- name: Silver Agency Members
-  type: silver
-  members:
-
-#------------------------------------------------------------------------------#
-
-- name: Bronze Agency Members
-  type: bronze
-  members:
+  - name: Rogerwilco
+    link: http://www.rogerwilco.co.za
+    type: business
+    from: 2015-11
+    to: 2016-10
 
   - name: Burtronix
-    link:
-    # link: https://www.drupal.org/profile/profile_current_company_organization/Burtronix
+    link: https://burtronix.co.za
+    type: business
     from: 2014-06
-    to: 2015-05
+    to: 2016-10
 
 #------------------------------------------------------------------------------#
 
@@ -30,46 +30,112 @@
   type: individual
   members:
 
-  - name: Lancelot Nyachoto
-    link: https://www.drupal.org/user/189021
-    from: 2015-05
-    to: 2016-04
+  - name: Stew West
+    link: https://www.drupal.org/user/530932
+    type: business
+    from: 2016-06
+    to: 2017-07
+
+  - name: Jason Lewis
+    link: https://www.drupal.org/user/1938816
+    type: business
+    from: 2016-04
+    to: 2017-03
+
+  - name: Mark Pape
+    link: https://www.drupal.org/user/199709
+    type: business
+    from: 2016-04
+    to: 2017-03
+
+  - name: Logan Brooke-Smith
+    link: https://www.drupal.org/user/3425035
+    type: business
+    from: 2016-04
+    to: 2017-03
+
+  - name: Rudi Sadler
+    link: https://www.drupal.org/user/3425035
+    type: business
+    from: 2016-04
+    to: 2017-03
+
+  - name: Noel Harrison
+    link: https://www.drupal.org/user/3416237
+    type: business
+    from: 2016-03
+    to: 2017-02
 
   - name: Sergio Henriques
     link: https://www.drupal.org/user/2730937
+    type: business
     from: 2015-03
-    to: 2016-02
+    to: 2017-02
 
-  - name: Clinton Lee Taylor
-    link: https://www.drupal.org/user/1047248
-    from: 2014-10
-    to: 2015-09
+  - name: Jonathan Wagener
+    link: https://www.drupal.org/user/251700
+    type: business
+    from: 2016-03
+    to: 2017-02
 
-  - name: Adam Dunn
-    link: https://www.drupal.org/user/1761708
-    from: 2014-10
-    to: 2015-09
+  - name: Dane Rossenrode
+    link: https://www.drupal.org/user/2996575
+    type: business
+    from: 2016-03
+    to: 2017-02
+
+  - name: Charlie Stewart
+    link: https://www.drupal.org/user/1181284
+    type: business
+    from: 2015-11
+    to: 2016-10
+
+  - name: Daniel Bornman
+    link: https://www.drupal.org/user/409701
+    type: business
+    from: 2015-11
+    to: 2016-10
+
+  - name: Wilhelm Erasmus
+    link: https://www.drupal.org/user/3348042
+    type: business
+    from: 2015-11
+    to: 2016-10
 
   - name: Johan du Bois
     link: https://www.drupal.org/user/107632
+    type: government
     from: 2014-10
-    to: 2015-09
+    to: 2016-09
 
   - name: Riaan Burger
     link: https://www.drupal.org/user/53372
+    type: business
     from: 2014-06
-    to: 2015-05
+    to: 2016-09
 
-#------------------------------------------------------------------------------#
+  - name: Renate Ehlers
+    link: https://www.drupal.org/user/2996509
+    type: business
+    from: 2015-10
+    to: 2016-09
 
-- name: Diamond Site Owners
-  type: diamond
-  members:
+  - name: Adam Dunn
+    link: https://www.drupal.org/user/1761708
+    type: business
+    from: 2014-10
+    to: 2016-09
 
-#------------------------------------------------------------------------------#
+  - name: Lancelot Nyachoto
+    link: https://www.drupal.org/user/189021
+    type: business
+    from: 2015-05
+    to: 2016-04
 
-- name: Graphite Site Owners
-  type: graphite
-  members:
+  # - name: Clinton Lee Taylor
+  #   link: https://www.drupal.org/user/1047248
+  #   type: business
+  #   from: 2014-10
+  #   to: 2015-09
 
 #------------------------------------------------------------------------------#

@@ -5,6 +5,23 @@ description: Contact DASA (Drupal Association South Africa).
 
 <article class="contact">
   <h1 id="page-title">
+    Community Contact <span class="hide"> for {{ site.long }}</span>
+  </h1>
+  <section class="panel panel-default">
+    <header class="panel-heading">
+      <h2><a href="https://groups.drupal.org/south-africa">GDoSA</a></h2>
+    </header>
+    <div class="panel-body">
+      <p>
+        Please join Groups.Drupal.org/South-Africa (GDoSA) to be able to contact
+        people in our community.
+      </p>
+    </div>
+  </section>
+</article>
+<!-- Removed for DASA's end.
+<article class="contact">
+  <h1 id="page-title">
     General Contact <span class="hide"> for {{ site.long }}</span>
   </h1>
   <section class="panel panel-default">
@@ -23,7 +40,7 @@ description: Contact DASA (Drupal Association South Africa).
 </article>
 
 <article class="governing-board clearfix">
-  <h1>Current (2015) Governing Board</h1>
+  <h1>Current (2016) Governing Board</h1>
   {% for member in site.data.board %}
     {% capture display %}
       {% if member.link.size > 0 and member.link contains 'drupal.org' %}
@@ -79,3 +96,4 @@ description: Contact DASA (Drupal Association South Africa).
     {% cycle 'portfolios_row_close': '', '', '', '</div>' %}
   {% endfor %}
 </article>
+-->

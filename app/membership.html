@@ -3,26 +3,32 @@ title: 'Membership'
 description: Membership and Donations for DASA (Drupal Association South Africa) and our Community.
 ---
 
+<!-- Removed for DASA's end.
 <article class="membership clearfix">
   <h1 id="page-title">
     {{ page.title }}
     <span class="hide"> and Donations for {{ site.long }}</span>
   </h1>
   {% for membership in site.data.memberships %}
-    <div class="col-md-4">
+    <div class="col-md-6">
       <section class="panel panel-default panel-{{ membership.type }}">
         <header class="panel-heading">
           <h2>{{ membership.title }}</h2>
         </header>
         <div class="panel-body">
-          <div class="membership-badge">
+          <p>{{ membership.cost }}</p>
+          <div class="membership-badge-1">
             <img
               alt="{{ membership.desc }} Badge"
-              src="images/membership/{{ membership.img }}"
+              src="images/membership/{{ membership.img1 }}"
             >
           </div>
-          <p>{{ membership.cost }}</p>
-          <p>{{ membership.desc }}</p>
+          <div class="membership-badge-2">
+            <img
+              alt="{{ membership.desc }} Badge"
+              src="images/membership/{{ membership.img2 }}"
+            >
+          </div>
         </div>
       </section>
     </div>
@@ -44,8 +50,10 @@ description: Membership and Donations for DASA (Drupal Association South Africa)
           {% include_relative includes/fragment-do.html %}
         </li>
         <li>
-          If the membership is for a website (Diamond Site Owner or Graphite Site
-          Owner), include a link to the website.
+          If the membership is for an organisation, include a link to the website.
+        </li>
+        <li>
+          As a member you are welcome to present either of the two options for logo badges above. They are in SVG format, so simply copy them from the website here.
         </li>
       </ul>
     </div>
@@ -58,10 +66,10 @@ description: Membership and Donations for DASA (Drupal Association South Africa)
       <h1>{{ membership.name }}</h1>
       {% for member in membership.members %}
       {% capture name %}
-        {% if member.link.size > 0 and member.link contains 'drupal.org' %}
+        {% if member.link.size > 0 and (member.link contains 'drupal.org' or membership.type == 'organisation') %}
           <a
             href="{{ member.link }}"
-            title="{{ member.name }} on Drupal.org"
+            title="{{ member.name }}{% if membership.type == 'individual' %} on Drupal.org{% else %} Website{% endif %}"
             rel="nofollow"
           >{{ member.name }}</a>
         {% else %}
@@ -82,37 +90,4 @@ description: Membership and Donations for DASA (Drupal Association South Africa)
     </article>
   {% endif %}
 {% endfor %}
-
-<!--
-<article class="donations clearfix">
-  <h1>Donations</h1>
-  {% for date in site.data.donations %}
-    <h2>{{ date.date }}</h2>
-    <div class="clearfix">
-      {% for donation in date.donations %}
-        {% capture by %}
-          {% if donation.link.size > 0 and donation.link contains 'drupal.org' %}
-            <a
-              href="{{ donation.link }}"
-              title="{{ donation.by }} on Drupal.org"
-              rel="nofollow"
-            >{{ donation.by }}</a>
-          {% else %}
-            {{ donation.by }}:
-          {% endif %}
-        {% endcapture %}
-        <div class="col-md-2">
-          <section class="panel panel-default panel-small">
-            <header class="panel-heading">
-              <h3><small>by</small> {{ by }}</h3>
-            </header>
-            <div class="panel-body">
-              <p>{{ donation.date }} {{ donation.description }}</p>
-            </div>
-          </section>
-        </div>
-      {% endfor %}
-    </div>
-  {% endfor %}
-</article>
- -->
+-->

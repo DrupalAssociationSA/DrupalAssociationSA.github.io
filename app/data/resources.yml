@@ -1,6 +1,11 @@
 ---
 
-- title: DrupalAssociationSA on GitHub
+- title: DASA on GitLab
+  url: https://gitlab.com/groups/DrupalAssociationSouthAfrica
+  description: >
+    The root DASA GitLab account. We're migrating from GitHub to GitLab.
+
+- title: DASA on GitHub
   url: https://github.com/DrupalAssociationSA
   description: >
     The root DASA GitHub account.
@@ -15,9 +20,18 @@
   description: >
     Our Google Drive Documentation. Currently only our constitution.
 
-- title: InternalDocumentation on GitHub
-  url: https://github.com/DrupalAssociationSA/InternalDocumentation
+- title: Document Archive on GitLab
+  url: https://gitlab.com/DrupalAssociationSouthAfrica/Archive
   description: >
-    DASA's internal documentation, including agendas (which, in version control,
-    turn into the minutes of the meetings on the evening of each meeting) and
-    our bank statements.
+    DASA's internal documentation.
+
+- title: Creative Identity on GitLab
+  url: https://gitlab.com/DrupalAssociationSouthAfrica/Creative
+  description: >
+    DASA's creative identity documents (designs and the like).
+
+- title: Agendas on GitLab
+  url: https://gitlab.com/DrupalAssociationSouthAfrica/Agendas
+  description: >
+    DASA's governing board meeting agendas (which, in version control,
+    turn into the minutes of the meetings on the evening of each meeting).
