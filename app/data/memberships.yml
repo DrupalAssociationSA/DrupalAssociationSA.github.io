@@ -1,37 +1,17 @@
 ---
 
-- type: gold
-  title: Gold
-  cost: R 20 000 p.a.
-  desc: Gold Agency Membership
-  img: dasa-membership-badge-agency-gold.svg
-
-- type: silver
-  title: Silver
-  cost: R 5 000 p.a.
-  desc: Silver Agency Membership
-  img: dasa-membership-badge-agency-silver.svg
-
-- type: bronze
-  title: Bronze
-  cost: R 1 000 p.a.
-  desc: Bronze Agency Membership
-  img: dasa-membership-badge-agency-bronze.svg
-
 - type: individual
   title: Individual
   cost: R 150 p.a.
   desc: Individual Membership
-  img: dasa-membership-badge-individual.svg
+  img: membership-individual-rectangle.svg
+  img1: membership-individual-rectangle.svg
+  img2: membership-individual-clear.svg
 
-- type: diamond
-  title: Diamond Site Owner
-  cost: R 10 000 p.a.
-  desc: Diamond Website Membership
-  img: dasa-membership-badge-site-owner-diamond.svg
-
-- type: graphite
-  title: Graphite Site Owner
-  cost: R 2 000 p.a.
-  desc: Graphite Website Membership
-  img: dasa-membership-badge-site-owner-graphite.svg
+- type: organisation
+  title: Organisation
+  cost: R 5 000 p.a.
+  desc: Organisation Membership
+  img: membership-organisation-rectangle.svg
+  img1: membership-organisation-rectangle.svg
+  img2: membership-organisation-clear.svg

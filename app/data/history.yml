@@ -1,92 +1,36 @@
 ---
 
-- head: Previous (2014) Voters
-  desc: "Community members who voted for the 2015 Governing Board on GDoSA."
+- head: Previous (2015) Governing Board
+  desc: "DASA's first governing board, from 2014 to late 2015."
   people:
 
     - name: Riaan Burger
       link: https://www.drupal.org/user/53372
-
-    - name: Mel de Gouveia
-      link: https://www.drupal.org/user/2550812
-
-    - name: Freda Browne
-      link: https://www.drupal.org/user/2581468
-
-    - name: Lauro Scott-Parkin
-      link: https://www.drupal.org/user/237346
-
-    - name: robin.prieschl
-      link: https://www.drupal.org/user/139756
-
-    - name: Adam Dunn
-      link: https://www.drupal.org/user/1761708
-
-    - name: leenx
-      link: https://www.drupal.org/user/1047248
-
-    - name: kombuta
-      link: https://www.drupal.org/user/189021
+      desc: Chairman
 
     - name: Renate Ehlers
       link: https://www.drupal.org/user/2996509
+      desc: Vice Chairman
+
+    - name: Greg McKeen
+      link: https://www.drupal.org/user/123163
+      desc: Secretary
+
+    - name: Adam Dunn
+      link: https://www.drupal.org/user/1761708
+      desc: Treasurer
+
+    - name: Robin Prieschl
+      link: https://www.drupal.org/user/139756
+      desc: Portfolio Manager
+
+    - name: Johan du Bois
+      link: https://www.drupal.org/user/107632
+      desc:
 
     - name: Jason Lewis
       link: https://www.drupal.org/user/1938816
-
-    - name: foxtrotcharlie
-      link: https://www.drupal.org/user/27895
-
-    - name: Ddroid_za
-      link: https://www.drupal.org/user/640452
-
-    - name: wavesailor
-      link: https://www.drupal.org/user/144761
-
-    - name: andrejansen
-      link: https://www.drupal.org/user/825558
-
-    - name: uberEllis
-      link: https://www.drupal.org/user/20502
-
-    - name: scheepers
-      link: https://www.drupal.org/user/162354
-
-    - name: mckeen.greg
-      link: https://www.drupal.org/user/123163
-
-    - name: dubois
-      link: https://www.drupal.org/user/107632
-
-    - name: dylanjohn
-      link: https://www.drupal.org/user/601114
-
-    - name: jimz0r
-      link: https://www.drupal.org/user/159238
-
-    - name: johnymap
-      link: https://www.drupal.org/user/226192
-
-    - name: Max_Headroom
-      link: https://www.drupal.org/user/94981
-
-    - name: Wayne Oliver
-      link: https://www.drupal.org/user/2952073
-
-    - name: lukevanblerk
-      link: https://www.drupal.org/user/953362
-
-    - name: kylegrey
-      link: https://www.drupal.org/user/3056205
-
-    - name: razmatez
-      link: https://www.drupal.org/user/2935989
-
-    - name: JasonLee87
-      link: https://www.drupal.org/user/1157838
-
-    - name: Andre Artus
-      link: https://www.drupal.org/user/2962855
+      desc:
 
 - head: Previous (2014) Governing Board
   desc: "DASA's first governing board, from 2013 to late 2014."

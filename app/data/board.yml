@@ -1,29 +1,29 @@
 ---
 
-- name: Riaan Burger
-  link: https://www.drupal.org/user/53372
-  desc: Chairman
-
-- name: Renate Ehlers
-  link: https://www.drupal.org/user/2996509
-  desc: Vice Chairman
-
-- name: Greg McKeen
-  link: https://www.drupal.org/user/123163
-  desc: Secretary
-
-- name: Adam Dunn
-  link: https://www.drupal.org/user/1761708
-  desc: Treasurer
-
-- name: Robin Prieschl
-  link: https://www.drupal.org/user/139756
-  desc: Portfolio Manager
-
-- name: dubois
+- name: Johan du Bois
   link: https://www.drupal.org/user/107632
-  desc:
+  desc: Chairman
 
 - name: Jason Lewis
   link: https://www.drupal.org/user/1938816
+  desc: Vice Chairman
+
+- name: Ingrid Talbot
+  link: https://www.drupal.org/user/2996509
+  desc: Secretary
+
+- name: Renate Ehlers
+  link: https://www.drupal.org/user/2996509
+  desc: Treasurer
+
+- name: Lee Taylor
+  link: https://www.drupal.org/user/1047248
+  desc: Portfolio Manager
+
+- name: Greg McKeen
+  link: https://www.drupal.org/user/123163
+  desc:
+
+- name: Riaan Burger
+  link: https://www.drupal.org/user/53372
   desc:
